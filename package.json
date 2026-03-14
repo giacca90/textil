@@ -12,6 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.0.4"
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^6.0.4",
+    "csv-parse": "^6.1.0",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0"
   }
 }

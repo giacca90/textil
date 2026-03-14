@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import { ClientRouter } from 'astro:transitions';
+import '../../styles/global.css';
+
+// 1. Generamos las rutas estáticas para cada artículo del CSV
+export async function getStaticPaths() {
+  const articulos = await getCollection('articulos');
+  return articulos.map((art) => ({
+    params: { id: art.id }, // La URL será /articulo/0, /articulo/1, etc.
+    props: { art },         // Pasamos los datos del artículo como props
+  }));
+}
+
+// 2. Recuperamos el artículo desde las props
+const { art } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{art.data.nombre}</title>
+    <ClientRouter />
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <main class="max-w-3xl mx-auto px-4 py-12">
+      <a href="/" class="group mb-8 inline-flex items-center text-indigo-600 hover:text-indigo-800 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Volver al catálogo
+      </a>
+
+      <article class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+        <div class="bg-indigo-600 h-32 w-full"></div>
+        
+        <div class="px-8 pb-12 -mt-12">
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-50">
+            <span class="text-indigo-500 font-bold uppercase tracking-widest text-sm">Producto Detallado</span>
+            
+            <h1 
+              class="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-6 capitalize"
+              transition:name={`nombre-${art.id}`}
+            >
+              {art.data.nombre}
+            </h1>
+
+            <div class="prose prose-indigo max-w-none">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Descripción:</h3>
+              <p class="text-gray-600 text-xl leading-relaxed">
+                {art.data.descripcion || "Este producto no tiene una descripción detallada en el archivo CSV."}
+              </p>
+            </div>
+
+            <div class="mt-10 pt-8 border-t border-gray-100 flex flex-wrap gap-4">
+               <div class="bg-gray-50 px-4 py-2 rounded-lg">
+                  <span class="block text-xs text-gray-400 uppercase font-bold">Referencia</span>
+                  <span class="text-gray-700 font-mono">SKU-{art.id}</span>
+               </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
