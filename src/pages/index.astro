@@ -4,15 +4,47 @@ import { getCollection } from 'astro:content';
 import { ClientRouter } from 'astro:transitions';
 
 const articulos = await getCollection('articulos');
+
+// SEO Variables
+const title = "C Palau S.A. | Mayorista de Tejidos y Telas";
+const description = "Explora nuestro catálogo de tejidos de alta calidad: rasos, lonetas y algodones para profesionales.";
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// CORRECCIÓN DEL ERROR DE URL:
+// Solo intentamos crear URLs absolutas si Astro.site existe. 
+// Si no, usamos rutas relativas para que no explote en local.
+const canonicalURL = Astro.site 
+  ? new URL(Astro.url.pathname, Astro.site) 
+  : Astro.url.pathname;
+
+const socialImageURL = Astro.site 
+  ? new URL(`${baseUrl}/og-image.jpg`, Astro.site) 
+  : `${baseUrl}/og-image.jpg`;
 ---
 
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href={`${baseUrl}/favicon.svg`} />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Catálogo de Productos</title>
+        
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalURL} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={socialImageURL} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={canonicalURL} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={socialImageURL} />
+        
         <ClientRouter />
     </head>
     <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
@@ -44,7 +76,7 @@ const articulos = await getCollection('articulos');
                         data-nombre={art.data.nombre.toLowerCase()}
                         class="card-articulo bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-md dark:hover:shadow-indigo-900/20 transition-all duration-300 flex flex-col"
                     >
-                        <a href={`/articulo/${art.id}`} class="aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700 block group">
+                        <a href={`${baseUrl}/articulo/${art.id}`} class="aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700 block group">
                             <img 
                                 src={art.data.imagen} 
                                 alt={art.data.nombre}
@@ -58,7 +90,7 @@ const articulos = await getCollection('articulos');
                                 <span class="text-xs font-semibold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 px-2 py-1 rounded">Tejido</span>
                             </div>
                             
-                            <a href={`/articulo/${art.id}`} class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                            <a href={`${baseUrl}/articulo/${art.id}`} class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                                 <h2 class="text-xl font-bold text-gray-800 dark:text-white mb-2 capitalize" transition:name={`nombre-${art.id}`}>
                                     {art.data.nombre}
                                 </h2>
@@ -70,7 +102,7 @@ const articulos = await getCollection('articulos');
                         </div>
                         
                         <div class="px-6 py-4 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-100 dark:border-gray-700 mt-auto">
-                            <a href={`/articulo/${art.id}`} class="block text-center w-full bg-indigo-600 dark:bg-indigo-500 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors">
+                            <a href={`${baseUrl}/articulo/${art.id}`} class="block text-center w-full bg-indigo-600 dark:bg-indigo-500 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors">
                                 Ver detalles
                             </a>
                         </div>

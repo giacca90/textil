@@ -18,22 +18,27 @@ const articulos = defineCollection({
     });
 
     return records.map((record: any, index: number) => {
-      // 1. Usamos una búsqueda de Unsplash moderna. 
-      // El truco es usar la URL de búsqueda de imágenes de alta calidad.
-      // Añadimos 'textile' y 'texture' para asegurar que salgan telas.
-      const query = encodeURIComponent(`${record.nombre} textile texture`);
+      // 1. Extraemos el valor de la columna 'imagen' y quitamos espacios
+      const imagenCsv = record.imagen ? String(record.imagen).trim() : "";
       
-      // Usamos una URL de Unsplash que permite búsqueda por palabras clave
-      // El parámetro 'sig' con el index evita que se repitan las fotos.
-      const fotoDinamica = `https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&w=800&q=80&sig=${index}&search=${query}`;
-      
-      // ALTERNATIVA SI LA ANTERIOR NO TE GUSTA (Fotos de telas muy variadas):
-      const fotoAlternativa = `https://loremflickr.com/800/600/fabric,textile/all?lock=${index}`;
+      let fotoFinal;
+
+      // 2. Comprobación: ¿Está la columna vacía?
+      if (imagenCsv !== "") {
+        // Si hay algo escrito (una URL o ruta local), lo usamos
+        fotoFinal = imagenCsv;
+      } else {
+        // SI ESTÁ VACÍA, usamos tu lógica de búsqueda que tanto te gusta:
+        const query = encodeURIComponent(`${record.nombre} textile texture`);
+        
+        // Esta es la URL de LoremFlickr que comentaste que mejor te funciona
+        fotoFinal = `https://loremflickr.com/800/600/fabric,textile/all?lock=${index}`;
+      }
 
       return {
         id: String(index),
         ...record,
-        imagen: fotoAlternativa, // He puesto loremflickr con 'lock' porque es el más estable ahora mismo
+        imagen: fotoFinal, 
       };
     });
   },
