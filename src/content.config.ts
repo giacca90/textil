@@ -17,16 +17,31 @@ const articulos = defineCollection({
       trim: true, 
     });
 
-    return records.map((record: any, index: number) => ({
-      // Como tu CSV no tiene columna 'id', usamos el índice como ID único
-      id: String(index),
-      ...record,
-    }));
+    return records.map((record: any, index: number) => {
+      // 1. Usamos una búsqueda de Unsplash moderna. 
+      // El truco es usar la URL de búsqueda de imágenes de alta calidad.
+      // Añadimos 'textile' y 'texture' para asegurar que salgan telas.
+      const query = encodeURIComponent(`${record.nombre} textile texture`);
+      
+      // Usamos una URL de Unsplash que permite búsqueda por palabras clave
+      // El parámetro 'sig' con el index evita que se repitan las fotos.
+      const fotoDinamica = `https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&w=800&q=80&sig=${index}&search=${query}`;
+      
+      // ALTERNATIVA SI LA ANTERIOR NO TE GUSTA (Fotos de telas muy variadas):
+      const fotoAlternativa = `https://loremflickr.com/800/600/fabric,textile/all?lock=${index}`;
+
+      return {
+        id: String(index),
+        ...record,
+        imagen: fotoAlternativa, // He puesto loremflickr con 'lock' porque es el más estable ahora mismo
+      };
+    });
   },
   schema: z.object({
     id: z.string(),
-    nombre: z.string(), // Antes decía 'titulo', por eso fallaba
-    descripcion: z.string().optional(), // Lo ponemos opcional por si hay filas vacías
+    nombre: z.string(),
+    descripcion: z.string().optional(),
+    imagen: z.string(),
   }),
 });
 

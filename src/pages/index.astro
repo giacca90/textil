@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css' 
 import { getCollection } from 'astro:content';
-// Importamos el componente de transiciones
 import { ClientRouter } from 'astro:transitions';
 
 const articulos = await getCollection('articulos');
@@ -16,54 +15,104 @@ const articulos = await getCollection('articulos');
         <title>Catálogo de Productos</title>
         <ClientRouter />
     </head>
-    <body class="bg-gray-50 text-gray-900 font-sans">
+    <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
         <main class="max-w-6xl mx-auto px-4 py-12">
             <header class="mb-12 text-center">
-                <h1 class="text-4xl font-extrabold tracking-tight text-indigo-600 mb-2">
+                <h1 class="text-4xl font-extrabold tracking-tight text-indigo-600 dark:text-indigo-400 mb-2">
                     Nuestros Productos
                 </h1>
+                <p class="text-gray-600 dark:text-gray-400 mb-8">Explora nuestra colección de tejidos de alta calidad.</p>
+
+                <div class="max-w-md mx-auto relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <input 
+                        type="text" 
+                        id="buscador" 
+                        placeholder="Buscar tejido..." 
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-700 rounded-2xl leading-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 dark:focus:ring-indigo-400 focus:border-indigo-600 sm:text-sm shadow-sm transition-all"
+                    />
+                </div>
             </header>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="grid-articulos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {articulos.map(art => (
-                    <article class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col">
-                        <div class="p-6 grow">
+                    <article 
+                        data-nombre={art.data.nombre.toLowerCase()}
+                        class="card-articulo bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-md dark:hover:shadow-indigo-900/20 transition-all duration-300 flex flex-col"
+                    >
+                        <a href={`/articulo/${art.id}`} class="aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700 block group">
+                            <img 
+                                src={art.data.imagen} 
+                                alt={art.data.nombre}
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                transition:name={`img-${art.id}`}
+                            />
+                        </a>
+
+                        <div class="p-6 grow flex flex-col">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-xs font-semibold uppercase tracking-wider text-indigo-500 bg-indigo-50 px-2 py-1 rounded">
-                                    Nuevo
-                                </span>
-                                <span class="text-gray-400 text-sm">#{art.id}</span>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 px-2 py-1 rounded">Tejido</span>
                             </div>
                             
-                            <h2 
-                                class="text-xl font-bold text-gray-800 mb-2 capitalize"
-                                transition:name={`nombre-${art.id}`}
-                            >
-                                {art.data.nombre}
-                            </h2>
+                            <a href={`/articulo/${art.id}`} class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                                <h2 class="text-xl font-bold text-gray-800 dark:text-white mb-2 capitalize" transition:name={`nombre-${art.id}`}>
+                                    {art.data.nombre}
+                                </h2>
+                            </a>
                             
-                            <p class="text-gray-600 text-sm leading-relaxed">
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-3">
                                 {art.data.descripcion || "Sin descripción disponible."}
                             </p>
                         </div>
                         
-                        <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 mt-auto">
-                            <a 
-                                href={`/articulo/${art.id}`}
-                                class="block text-center w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
-                            >
+                        <div class="px-6 py-4 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-100 dark:border-gray-700 mt-auto">
+                            <a href={`/articulo/${art.id}`} class="block text-center w-full bg-indigo-600 dark:bg-indigo-500 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors">
                                 Ver detalles
                             </a>
                         </div>
                     </article>
                 ))}
             </div>
+
+            <div id="no-results" class="hidden text-center py-20">
+                <p class="text-gray-500 dark:text-gray-400 text-xl italic">No se encontraron tejidos.</p>
+            </div>
             
-            {articulos.length === 0 && (
-                <div class="text-center py-20">
-                    <p class="text-gray-500 italic">No se encontraron productos en el archivo CSV.</p>
-                </div>
-            )}
         </main>
+
+        <script>
+            const setupSearch = () => {
+                const input = document.getElementById('buscador') as HTMLInputElement;
+                const articles = document.querySelectorAll('.card-articulo');
+                const noResults = document.getElementById('no-results');
+
+                input?.addEventListener('input', (e) => {
+                    const term = (e.target as HTMLInputElement).value.toLowerCase();
+                    let hasResults = false;
+
+                    articles.forEach(article => {
+                        const nombre = (article as HTMLElement).dataset.nombre;
+                        if (nombre?.includes(term)) {
+                            (article as HTMLElement).style.display = 'flex';
+                            hasResults = true;
+                        } else {
+                            (article as HTMLElement).style.display = 'none';
+                        }
+                    });
+
+                    if (hasResults) {
+                        noResults?.classList.add('hidden');
+                    } else {
+                        noResults?.classList.remove('hidden');
+                    }
+                });
+            };
+
+            document.addEventListener('astro:page-load', setupSearch);
+        </script>
     </body>
 </html>
