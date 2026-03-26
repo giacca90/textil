@@ -1,150 +1,133 @@
 ---
-import '../styles/global.css' 
-import { getCollection } from 'astro:content';
-import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+import {getCollection} from 'astro:content';
+import {ClientRouter} from 'astro:transitions';
 
 const articulos = await getCollection('articulos');
 
-// SEO Variables
-const title = "C Palau S.A. | Mayorista de Tejidos y Telas";
-const description = "Explora nuestro catálogo de tejidos de alta calidad: rasos, lonetas y algodones para profesionales.";
+const title = 'C Palau S.A. | Mayorista de Tejidos y Telas';
+const description = 'Explora nuestro catálogo de tejidos de alta calidad: rasos, lonetas y algodones para profesionales.';
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-
-// CORRECCIÓN DEL ERROR DE URL:
-// Solo intentamos crear URLs absolutas si Astro.site existe. 
-// Si no, usamos rutas relativas para que no explote en local.
-const canonicalURL = Astro.site 
-  ? new URL(Astro.url.pathname, Astro.site) 
-  : Astro.url.pathname;
-
-const socialImageURL = Astro.site 
-  ? new URL(`${baseUrl}/og-image.jpg`, Astro.site) 
-  : `${baseUrl}/og-image.jpg`;
+const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url.pathname;
+const socialImageURL = Astro.site ? new URL(`${baseUrl}/og-image.jpg`, Astro.site) : `${baseUrl}/og-image.jpg`;
 ---
 
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href={`${baseUrl}/favicon.svg`} />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={canonicalURL} />
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href={`${baseUrl}/favicon.svg`} />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalURL} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={socialImageURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={socialImageURL} />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={canonicalURL} />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content={socialImageURL} />
-        
-        <ClientRouter />
-    </head>
-    <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
-        <main class="max-w-6xl mx-auto px-4 py-12">
-            <header class="mb-12 text-center">
-                <h1 class="text-4xl font-extrabold tracking-tight text-indigo-600 dark:text-indigo-400 mb-2">
-                    Nuestros Productos
-                </h1>
-                <p class="text-gray-600 dark:text-gray-400 mb-8">Explora nuestra colección de tejidos de alta calidad.</p>
+		<ClientRouter />
+	</head>
+	<body class="bg-gray-50 font-sans text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+		<main class="mx-auto max-w-6xl px-4 py-12 flex-grow">
+			<header class="mb-12 text-center">
+				<h1 class="mb-2 text-4xl font-extrabold tracking-tight text-indigo-600 dark:text-indigo-400">Nuestros Productos</h1>
 
-                <div class="max-w-md mx-auto relative">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
-                    <input 
-                        type="text" 
-                        id="buscador" 
-                        placeholder="Buscar tejido..." 
-                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-700 rounded-2xl leading-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 dark:focus:ring-indigo-400 focus:border-indigo-600 sm:text-sm shadow-sm transition-all"
-                    />
-                </div>
-            </header>
+				<div class="relative mx-auto max-w-md mt-8">
+					<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+						<svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+						</svg>
+					</div>
+					<input type="text" id="buscador" placeholder="Buscar tejido..." class="block w-full rounded-2xl border border-gray-300 bg-white py-3 pr-3 pl-10 leading-5 text-gray-900 placeholder-gray-500 shadow-sm transition-all focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600 focus:outline-none dark:border-gray-700 dark:bg-gray-800 dark:text-white" transition:persist />
+				</div>
+			</header>
 
-            <div id="grid-articulos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {articulos.map(art => (
-                    <article 
-                        data-nombre={art.data.nombre.toLowerCase()}
-                        class="card-articulo bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-md dark:hover:shadow-indigo-900/20 transition-all duration-300 flex flex-col"
-                    >
-                        <a href={`${baseUrl}/articulo/${art.id}`} class="aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700 block group">
-                            <img 
-                                src={art.data.imagen} 
-                                alt={art.data.nombre}
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                transition:name={`img-${art.id}`}
-                            />
-                        </a>
+			<div id="grid-articulos" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+				{
+					articulos.map((art) => (
+						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo hidden flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+							<a href={`${baseUrl}/articulo/${art.id}`} class="group block aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+								<img src={art.data.imagen} alt={art.data.nombre} class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" transition:name={`img-${art.id}`} />
+							</a>
 
-                        <div class="p-6 grow flex flex-col">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-xs font-semibold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 px-2 py-1 rounded">Tejido</span>
-                            </div>
-                            
-                            <a href={`${baseUrl}/articulo/${art.id}`} class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-                                <h2 class="text-xl font-bold text-gray-800 dark:text-white mb-2 capitalize" transition:name={`nombre-${art.id}`}>
-                                    {art.data.nombre}
-                                </h2>
-                            </a>
-                            
-                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-3">
-                                {art.data.descripcion || "Sin descripción disponible."}
-                            </p>
-                        </div>
-                        
-                        <div class="px-6 py-4 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-100 dark:border-gray-700 mt-auto">
-                            <a href={`${baseUrl}/articulo/${art.id}`} class="block text-center w-full bg-indigo-600 dark:bg-indigo-500 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors">
-                                Ver detalles
-                            </a>
-                        </div>
-                    </article>
-                ))}
-            </div>
+							<div class="flex grow flex-col p-6">
+								<h2 class="mb-2 text-xl font-bold text-gray-800 capitalize dark:text-white" transition:name={`nombre-${art.id}`}>
+									{art.data.nombre}
+								</h2>
+								<p class="line-clamp-3 text-sm text-gray-600 dark:text-gray-400">{art.data.descripcion}</p>
+							</div>
 
-            <div id="no-results" class="hidden text-center py-20">
-                <p class="text-gray-500 dark:text-gray-400 text-xl italic">No se encontraron tejidos.</p>
-            </div>
-            
-        </main>
+							<div class="mt-auto border-t border-gray-100 bg-gray-50 px-6 py-4 dark:border-gray-700 dark:bg-gray-800/50">
+								<a href={`${baseUrl}/articulo/${art.id}`} class="block w-full rounded-lg bg-indigo-600 py-2 text-center font-medium text-white hover:bg-indigo-700 dark:bg-indigo-500">
+									Ver detalles
+								</a>
+							</div>
+						</article>
+					))
+				}
+			</div>
 
-        <script>
-            const setupSearch = () => {
-                const input = document.getElementById('buscador') as HTMLInputElement;
-                const articles = document.querySelectorAll('.card-articulo');
-                const noResults = document.getElementById('no-results');
+			<div class="mt-12 text-center">
+				<button id="btn-cargar-mas" class="rounded-full bg-indigo-100 px-8 py-3 font-semibold text-indigo-600 transition-all hover:bg-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-400">Cargar más productos</button>
+			</div>
 
-                input?.addEventListener('input', (e) => {
-                    const term = (e.target as HTMLInputElement).value.toLowerCase();
-                    let hasResults = false;
+			<div id="no-results" class="hidden py-20 text-center">
+				<p class="text-xl text-gray-500 italic dark:text-gray-400">No se encontraron tejidos.</p>
+			</div>
+		</main>
 
-                    articles.forEach(article => {
-                        const nombre = (article as HTMLElement).dataset.nombre;
-                        if (nombre?.includes(term)) {
-                            (article as HTMLElement).style.display = 'flex';
-                            hasResults = true;
-                        } else {
-                            (article as HTMLElement).style.display = 'none';
-                        }
-                    });
+		<footer class="mt-auto border-t border-gray-200 bg-white py-8 dark:border-gray-800 dark:bg-gray-950">
+			<div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+				<p class="text-sm text-gray-500">&copy; {new Date().getFullYear()} C Palau S.A.</p>
+				<nav class="flex gap-6">
+					<a href={`${baseUrl}/nosotros`} class="text-sm font-medium text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">Sobre Nosotros</a>
+				</nav>
+			</div>
+		</footer>
 
-                    if (hasResults) {
-                        noResults?.classList.add('hidden');
-                    } else {
-                        noResults?.classList.remove('hidden');
-                    }
-                });
-            };
+		<script>
+			const setupPagination = () => {
+				const input = document.getElementById('buscador') as HTMLInputElement;
+				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
+				const btnCargar = document.getElementById('btn-cargar-mas') as HTMLButtonElement;
+				const noResults = document.getElementById('no-results');
 
-            document.addEventListener('astro:page-load', setupSearch);
-        </script>
-    </body>
+				if (!articles.length) return;
+
+				const esMovil = window.innerWidth < 768;
+				const articulosPorPagina = esMovil ? 15 : 30;
+				let articulosVisibles = articulosPorPagina;
+
+				const render = () => {
+					const term = input?.value.toLowerCase() || '';
+					const filtrados = articles.filter((art) => art.dataset.nombre?.includes(term));
+
+					articles.forEach((art) => art.classList.add('hidden'));
+
+					const aMostrar = filtrados.slice(0, articulosVisibles);
+					aMostrar.forEach((art) => art.classList.remove('hidden'));
+
+					if (btnCargar) {
+						btnCargar.style.display = articulosVisibles >= filtrados.length ? 'none' : 'inline-block';
+					}
+
+					noResults?.classList.toggle('hidden', filtrados.length > 0);
+				};
+
+				input?.addEventListener('input', () => {
+					articulosVisibles = articulosPorPagina;
+					render();
+				});
+
+				btnCargar?.addEventListener('click', () => {
+					articulosVisibles += articulosPorPagina;
+					render();
+				});
+
+				render();
+			};
+
+			document.addEventListener('astro:page-load', setupPagination);
+		</script>
+	</body>
 </html>
