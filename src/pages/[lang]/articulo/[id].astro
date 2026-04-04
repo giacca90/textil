@@ -2,36 +2,44 @@
 import {getCollection, type CollectionEntry} from 'astro:content';
 import {ClientRouter} from 'astro:transitions';
 import '../../../styles/global.css';
+import uiDataRaw from './id.json';
 
+// 1. DEFINICIÓN DE TIPOS
+type Lang = 'es' | 'ca' | 'en' | 'fr';
+
+interface DetalleTranslations {
+	back: string;
+	label: string;
+	about: string;
+	call: string;
+	defaultDesc: string;
+}
+
+const uiData = uiDataRaw as Record<Lang, DetalleTranslations>;
+
+// 2. GENERAR RUTAS DINÁMICAS
 export async function getStaticPaths() {
 	const articulos = await getCollection('articulos');
 
-	// Filtramos para que este archivo SOLO genere rutas que tengan un idioma (no el principal si es español)
-	// O si quieres que todos pasen por aquí, asegúrate de que el catálogo apunte a /es/...
 	return articulos.map((art: CollectionEntry<'articulos'>) => ({
 		params: {
-			lang: art.data.lang, // Esto pondrá 'ca', 'en', 'fr' o 'es'
+			lang: art.data.lang as Lang,
 			id: art.data.index.toString(),
 		},
 		props: {art},
 	}));
 }
 
+// 3. PROPS Y PARAMS
 const {art} = Astro.props;
-const {lang} = Astro.params;
+const {lang} = Astro.params as {lang: Lang};
 
-const ui = {
-	es: {back: 'Volver al catálogo', label: 'Colección de Tejidos', about: 'Sobre este artículo', call: 'Llamar ahora', defaultDesc: 'Este tejido es parte de nuestra selección exclusiva.'},
-	ca: {back: 'Tornar al catàleg', label: 'Col·lecció de Teixits', about: 'Sobre aquest article', call: 'Trucar ara', defaultDesc: 'Aquest teixit és part de la nostra selecció exclusiva.'},
-	en: {back: 'Back to catalog', label: 'Fabric Collection', about: 'About this item', call: 'Call now', defaultDesc: 'This fabric is part of our exclusive selection.'},
-	fr: {back: 'Retour au catalogue', label: 'Collection de Tissus', about: 'À propos de cet article', call: 'Appeler maintenant', defaultDesc: 'Ce tissu fait partie de notre sélection exclusive.'},
-};
+const t = uiData[lang] || uiData.es;
 
-const t = ui[lang as keyof typeof ui] || ui.es;
-
-// Lógica de URL de retorno mejorada
+// Lógica de URL de retorno
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-const backUrl = lang === 'es' ? `${baseUrl}/` : `${baseUrl}/${lang}/`;
+// Si el idioma es español, vuelve a la raíz, si no a la subcarpeta del idioma
+const backUrl = (lang as string) === 'es' ? `${baseUrl}/` : `${baseUrl}/${lang}/`;
 ---
 
 <html lang={lang}>

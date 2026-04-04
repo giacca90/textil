@@ -1,0 +1,23 @@
+{
+	"ca": {
+		"title": "Productes",
+		"search": "Cercar teixit...",
+		"details": "Veure detalls",
+		"more": "Carregar més",
+		"empty": "No s’han trobat teixits."
+	},
+	"en": {
+		"title": "Products",
+		"search": "Search fabric...",
+		"details": "View details",
+		"more": "Load more",
+		"empty": "No fabrics found."
+	},
+	"fr": {
+		"title": "Produits",
+		"search": "Chercher tissu...",
+		"details": "Voir détails",
+		"more": "Charger plus",
+		"empty": "Aucun tissu trouvé."
+	}
+}

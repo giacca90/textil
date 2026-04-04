@@ -1,0 +1,62 @@
+{
+	"es": {
+		"title": "Sobre Nosotros | C. PALAU SA",
+		"description": "Conoce a C. PALAU SA, especialistas en distribución textil al por mayor.",
+		"navBack": "Volver al Catálogo",
+		"headerTitle": "C. PALAU SA",
+		"headerSub": "Especialistas en la distribución mayorista de tejidos.",
+		"sedeTitle": "Nuestra Sede",
+		"sedeText": "Ubicados en **La Roca del Vallès**, nos encontramos en un enclave estratégico para la industria textil catalana. Desde nuestras instalaciones coordinamos la logística y distribución de una amplia gama de tejidos para clientes nacionales e internacionales.",
+		"expTitle": "Experiencia",
+		"expText": "Décadas de trayectoria en el sector mayorista, garantizando un conocimiento profundo de cada material y proceso textil.",
+		"compTitle": "Compromiso",
+		"compText": "Servicio enfocado a profesionales, ofreciendo stock constante y soluciones a medida para fabricantes y decoradores.",
+		"sumTitle": "Suministro Integral",
+		"sumText": "En C. PALAU SA entendemos las exigencias del mercado actual. Por ello, nuestro catálogo abarca desde fibras naturales como el algodón y el lino, hasta tejidos técnicos y de moda, siempre bajo estrictos estándares de calidad."
+	},
+	"ca": {
+		"title": "Sobre Nosaltres | C. PALAU SA",
+		"description": "Coneix C. PALAU SA, especialistes en distribució tèxtil a l'engròs.",
+		"navBack": "Tornar al Catàleg",
+		"headerTitle": "C. PALAU SA",
+		"headerSub": "Especialistes en la distribució a l'engròs de teixits.",
+		"sedeTitle": "La nostra Seu",
+		"sedeText": "Situats a **La Roca del Vallès**, ens trobem en un enclau estratègic per a la indústria tèxtil catalana. Des de les nostres instal·lacions coordinem la logística i distribució d'una àmplia gamma de teixits per a clients nacionals i internacionals.",
+		"expTitle": "Experiència",
+		"expText": "Dècades de trajectòria en el sector majorista, garantint un coneixement profund de cada material i procés tèxtil.",
+		"compTitle": "Compromís",
+		"compText": "Servei enfocat a professionals, oferint estoc constant i solucions a mida per a fabricants i decoradors.",
+		"sumTitle": "Subministrament Integral",
+		"sumText": "A C. PALAU SA entenem les exigències del mercat actual. Per això, el nostre catàleg inclou des de fibres naturals com el cotó i el lli, fins a teixits tècnics i de moda."
+	},
+	"en": {
+		"title": "About Us | C. PALAU SA",
+		"description": "Meet C. PALAU SA, specialists in wholesale textile distribution.",
+		"navBack": "Back to Catalog",
+		"headerTitle": "C. PALAU SA",
+		"headerSub": "Specialists in wholesale fabric distribution.",
+		"sedeTitle": "Our Headquarters",
+		"sedeText": "Located in **La Roca del Vallès**, we are in a strategic location for the Catalan textile industry. From our facilities, we coordinate logistics and distribution for domestic and international clients.",
+		"expTitle": "Experience",
+		"expText": "Decades of experience in the wholesale sector, ensuring deep knowledge of every material and textile process.",
+		"compTitle": "Commitment",
+		"compText": "Service focused on professionals, offering constant stock and tailored solutions for manufacturers and decorators.",
+		"sumTitle": "Comprehensive Supply",
+		"sumText": "At C. PALAU SA we understand today's market demands. Our catalog ranges from natural fibers like cotton and linen to technical and fashion fabrics."
+	},
+	"fr": {
+		"title": "À Propos de Nous | C. PALAU SA",
+		"description": "Découvrez C. PALAU SA, spécialistes de la distribution textile de gros.",
+		"navBack": "Retour au Catalogue",
+		"headerTitle": "C. PALAU SA",
+		"headerSub": "Spécialistes de la distribution de tissus en gros.",
+		"sedeTitle": "Notre Siège",
+		"sedeText": "Situés à **La Roca del Vallès**, nous nous trouvons dans une enclave stratégique pour l'industrie textile catalane. Depuis nos installations, nous coordonnons la logistique et la distribution d'une large gamme de tissus pour nos clients nationaux et internationaux.",
+		"expTitle": "Expérience",
+		"expText": "Des décennies d'expérience dans le secteur de la vente en gros, garantissant une connaissance approfondie de chaque matériau et processus textile.",
+		"compTitle": "Engagement",
+		"compText": "Un service axé sur les professionnels, offrant un stock permanent et des solutions sur mesure pour les fabricants et les décorateurs.",
+		"sumTitle": "Approvisionnement Intégral",
+		"sumText": "Chez C. PALAU SA, nous comprenons les exigences du marché actuel. C'est pourquoi notre catalogue comprend aussi bien des fibres naturelles comme le coton et le lin que des tissus techniques et de mode, toujours selon des normes de qualité strictes."
+	}
+}

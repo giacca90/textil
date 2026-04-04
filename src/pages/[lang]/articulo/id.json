@@ -1,0 +1,30 @@
+{
+	"es": {
+		"back": "Volver al catálogo",
+		"label": "Colección de Tejidos",
+		"about": "Sobre este artículo",
+		"call": "Llamar ahora",
+		"defaultDesc": "Este tejido es parte de nuestra selección exclusiva."
+	},
+	"ca": {
+		"back": "Tornar al catàleg",
+		"label": "Col·lecció de Teixits",
+		"about": "Sobre aquest article",
+		"call": "Trucar ara",
+		"defaultDesc": "Aquest teixit és part de la nostra selecció exclusiva."
+	},
+	"en": {
+		"back": "Back to catalog",
+		"label": "Fabric Collection",
+		"about": "About this item",
+		"call": "Call now",
+		"defaultDesc": "This fabric is part of our exclusive selection."
+	},
+	"fr": {
+		"back": "Retour au catalogue",
+		"label": "Collection de Tissus",
+		"about": "À propos de cet article",
+		"call": "Appeler maintenant",
+		"defaultDesc": "Ce tissu fait partie de notre sélection exclusive."
+	}
+}
