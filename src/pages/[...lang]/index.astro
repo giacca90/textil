@@ -1,0 +1,138 @@
+---
+import '../../styles/global.css';
+import {ClientRouter} from 'astro:transitions';
+import {getCollection, type CollectionEntry} from 'astro:content';
+
+type LangCode = 'es' | 'ca' | 'en' | 'fr';
+
+const uiTranslations = {
+	es: {title: 'Nuestros Productos', search: 'Buscar tejido...', details: 'Ver detalles', more: 'Cargar más productos', empty: 'No se encontraron tejidos.'},
+	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar més productes', empty: "No s'han trobat teixits."},
+	en: {title: 'Our Products', search: 'Search fabric...', details: 'View details', more: 'Load more products', empty: 'No fabrics found.'},
+	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les détails', more: 'Charger plus de produits', empty: 'Aucun tissu trouvé.'},
+};
+
+export async function getStaticPaths() {
+	return [{params: {lang: undefined}}, {params: {lang: 'ca'}}, {params: {lang: 'en'}}, {params: {lang: 'fr'}}];
+}
+
+const {lang} = Astro.params;
+const currentLang = (lang as LangCode) || 'es';
+const t = uiTranslations[currentLang];
+
+const articulos = (await getCollection('articulos')).filter((a) => a.data.lang === currentLang);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const getRoute = (l: LangCode) => (l === 'es' ? `${baseUrl}/` : `${baseUrl}/${l}/`);
+const homeUrl = getRoute(currentLang);
+
+const languages = [
+	{code: 'es', label: 'Castellano', flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'},
+	{code: 'ca', label: 'Català', flag: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg'},
+	{code: 'en', label: 'English', flag: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg'},
+	{code: 'fr', label: 'Français', flag: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg'},
+];
+---
+
+<html lang={currentLang}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>C Palau S.A. | Mayorista</title>
+		<ClientRouter />
+	</head>
+	<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+		<main class="mx-auto max-w-6xl px-4 py-12 grow w-full">
+			<header class="mb-12 flex justify-between items-center">
+				<a href={homeUrl} class="text-3xl font-black text-indigo-600 dark:text-indigo-400">C. PALAU SA</a>
+				<nav class="flex gap-2 bg-white dark:bg-gray-800 p-1 rounded-full shadow-sm border border-gray-200 dark:border-gray-700">
+					{
+						languages.map((l) => (
+							<a href={getRoute(l.code as LangCode)} class={`w-8 h-8 rounded-full overflow-hidden border-2 ${l.code === currentLang ? 'border-indigo-500' : 'border-transparent opacity-50'}`}>
+								<img src={l.flag} alt={l.label} class="w-full h-full object-cover" />
+							</a>
+						))
+					}
+				</nav>
+			</header>
+
+			<div class="mb-12 text-center">
+				<h1 class="text-3xl font-bold mb-6">{t.title}</h1>
+				<input type="text" id="buscador" placeholder={t.search} class="w-full max-w-md mx-auto block rounded-2xl border border-gray-300 p-3 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:ring-indigo-500 outline-none dark:text-white" />
+			</div>
+
+			<div id="grid-articulos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+				{
+					articulos.map((art) => (
+						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col border rounded-xl overflow-hidden bg-white dark:bg-gray-800 dark:border-gray-700">
+							<a href={`${homeUrl}articulo/${art.data.index}`} class="block aspect-video overflow-hidden bg-gray-100">
+								<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} />
+							</a>
+							<div class="p-6 flex flex-col grow">
+								<h2 class="text-xl font-bold mb-2 capitalize" transition:name={`nombre-${art.data.index}`}>
+									{art.data.nombre}
+								</h2>
+								<p class="text-sm text-gray-500 line-clamp-3 mb-4">{art.data.descripcion}</p>
+								<a href={`${homeUrl}articulo/${art.data.index}`} class="mt-auto block bg-indigo-600 text-white text-center py-2 rounded-lg font-medium">
+									{t.details}
+								</a>
+							</div>
+						</article>
+					))
+				}
+			</div>
+
+			<div class="mt-12 text-center">
+				<button id="btn-cargar-mas" class="bg-indigo-100 text-indigo-600 px-8 py-3 rounded-full font-bold">{t.more}</button>
+			</div>
+			<div id="no-results" class="hidden py-20 text-center italic text-gray-400">{t.empty}</div>
+		</main>
+
+		<script>
+			function init() {
+				const input = document.getElementById('buscador') as HTMLInputElement;
+				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
+				const btn = document.getElementById('btn-cargar-mas');
+				const noRes = document.getElementById('no-results');
+
+				if (!input) return;
+
+				// RECUPERAR ESTADO: Al volver, recuperamos búsqueda y cantidad
+				const savedTerm = sessionStorage.getItem('search-term') || '';
+				let visibleCount = parseInt(sessionStorage.getItem('visible-count') || '15');
+
+				input.value = savedTerm;
+
+				const render = () => {
+					const term = input.value.toLowerCase().trim();
+					const filtered = articles.filter((a) => a.dataset.nombre?.includes(term));
+
+					articles.forEach((a) => a.classList.add('hidden'));
+					filtered.slice(0, visibleCount).forEach((a) => a.classList.remove('hidden'));
+
+					if (btn) btn.style.display = visibleCount >= filtered.length ? 'none' : 'inline-block';
+					if (noRes) noRes.classList.toggle('hidden', filtered.length > 0);
+				};
+
+				input.addEventListener('input', () => {
+					sessionStorage.setItem('search-term', input.value);
+					visibleCount = 15; // Reset al buscar
+					sessionStorage.setItem('visible-count', '15');
+					render();
+				});
+
+				if (btn) {
+					btn.onclick = () => {
+						visibleCount += 15;
+						sessionStorage.setItem('visible-count', visibleCount.toString());
+						render();
+					};
+				}
+
+				render();
+			}
+
+			// astro:page-load se dispara siempre al terminar la transición
+			document.addEventListener('astro:page-load', init);
+		</script>
+	</body>
+</html>

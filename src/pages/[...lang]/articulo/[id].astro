@@ -5,7 +5,7 @@ import '../../../styles/global.css';
 import uiDataRaw from './id.json';
 
 // 1. DEFINICIÓN DE TIPOS
-type Lang = 'es' | 'ca' | 'en' | 'fr';
+type LangCode = 'es' | 'ca' | 'en' | 'fr';
 
 interface DetalleTranslations {
 	back: string;
@@ -15,34 +15,37 @@ interface DetalleTranslations {
 	defaultDesc: string;
 }
 
-const uiData = uiDataRaw as Record<Lang, DetalleTranslations>;
+const uiData = uiDataRaw as Record<LangCode, DetalleTranslations>;
 
-// 2. GENERAR RUTAS DINÁMICAS
+// 2. GENERAR RUTAS DINÁMICAS UNIFICADAS
 export async function getStaticPaths() {
 	const articulos = await getCollection('articulos');
 
-	return articulos.map((art: CollectionEntry<'articulos'>) => ({
-		params: {
-			lang: art.data.lang as Lang,
-			id: art.data.index.toString(),
-		},
-		props: {art},
-	}));
+	return articulos.map((art: CollectionEntry<'articulos'>) => {
+		const langParam = art.data.lang === 'es' ? undefined : art.data.lang;
+
+		return {
+			params: {
+				lang: langParam,
+				id: art.data.index.toString(),
+			},
+			props: {art},
+		};
+	});
 }
 
-// 3. PROPS Y PARAMS
+// 3. PROPS Y LÓGICA DE IDIOMA
 const {art} = Astro.props;
-const {lang} = Astro.params as {lang: Lang};
+const {lang} = Astro.params;
+const currentLang: LangCode = (lang as LangCode) || 'es';
 
-const t = uiData[lang] || uiData.es;
+const t = uiData[currentLang];
 
-// Lógica de URL de retorno
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-// Si el idioma es español, vuelve a la raíz, si no a la subcarpeta del idioma
-const backUrl = (lang as string) === 'es' ? `${baseUrl}/` : `${baseUrl}/${lang}/`;
+const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang}/`;
 ---
 
-<html lang={lang}>
+<html lang={currentLang}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -51,7 +54,7 @@ const backUrl = (lang as string) === 'es' ? `${baseUrl}/` : `${baseUrl}/${lang}/
 	</head>
 	<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
 		<main class="max-w-3xl mx-auto px-4 py-12">
-			<a href={backUrl} class="group mb-8 inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors font-medium">
+			<a href={backUrl} data-astro-history="back" class="group mb-8 inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors font-medium">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
 				</svg>
@@ -69,7 +72,7 @@ const backUrl = (lang as string) === 'es' ? `${baseUrl}/` : `${baseUrl}/${lang}/
 							{t.label} (REF: #{art.data.index})
 						</span>
 
-						<h1 class="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mt-2 mb-6 capitalize">
+						<h1 class="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mt-2 mb-6 capitalize" transition:name={`nombre-${art.data.index}`}>
 							{art.data.nombre}
 						</h1>
 

@@ -1,20 +1,27 @@
 {
+	"es": {
+		"title": "Nuestros Productos",
+		"search": "Buscar tejido...",
+		"details": "Ver detalles",
+		"more": "Cargar más productos",
+		"empty": "No se encontraron tejidos."
+	},
 	"ca": {
-		"title": "Productes",
+		"title": "Els Nostres Productes",
 		"search": "Cercar teixit...",
 		"details": "Veure detalls",
 		"more": "Carregar més",
 		"empty": "No s’han trobat teixits."
 	},
 	"en": {
-		"title": "Products",
+		"title": "Our Products",
 		"search": "Search fabric...",
 		"details": "View details",
 		"more": "Load more",
 		"empty": "No fabrics found."
 	},
 	"fr": {
-		"title": "Produits",
+		"title": "Nos Produits",
 		"search": "Chercher tissu...",
 		"details": "Voir détails",
 		"more": "Charger plus",

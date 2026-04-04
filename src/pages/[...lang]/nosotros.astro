@@ -1,44 +1,78 @@
 ---
 import '../../styles/global.css';
 import {ClientRouter} from 'astro:transitions';
-import traducciones from './nosotros.json';
+import uiDataRaw from './nosotros.json';
 
-export function getStaticPaths() {
-	return [{params: {lang: 'es'}}, {params: {lang: 'ca'}}, {params: {lang: 'en'}}, {params: {lang: 'fr'}}];
+// 1. TIPADO ESTRICTO
+type LangCode = 'es' | 'ca' | 'en' | 'fr';
+
+interface NosotrosTranslations {
+	title: string;
+	description: string;
+	navBack: string;
+	headerTitle: string;
+	headerSub: string;
+	sedeTitle: string;
+	sedeText: string;
+	expTitle: string;
+	expText: string;
+	compTitle: string;
+	compText: string;
+	sumTitle: string;
+	sumText: string;
 }
 
+const uiData = uiDataRaw as Record<LangCode, NosotrosTranslations>;
+
+// 2. GENERACIÓN DE RUTAS DINÁMICAS
+export async function getStaticPaths() {
+	return [
+		{params: {lang: undefined}}, // /nosotros (Español)
+		{params: {lang: 'ca'}}, // /ca/nosotros
+		{params: {lang: 'en'}}, // /en/nosotros
+		{params: {lang: 'fr'}}, // /fr/nosotros
+	];
+}
+
+// 3. LÓGICA DE IDIOMA Y RUTAS
 const {lang} = Astro.params;
-// Seleccionamos la traducción o fallback a español
-const t = traducciones[lang as keyof typeof traducciones] || traducciones.es;
+const currentLang: LangCode = (lang as LangCode) || 'es';
+const t = uiData[currentLang];
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-// Ruta de retorno dinámica
-const backUrl = lang === 'es' ? `${baseUrl}/` : `${baseUrl}/${lang}/`;
 
-// Función simple para renderizar el "bold" del JSON (opcional)
+// Ruta de retorno al catálogo según el idioma
+const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang}/`;
+
+// Formateo de negritas
 const formatText = (text: string) => text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 ---
 
-<html lang={lang}>
+<html lang={currentLang}>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href={`${baseUrl}/favicon.svg`} />
 		<meta name="viewport" content="width=device-width" />
-		<title>{t.title}</title>
+		<title>{t.title} | C. PALAU SA</title>
 		<meta name="description" content={t.description} />
 		<ClientRouter />
 	</head>
-	<body class="bg-gray-50 font-sans text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
+	<body class="bg-gray-50 font-sans text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
 		<nav class="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-950/80">
-			<div class="mx-auto max-w-6xl px-4 py-4 flex justify-between items-center">
-				<a href={backUrl} class="text-xl font-bold text-indigo-600 dark:text-indigo-400">C. PALAU SA</a>
-				<a href={backUrl} class="text-sm font-medium hover:text-indigo-600 transition-colors">{t.navBack}</a>
+			<div class="mx-auto max-w-6xl px-4 py-4 flex justify-between items-center w-full">
+				<a href={backUrl} class="text-xl font-bold text-indigo-600 dark:text-indigo-400 hover:opacity-80 transition-opacity">C. PALAU SA</a>
+				<a href={backUrl} class="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+					</svg>
+					{t.navBack}
+				</a>
 			</div>
 		</nav>
 
-		<main class="mx-auto max-w-4xl px-4 py-16">
+		<main class="mx-auto max-w-4xl px-4 py-16 grow">
 			<header class="mb-12 text-center">
-				<h1 class="mb-4 text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">{t.headerTitle}</h1>
+				<h1 class="mb-4 text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white" transition:name="page-title">{t.headerTitle}</h1>
 				<p class="text-xl text-gray-600 dark:text-gray-400">{t.headerSub}</p>
 			</header>
 
@@ -60,7 +94,7 @@ const formatText = (text: string) => text.replace(/\*\*(.*?)\*\*/g, '<strong>$1<
 				</div>
 
 				<article class="prose prose-indigo dark:prose-invert max-w-none bg-indigo-50/30 dark:bg-indigo-900/10 p-8 rounded-2xl border border-indigo-100 dark:border-indigo-900/30">
-					<h3 class="text-indigo-900 dark:text-indigo-300">{t.sumTitle}</h3>
+					<h3 class="text-indigo-900 dark:text-indigo-300 font-bold text-xl mb-4">{t.sumTitle}</h3>
 					<p>{t.sumText}</p>
 				</article>
 			</section>
