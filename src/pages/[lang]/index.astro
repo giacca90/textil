@@ -1,0 +1,145 @@
+---
+import '../../styles/global.css';
+import {getCollection, type CollectionEntry} from 'astro:content';
+import {ClientRouter} from 'astro:transitions';
+
+// 1. GENERAR RUTAS DINÁMICAS
+export async function getStaticPaths() {
+	// Estas rutas deben coincidir con los nombres de tus archivos: ca.csv, en.csv, fr.csv
+	return [{params: {lang: 'ca'}}, {params: {lang: 'en'}}, {params: {lang: 'fr'}}];
+}
+
+const {lang} = Astro.params as {lang: 'ca' | 'en' | 'fr'};
+
+// 2. CARGAR DATOS
+// Filtramos comparando el campo 'lang' (que viene del nombre del archivo en el loader)
+const articulosDeEsteIdioma = await getCollection('articulos', ({data}: CollectionEntry<'articulos'>) => {
+	return data.lang === lang;
+});
+
+// 3. DICCIONARIO DE INTERFAZ
+interface UITranslations {
+	title: string;
+	search: string;
+	details: string;
+	more: string;
+	empty: string;
+}
+
+const ui: Record<'ca' | 'en' | 'fr', UITranslations> = {
+	ca: {title: 'Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar més', empty: 'No s’han trobat teixits.'},
+	en: {title: 'Products', search: 'Search fabric...', details: 'View details', more: 'Load more', empty: 'No fabrics found.'},
+	fr: {title: 'Produits', search: 'Chercher tissu...', details: 'Voir detalles', more: 'Charger plus', empty: 'Aucun tissu trouvé.'},
+};
+
+const t: UITranslations = ui[lang];
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const languages = [
+	{code: 'es', label: 'Castellano', flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg', path: '/'},
+	{code: 'ca', label: 'Català', flag: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg', path: '/ca'},
+	{code: 'en', label: 'English', flag: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg', path: '/en'},
+	{code: 'fr', label: 'Français', flag: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg', path: '/fr'},
+];
+---
+
+<html lang={lang}>
+	<head>
+		<meta charset="utf-8" />
+		<title>C. Palau S.A. | {t.title}</title>
+		<ClientRouter />
+	</head>
+	<body class="bg-gray-50 dark:bg-gray-900 flex flex-col min-h-screen text-gray-900 dark:text-gray-100">
+		<main class="mx-auto max-w-6xl px-4 py-12 grow">
+			<header class="mb-12 flex flex-col md:flex-row justify-between items-center gap-6">
+				<h1 class="text-4xl font-extrabold text-indigo-600 dark:text-indigo-400">C. PALAU SA</h1>
+
+				<nav class="flex gap-2 bg-white dark:bg-gray-800 p-1.5 rounded-full shadow-sm border border-gray-200 dark:border-gray-700">
+					{
+						languages.map((l) => (
+							<a href={`${baseUrl}${l.path}`} title={l.label} class={`w-8 h-8 rounded-full border-2 transition-all ${l.code === lang ? 'border-indigo-500 scale-110' : 'border-transparent opacity-50 hover:opacity-100'}`}>
+								<img src={l.flag} alt={l.label} class="w-full h-full object-cover rounded-full shadow-inner" />
+							</a>
+						))
+					}
+				</nav>
+			</header>
+
+			<div class="mb-12 text-center">
+				<input type="text" id="buscador" placeholder={t.search} class="w-full max-w-md mx-auto block rounded-2xl border border-gray-300 p-3 dark:bg-gray-800 dark:border-gray-700 focus:ring-2 focus:ring-indigo-500 outline-none transition-all shadow-sm" transition:persist />
+			</div>
+
+			<div id="grid-articulos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+				{
+					articulosDeEsteIdioma.length > 0 ? (
+						articulosDeEsteIdioma.map((art: any) => (
+							<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col border rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-all dark:border-gray-700">
+								<img src={art.data.imagen} alt={art.data.nombre} class="aspect-video object-cover w-full bg-gray-200 dark:bg-gray-700" loading="lazy" transition:name={`img-${art.data.index}`} />
+
+								<div class="p-6 flex flex-col grow">
+									<h2 class="text-xl font-bold mb-2">{art.data.nombre}</h2>
+									<p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3 mb-4">{art.data.descripcion}</p>
+									<a href={`${baseUrl}/${lang}/articulo/${art.data.index}`} class="mt-auto block bg-indigo-600 text-white text-center py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
+										{t.details}
+									</a>
+								</div>
+							</article>
+						))
+					) : (
+						<div class="col-span-full text-center py-20 italic text-gray-500">{t.empty}</div>
+					)
+				}
+			</div>
+
+			{
+				articulosDeEsteIdioma.length > 15 && (
+					<div class="text-center mt-12">
+						<button id="btn-cargar-mas" class="bg-indigo-100 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300 px-8 py-3 rounded-full font-bold hover:bg-indigo-200 transition-all">
+							{t.more}
+						</button>
+					</div>
+				)
+			}
+		</main>
+
+		<script>
+			// Usamos una función autoejecutable para que se limpie entre navegaciones
+			const initSearch = () => {
+				const input = document.getElementById('buscador') as HTMLInputElement | null;
+				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
+				const btn = document.getElementById('btn-cargar-mas') as HTMLButtonElement | null;
+
+				if (!articles.length) return;
+
+				let visibleCount = 15;
+
+				const updateVisibility = () => {
+					const term = input?.value.toLowerCase() || '';
+					const filtered = articles.filter((a) => a.dataset.nombre?.includes(term));
+
+					articles.forEach((a) => (a.style.display = 'none'));
+					filtered.slice(0, visibleCount).forEach((a) => (a.style.display = 'flex'));
+
+					if (btn) {
+						btn.style.display = visibleCount >= filtered.length ? 'none' : 'inline-block';
+					}
+				};
+
+				input?.addEventListener('input', () => {
+					visibleCount = 15;
+					updateVisibility();
+				});
+
+				btn?.addEventListener('click', () => {
+					visibleCount += 15;
+					updateVisibility();
+				});
+
+				// Inicializar vista
+				updateVisibility();
+			};
+
+			document.addEventListener('astro:page-load', initSearch);
+		</script>
+	</body>
+</html>

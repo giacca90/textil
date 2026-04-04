@@ -1,53 +1,82 @@
-import { defineCollection } from 'astro/content/config';
-import { z } from 'astro/zod';
-import { parse } from 'csv-parse/sync';
+import {defineCollection, z} from 'astro:content';
+import {parse} from 'csv-parse/sync';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const articulos = defineCollection({
-  loader: async () => {
-    const filePath = path.resolve('./public/articulos.csv');
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    
-    const records = parse(fileContent, {
-      columns: true,
-      skip_empty_lines: true,
-      cast: true,
-      delimiter: ';',
-      trim: true, 
-    });
+interface CsvRow {
+	nombre?: string;
+	descripcion?: string;
+	imagen?: string;
+}
 
-    return records.map((record: any, index: number) => {
-      // 1. Extraemos el valor de la columna 'imagen' y quitamos espacios
-      const imagenCsv = record.imagen ? String(record.imagen).trim() : "";
-      
-      let fotoFinal;
+// Definimos la interfaz plana que Astro espera cuando se devuelve un array
+interface ArticuloEntry {
+	id: string;
+	lang: string;
+	index: number;
+	nombre: string;
+	descripcion: string;
+	imagen: string;
+}
 
-      // 2. Comprobación: ¿Está la columna vacía?
-      if (imagenCsv !== "") {
-        // Si hay algo escrito (una URL o ruta local), lo usamos
-        fotoFinal = imagenCsv;
-      } else {
-        // SI ESTÁ VACÍA, usamos tu lógica de búsqueda que tanto te gusta:
-        const query = encodeURIComponent(`${record.nombre} textile texture`);
-        
-        // Esta es la URL de LoremFlickr que comentaste que mejor te funciona
-        fotoFinal = `https://loremflickr.com/800/600/fabric,textile/all?lock=${index}`;
-      }
+export const collections = {
+	articulos: defineCollection({
+		loader: async (): Promise<ArticuloEntry[]> => {
+			const allEntries: ArticuloEntry[] = [];
+			const dataDir = path.join(process.cwd(), 'src', 'content');
 
-      return {
-        id: String(index),
-        ...record,
-        imagen: fotoFinal, 
-      };
-    });
-  },
-  schema: z.object({
-    id: z.string(),
-    nombre: z.string(),
-    descripcion: z.string().optional(),
-    imagen: z.string(),
-  }),
-});
+			if (!fs.existsSync(dataDir)) return [];
 
-export const collections = { articulos };
+			const files = fs.readdirSync(dataDir).filter((f) => f.endsWith('.csv'));
+
+			const esPath = path.join(dataDir, 'es.csv');
+			let esRecords: CsvRow[] = [];
+			if (fs.existsSync(esPath)) {
+				esRecords = parse(fs.readFileSync(esPath, 'utf-8'), {
+					columns: true,
+					skip_empty_lines: true,
+					delimiter: ';',
+					trim: true,
+				}) as CsvRow[];
+			}
+
+			for (const file of files) {
+				const lang = path.basename(file, '.csv');
+				const content = fs.readFileSync(path.join(dataDir, file), 'utf-8');
+				const rows = parse(content, {
+					columns: true,
+					skip_empty_lines: true,
+					delimiter: ';',
+					trim: true,
+				}) as CsvRow[];
+
+				rows.forEach((row, i) => {
+					const fotoMaestra = esRecords[i]?.imagen?.trim() || '';
+					const fotoActual = row.imagen?.trim() || '';
+					const fotoFinal = fotoActual !== '' ? fotoActual : fotoMaestra !== '' ? fotoMaestra : `https://loremflickr.com/800/600/fabric,textile/all?lock=${i}`;
+
+					// IMPORTANTE: Devolvemos los campos "planos".
+					// Astro los envolverá en 'data' automáticamente basándose en el schema.
+					allEntries.push({
+						id: `${lang}-${i}`,
+						lang: lang,
+						index: i,
+						nombre: row.nombre || 'Sin nombre',
+						descripcion: row.descripcion || '',
+						imagen: fotoFinal,
+					});
+				});
+			}
+
+			console.log(`✅ Loader: ${allEntries.length} entradas procesadas.`);
+			return allEntries;
+		},
+		schema: z.object({
+			lang: z.string(),
+			index: z.number(),
+			nombre: z.string(),
+			descripcion: z.string(),
+			imagen: z.string(),
+		}),
+	}),
+};

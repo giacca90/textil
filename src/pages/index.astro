@@ -1,15 +1,18 @@
 ---
 import '../styles/global.css';
-import {getCollection} from 'astro:content';
 import {ClientRouter} from 'astro:transitions';
+import {getCollection, type CollectionEntry} from 'astro:content';
 
-const articulos = await getCollection('articulos');
+// 1. FILTRADO CRÍTICO: Solo queremos los artículos en español para la home principal
+const todosLosArticulos: CollectionEntry<'articulos'>[] = await getCollection('articulos');
+const articulos = todosLosArticulos.filter((art) => art.data.lang === 'es');
 
-const title = 'C Palau S.A. | Mayorista de Tejidos y Telas';
-const description = 'Explora nuestro catálogo de tejidos de alta calidad: rasos, lonetas y algodones para profesionales.';
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url.pathname;
-const socialImageURL = Astro.site ? new URL(`${baseUrl}/og-image.jpg`, Astro.site) : `${baseUrl}/og-image.jpg`;
+const title: string = 'C Palau S.A. | Mayorista de Tejidos y Telas';
+const description: string = 'Explora nuestro catálogo de tejidos de alta calidad: rasos, lonetas y algodones para profesionales.';
+const baseUrl: string = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const canonicalURL: URL | string = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url.pathname;
+const socialImageURL: URL | string = Astro.site ? new URL(`${baseUrl}/og-image.jpg`, Astro.site) : `${baseUrl}/og-image.jpg`;
 ---
 
 <html lang="es">
@@ -28,7 +31,7 @@ const socialImageURL = Astro.site ? new URL(`${baseUrl}/og-image.jpg`, Astro.sit
 		<ClientRouter />
 	</head>
 	<body class="bg-gray-50 font-sans text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
-		<main class="mx-auto max-w-6xl px-4 py-12 flex-grow">
+		<main class="mx-auto max-w-6xl px-4 py-12 grow">
 			<header class="mb-12 text-center">
 				<h1 class="mb-2 text-4xl font-extrabold tracking-tight text-indigo-600 dark:text-indigo-400">Nuestros Productos</h1>
 
@@ -45,20 +48,19 @@ const socialImageURL = Astro.site ? new URL(`${baseUrl}/og-image.jpg`, Astro.sit
 			<div id="grid-articulos" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 				{
 					articulos.map((art) => (
-						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo hidden flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
-							<a href={`${baseUrl}/articulo/${art.id}`} class="group block aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700">
-								<img src={art.data.imagen} alt={art.data.nombre} class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" transition:name={`img-${art.id}`} />
+						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+							{/* CORRECCIÓN: El enlace ahora usa el lang y el index del data */}
+							<a href={`${baseUrl}/${art.data.lang}/articulo/${art.data.index}`} class="group block aspect-video w-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+								<img src={art.data.imagen} alt={art.data.nombre} class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" transition:name={`img-${art.data.index}`} />
 							</a>
 
 							<div class="flex grow flex-col p-6">
-								<h2 class="mb-2 text-xl font-bold text-gray-800 capitalize dark:text-white" transition:name={`nombre-${art.id}`}>
-									{art.data.nombre}
-								</h2>
+								<h2 class="mb-2 text-xl font-bold text-gray-800 capitalize dark:text-white">{art.data.nombre}</h2>
 								<p class="line-clamp-3 text-sm text-gray-600 dark:text-gray-400">{art.data.descripcion}</p>
 							</div>
 
 							<div class="mt-auto border-t border-gray-100 bg-gray-50 px-6 py-4 dark:border-gray-700 dark:bg-gray-800/50">
-								<a href={`${baseUrl}/articulo/${art.id}`} class="block w-full rounded-lg bg-indigo-600 py-2 text-center font-medium text-white hover:bg-indigo-700 dark:bg-indigo-500">
+								<a href={`${baseUrl}/${art.data.lang}/articulo/${art.data.index}`} class="block w-full rounded-lg bg-indigo-600 py-2 text-center font-medium text-white hover:bg-indigo-700 dark:bg-indigo-500">
 									Ver detalles
 								</a>
 							</div>
@@ -86,6 +88,7 @@ const socialImageURL = Astro.site ? new URL(`${baseUrl}/og-image.jpg`, Astro.sit
 		</footer>
 
 		<script>
+			// Mantenemos tu lógica de paginación intacta
 			const setupPagination = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
