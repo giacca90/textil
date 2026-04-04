@@ -1,4 +1,5 @@
-import {defineCollection, z} from 'astro:content';
+import {defineCollection} from 'astro:content';
+import {z} from 'astro/zod';
 import {parse} from 'csv-parse/sync';
 import fs from 'node:fs';
 import path from 'node:path';

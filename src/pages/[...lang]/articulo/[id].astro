@@ -4,7 +4,6 @@ import {ClientRouter} from 'astro:transitions';
 import '../../../styles/global.css';
 import uiDataRaw from './id.json';
 
-// 1. DEFINICIÓN DE TIPOS
 type LangCode = 'es' | 'ca' | 'en' | 'fr';
 
 interface DetalleTranslations {
@@ -17,11 +16,11 @@ interface DetalleTranslations {
 
 const uiData = uiDataRaw as Record<LangCode, DetalleTranslations>;
 
-// 2. GENERAR RUTAS DINÁMICAS UNIFICADAS
 export async function getStaticPaths() {
 	const articulos = await getCollection('articulos');
 
 	return articulos.map((art: CollectionEntry<'articulos'>) => {
+		// Importante: langParam debe coincidir exactamente con el del index
 		const langParam = art.data.lang === 'es' ? undefined : art.data.lang;
 
 		return {
@@ -34,7 +33,6 @@ export async function getStaticPaths() {
 	});
 }
 
-// 3. PROPS Y LÓGICA DE IDIOMA
 const {art} = Astro.props;
 const {lang} = Astro.params;
 const currentLang: LangCode = (lang as LangCode) || 'es';
@@ -42,6 +40,7 @@ const currentLang: LangCode = (lang as LangCode) || 'es';
 const t = uiData[currentLang];
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Asegúrate de que esta URL sea idéntica a la que el index espera recibir
 const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang}/`;
 ---
 
@@ -63,7 +62,7 @@ const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang
 
 			<article class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
 				<div class="w-full h-64 md:h-80 overflow-hidden bg-gray-200 dark:bg-gray-700">
-					<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} />
+					<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} loading="eager" />
 				</div>
 
 				<div class="px-8 pb-12 -mt-8 relative z-10">
