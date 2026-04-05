@@ -6,10 +6,10 @@ import {getCollection} from 'astro:content';
 type LangCode = 'es' | 'ca' | 'en' | 'fr';
 
 const uiTranslations = {
-	es: {title: 'Nuestros Productos', search: 'Buscar tejido...', details: 'Ver detalles', more: 'Cargar más productos', empty: 'No se encontraron tejidos.'},
-	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar más productes', empty: "No s'han trobat teixits."},
-	en: {title: 'Our Products', search: 'Search fabric...', details: 'View details', more: 'Load more products', empty: 'No fabrics found.'},
-	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les detalles', more: 'Charger plus de productos', empty: 'Aucun tissu trouvé.'},
+	es: {title: 'Nuestros Productos', search: 'Buscar tejido...', details: 'Ver detalles', more: 'Cargar más productos', empty: 'No se encontraron tejidos.', footer: '© 2024 C. PALAU SA.', about: 'Nosotros'},
+	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar más productes', empty: "No s'han trobat teixits.", footer: '© 2024 C. PALAU SA.', about: 'Nosaltres'},
+	en: {title: 'Our Products', search: 'Search fabric...', details: 'View details', more: 'Load more products', empty: 'No fabrics found.', footer: '© 2024 C. PALAU SA.', about: 'About Us'},
+	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les detalles', more: 'Charger plus de productos', empty: 'Aucun tissu trouvé.', footer: '© 2024 C. PALAU SA.', about: 'À propos'},
 };
 
 export async function getStaticPaths() {
@@ -22,8 +22,7 @@ const t = uiTranslations[currentLang];
 
 const articulos = (await getCollection('articulos')).filter((a) => a.data.lang === currentLang);
 
-// Lógica de rutas blindada para GitHub Pages (/textil/)
-const base = import.meta.env.BASE_URL; // Ya incluye las barras: "/textil/"
+const base = import.meta.env.BASE_URL;
 const forceSlash = (path: string) => (path.endsWith('/') ? path : `${path}/`);
 
 const getRoute = (l: LangCode) => {
@@ -32,6 +31,7 @@ const getRoute = (l: LangCode) => {
 };
 
 const homeUrl = getRoute(currentLang);
+const aboutUrl = forceSlash(`${homeUrl}nosotros`);
 
 const languages = [
 	{code: 'es', label: 'Castellano', flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'},
@@ -46,26 +46,25 @@ const languages = [
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>C Palau S.A. | Mayorista</title>
-
 		<link rel="icon" type="image/svg+xml" href={`${base}favicon.ico`} />
-
 		<ClientRouter />
 
 		<script is:inline>
-			// Forzar manual para controlar nosotros el salto tras el scroll-pos guardado
-			if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-
-			if (window.performance && window.performance.navigation.type === 1) {
-				sessionStorage.clear();
-			}
+			// El tema se aplica de forma inmediata para evitar destellos blancos
+			const applyTheme = () => {
+				const stored = localStorage.getItem('theme');
+				const darkMode = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList.toggle('dark', darkMode);
+			};
+			applyTheme();
+			document.addEventListener('astro:after-swap', applyTheme);
 		</script>
 
 		<style is:global>
-			[transition:name] {
-				will-change: transform, opacity;
-			}
-			html {
-				scroll-behavior: auto !important;
+			/* Optimizamos para que las transiciones sean suaves */
+			::view-transition-old(*),
+			::view-transition-new(*) {
+				animation-duration: 400ms;
 			}
 			.hidden-art {
 				display: none !important;
@@ -97,7 +96,7 @@ const languages = [
 					articulos.map((art) => (
 						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col border rounded-xl overflow-hidden bg-white dark:bg-gray-800 dark:border-gray-700">
 							<a href={forceSlash(`${homeUrl}articulo/${art.data.index}`)} class="block aspect-video overflow-hidden bg-gray-100">
-								<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} loading="eager" />
+								<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} />
 							</a>
 							<div class="p-6 flex flex-col grow">
 								<h2 class="text-xl font-bold mb-2 capitalize" transition:name={`nombre-${art.data.index}`}>
@@ -119,25 +118,40 @@ const languages = [
 			<div id="no-results" class="hidden py-20 text-center italic text-gray-400">{t.empty}</div>
 		</main>
 
+		<footer class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 backdrop-blur-sm">
+			<div class="mx-auto max-w-6xl px-4 py-10">
+				<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+					<div class="text-center md:text-left">
+						<p class="font-bold text-gray-900 dark:text-white mb-1">C. PALAU SA</p>
+						<p class="text-sm text-gray-500">{t.footer}</p>
+					</div>
+					<div class="flex items-center gap-6">
+						<button id="theme-toggle" class="p-2 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:scale-110 transition-transform">
+							<span class="dark:hidden">🌙</span>
+							<span class="hidden dark:inline">☀️</span>
+						</button>
+						<a href={aboutUrl} class="text-sm font-medium hover:text-indigo-500 transition-colors">{t.about}</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 		<script>
-			const updateGrid = () => {
+			const prepareGrid = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
 				const btn = document.getElementById('btn-cargar-mas');
 				const noResults = document.getElementById('no-results');
 
-				if (!input) return;
+				if (!input || articles.length === 0) return;
 
 				const term = (sessionStorage.getItem('search-term') || '').toLowerCase().trim();
 				const visibleCount = parseInt(sessionStorage.getItem('visible-count') || '15');
-
 				input.value = term;
 
 				let visibleActual = 0;
 				articles.forEach((art) => {
-					const nombre = art.dataset.nombre || '';
-					const coincide = nombre.includes(term);
-
+					const coincide = (art.dataset.nombre || '').includes(term);
 					if (coincide && visibleActual < visibleCount) {
 						art.classList.remove('hidden-art');
 						visibleActual++;
@@ -146,57 +160,63 @@ const languages = [
 					}
 				});
 
-				const totalCoincidentes = articles.filter((a) => (a.dataset.nombre || '').includes(term)).length;
-				if (btn) btn.style.display = visibleActual >= totalCoincidentes ? 'none' : 'inline-block';
-				if (noResults) noResults.style.display = totalCoincidentes === 0 ? 'block' : 'none';
+				const total = articles.filter((a) => (a.dataset.nombre || '').includes(term)).length;
+				if (btn) btn.style.display = visibleActual >= total ? 'none' : 'inline-block';
+				if (noResults) noResults.style.display = total === 0 ? 'block' : 'none';
 			};
 
 			const init = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const btn = document.getElementById('btn-cargar-mas');
-				const grid = document.getElementById('grid-articulos');
+				const isIndex = !!document.getElementById('grid-articulos');
 
-				if (!input) return;
-
-				updateGrid();
-
-				const vienesDeDetalle = sessionStorage.getItem('nav-from-detail') === 'true';
-				if (vienesDeDetalle) {
-					const savedScroll = sessionStorage.getItem('scroll-pos');
-					if (savedScroll) {
-						// Esperar un frame para que el grid se oculte/muestre según sessionStorage
-						requestAnimationFrame(() => {
-							window.scrollTo(0, parseInt(savedScroll));
-						});
-					}
-					sessionStorage.removeItem('nav-from-detail');
+				if (input) {
+					input.oninput = () => {
+						sessionStorage.setItem('search-term', input.value);
+						sessionStorage.setItem('visible-count', '15');
+						prepareGrid();
+					};
 				}
-
-				input.oninput = () => {
-					sessionStorage.setItem('search-term', input.value);
-					sessionStorage.setItem('visible-count', '15');
-					updateGrid();
-				};
 
 				if (btn) {
 					btn.onclick = () => {
 						const current = parseInt(sessionStorage.getItem('visible-count') || '15');
 						sessionStorage.setItem('visible-count', (current + 15).toString());
-						updateGrid();
+						prepareGrid();
 					};
 				}
 
-				grid?.addEventListener('click', (e) => {
-					const link = (e.target as HTMLElement).closest('a');
-					if (link) {
-						sessionStorage.setItem('nav-from-detail', 'true');
-						sessionStorage.setItem('scroll-pos', window.scrollY.toString());
-					}
-				});
+				// Restauramos scroll solo al volver
+				if (isIndex && sessionStorage.getItem('should-restore') === 'true') {
+					const pos = sessionStorage.getItem('scroll-pos');
+					if (pos) window.scrollTo(0, parseInt(pos));
+					sessionStorage.removeItem('should-restore');
+				}
 			};
 
+			// Guardado de posición ANTES de navegar
+			document.addEventListener('astro:before-preparation', () => {
+				if (document.getElementById('grid-articulos')) {
+					sessionStorage.setItem('scroll-pos', window.scrollY.toString());
+				}
+			});
+
+			// Marcamos que queremos restaurar solo si hacemos click en "atrás" o volvemos al index
+			document.addEventListener('click', (e) => {
+				const target = e.target as HTMLElement;
+				if (target.closest('#theme-toggle')) {
+					const isDark = document.documentElement.classList.toggle('dark');
+					localStorage.setItem('theme', isDark ? 'dark' : 'light');
+				}
+				if (target.closest('.card-articulo a')) {
+					sessionStorage.setItem('should-restore', 'true');
+				}
+			});
+
+			// Flujo de Astro
+			prepareGrid();
+			document.addEventListener('astro:after-swap', prepareGrid);
 			document.addEventListener('astro:page-load', init);
-			document.addEventListener('astro:after-swap', updateGrid);
 		</script>
 	</body>
 </html>
