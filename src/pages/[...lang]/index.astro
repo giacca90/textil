@@ -21,8 +21,16 @@ const currentLang = (lang as LangCode) || 'es';
 const t = uiTranslations[currentLang];
 
 const articulos = (await getCollection('articulos')).filter((a) => a.data.lang === currentLang);
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-const getRoute = (l: LangCode) => (l === 'es' ? `${baseUrl}/` : `${baseUrl}/${l}/`);
+
+// Lógica de rutas blindada para GitHub Pages (/textil/)
+const base = import.meta.env.BASE_URL; // Ya incluye las barras: "/textil/"
+const forceSlash = (path: string) => (path.endsWith('/') ? path : `${path}/`);
+
+const getRoute = (l: LangCode) => {
+	if (l === 'es') return base;
+	return forceSlash(`${base}${l}`);
+};
+
 const homeUrl = getRoute(currentLang);
 
 const languages = [
@@ -38,10 +46,15 @@ const languages = [
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>C Palau S.A. | Mayorista</title>
+
+		<link rel="icon" type="image/svg+xml" href={`${base}favicon.ico`} />
+
 		<ClientRouter />
 
 		<script is:inline>
-			// RESET TOTAL EN F5: Si el usuario recarga, limpiamos todo antes de mostrar la página
+			// Forzar manual para controlar nosotros el salto tras el scroll-pos guardado
+			if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
 			if (window.performance && window.performance.navigation.type === 1) {
 				sessionStorage.clear();
 			}
@@ -54,7 +67,6 @@ const languages = [
 			html {
 				scroll-behavior: auto !important;
 			}
-			/* Aseguramos que hidden funcione siempre */
 			.hidden-art {
 				display: none !important;
 			}
@@ -84,7 +96,7 @@ const languages = [
 				{
 					articulos.map((art) => (
 						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col border rounded-xl overflow-hidden bg-white dark:bg-gray-800 dark:border-gray-700">
-							<a href={`${homeUrl}articulo/${art.data.index}`} class="block aspect-video overflow-hidden bg-gray-100">
+							<a href={forceSlash(`${homeUrl}articulo/${art.data.index}`)} class="block aspect-video overflow-hidden bg-gray-100">
 								<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} loading="eager" />
 							</a>
 							<div class="p-6 flex flex-col grow">
@@ -92,7 +104,7 @@ const languages = [
 									{art.data.nombre}
 								</h2>
 								<p class="text-sm text-gray-500 line-clamp-3 mb-4">{art.data.descripcion}</p>
-								<a href={`${homeUrl}articulo/${art.data.index}`} class="mt-auto block bg-indigo-600 text-white text-center py-2 rounded-lg font-medium">
+								<a href={forceSlash(`${homeUrl}articulo/${art.data.index}`)} class="mt-auto block bg-indigo-600 text-white text-center py-2 rounded-lg font-medium">
 									{t.details}
 								</a>
 							</div>
@@ -108,7 +120,6 @@ const languages = [
 		</main>
 
 		<script>
-			// Función para actualizar la visibilidad de los artículos
 			const updateGrid = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
@@ -135,7 +146,6 @@ const languages = [
 					}
 				});
 
-				// Botón "Cargar más"
 				const totalCoincidentes = articles.filter((a) => (a.dataset.nombre || '').includes(term)).length;
 				if (btn) btn.style.display = visibleActual >= totalCoincidentes ? 'none' : 'inline-block';
 				if (noResults) noResults.style.display = totalCoincidentes === 0 ? 'block' : 'none';
@@ -148,21 +158,23 @@ const languages = [
 
 				if (!input) return;
 
-				// 1. Restaurar filtros
 				updateGrid();
 
-				// 2. Restaurar scroll solo si venimos de un detalle
 				const vienesDeDetalle = sessionStorage.getItem('nav-from-detail') === 'true';
 				if (vienesDeDetalle) {
 					const savedScroll = sessionStorage.getItem('scroll-pos');
-					if (savedScroll) window.scrollTo(0, parseInt(savedScroll));
+					if (savedScroll) {
+						// Esperar un frame para que el grid se oculte/muestre según sessionStorage
+						requestAnimationFrame(() => {
+							window.scrollTo(0, parseInt(savedScroll));
+						});
+					}
 					sessionStorage.removeItem('nav-from-detail');
 				}
 
-				// 3. Eventos
 				input.oninput = () => {
 					sessionStorage.setItem('search-term', input.value);
-					sessionStorage.setItem('visible-count', '15'); // Reset count al buscar
+					sessionStorage.setItem('visible-count', '15');
 					updateGrid();
 				};
 
@@ -174,21 +186,17 @@ const languages = [
 					};
 				}
 
-				// Detectar cuando vamos a un detalle
 				grid?.addEventListener('click', (e) => {
-					if ((e.target as HTMLElement).closest('a')) {
+					const link = (e.target as HTMLElement).closest('a');
+					if (link) {
 						sessionStorage.setItem('nav-from-detail', 'true');
 						sessionStorage.setItem('scroll-pos', window.scrollY.toString());
 					}
 				});
 			};
 
-			// Ejecución en Astro
 			document.addEventListener('astro:page-load', init);
 			document.addEventListener('astro:after-swap', updateGrid);
-
-			// Desactivar restauración automática del navegador
-			if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 		</script>
 	</body>
 </html>
