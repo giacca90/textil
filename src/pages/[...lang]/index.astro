@@ -1,8 +1,7 @@
 ---
-// ... (El frontmatter se mantiene exactamente igual)
 import '../../styles/global.css';
 import {ClientRouter} from 'astro:transitions';
-import {getCollection, type CollectionEntry} from 'astro:content';
+import {getCollection} from 'astro:content';
 
 type LangCode = 'es' | 'ca' | 'en' | 'fr';
 
@@ -40,12 +39,24 @@ const languages = [
 		<meta name="viewport" content="width=device-width" />
 		<title>C Palau S.A. | Mayorista</title>
 		<ClientRouter />
+
+		<script is:inline>
+			// RESET TOTAL EN F5: Si el usuario recarga, limpiamos todo antes de mostrar la página
+			if (window.performance && window.performance.navigation.type === 1) {
+				sessionStorage.clear();
+			}
+		</script>
+
 		<style is:global>
 			[transition:name] {
 				will-change: transform, opacity;
 			}
 			html {
 				scroll-behavior: auto !important;
+			}
+			/* Aseguramos que hidden funcione siempre */
+			.hidden-art {
+				display: none !important;
 			}
 		</style>
 	</head>
@@ -72,9 +83,9 @@ const languages = [
 			<div id="grid-articulos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 				{
 					articulos.map((art) => (
-						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col border rounded-xl overflow-hidden bg-white dark:bg-gray-800 dark:border-gray-700" style="border-radius: 0.75rem;">
-							<a href={`${homeUrl}articulo/${art.data.index}`} class="block aspect-video overflow-hidden bg-gray-100" style="border-top-left-radius: 0.75rem; border-top-right-radius: 0.75rem;">
-								<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} loading="eager" decoding="sync" style="border-top-left-radius: 0.75rem; border-top-right-radius: 0.75rem;" />
+						<article data-nombre={art.data.nombre.toLowerCase()} class="card-articulo flex flex-col border rounded-xl overflow-hidden bg-white dark:bg-gray-800 dark:border-gray-700">
+							<a href={`${homeUrl}articulo/${art.data.index}`} class="block aspect-video overflow-hidden bg-gray-100">
+								<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} loading="eager" />
 							</a>
 							<div class="p-6 flex flex-col grow">
 								<h2 class="text-xl font-bold mb-2 capitalize" transition:name={`nombre-${art.data.index}`}>
@@ -97,92 +108,87 @@ const languages = [
 		</main>
 
 		<script>
-			const applySavedState = () => {
+			// Función para actualizar la visibilidad de los artículos
+			const updateGrid = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
 				const btn = document.getElementById('btn-cargar-mas');
+				const noResults = document.getElementById('no-results');
 
 				if (!input) return;
 
-				// --- LA LLAVE DE NAVEGACIÓN ---
-				const vienesDeDetalle = sessionStorage.getItem('nav-from-detail') === 'true';
-
-				if (!vienesDeDetalle) {
-					// Es un F5 o entrada nueva: Reset total
-					sessionStorage.removeItem('search-term');
-					sessionStorage.removeItem('visible-count');
-					sessionStorage.setItem('scroll-pos', '0');
-					window.scrollTo(0, 0);
-				}
-
-				// Consumimos la llave (la borramos para que el próximo F5 limpie la página)
-				sessionStorage.removeItem('nav-from-detail');
-
-				// --- APLICAR ESTADO ---
 				const term = (sessionStorage.getItem('search-term') || '').toLowerCase().trim();
 				const visibleCount = parseInt(sessionStorage.getItem('visible-count') || '15');
-				const savedScroll = sessionStorage.getItem('scroll-pos');
 
-				input.value = sessionStorage.getItem('search-term') || '';
-				const filtered = articles.filter((a) => a.dataset.nombre?.includes(term));
+				input.value = term;
 
-				articles.forEach((a) => a.classList.add('hidden'));
-				filtered.slice(0, visibleCount).forEach((a) => a.classList.remove('hidden'));
+				let visibleActual = 0;
+				articles.forEach((art) => {
+					const nombre = art.dataset.nombre || '';
+					const coincide = nombre.includes(term);
 
-				if (btn) (btn as HTMLElement).style.display = visibleCount >= filtered.length ? 'none' : 'inline-block';
+					if (coincide && visibleActual < visibleCount) {
+						art.classList.remove('hidden-art');
+						visibleActual++;
+					} else {
+						art.classList.add('hidden-art');
+					}
+				});
 
-				// Restaurar scroll solo si veníamos de un detalle
-				if (vienesDeDetalle && savedScroll && savedScroll !== '0') {
-					setTimeout(() => {
-						window.scrollTo(0, parseInt(savedScroll));
-					}, 10); // Un pequeño margen para que el layout se asiente
-				}
+				// Botón "Cargar más"
+				const totalCoincidentes = articles.filter((a) => (a.dataset.nombre || '').includes(term)).length;
+				if (btn) btn.style.display = visibleActual >= totalCoincidentes ? 'none' : 'inline-block';
+				if (noResults) noResults.style.display = totalCoincidentes === 0 ? 'block' : 'none';
 			};
 
-			const setupEvents = () => {
+			const init = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const btn = document.getElementById('btn-cargar-mas');
+				const grid = document.getElementById('grid-articulos');
+
 				if (!input) return;
 
+				// 1. Restaurar filtros
+				updateGrid();
+
+				// 2. Restaurar scroll solo si venimos de un detalle
+				const vienesDeDetalle = sessionStorage.getItem('nav-from-detail') === 'true';
+				if (vienesDeDetalle) {
+					const savedScroll = sessionStorage.getItem('scroll-pos');
+					if (savedScroll) window.scrollTo(0, parseInt(savedScroll));
+					sessionStorage.removeItem('nav-from-detail');
+				}
+
+				// 3. Eventos
 				input.oninput = () => {
 					sessionStorage.setItem('search-term', input.value);
-					sessionStorage.setItem('visible-count', '15');
-					sessionStorage.setItem('scroll-pos', '0');
-					applySavedState();
+					sessionStorage.setItem('visible-count', '15'); // Reset count al buscar
+					updateGrid();
 				};
 
 				if (btn) {
 					btn.onclick = () => {
 						const current = parseInt(sessionStorage.getItem('visible-count') || '15');
 						sessionStorage.setItem('visible-count', (current + 15).toString());
-						applySavedState();
+						updateGrid();
 					};
 				}
 
-				// CAPTURA DE SALIDA: Al hacer clic en un artículo, avisamos que "nos vamos pero volveremos"
-				document.getElementById('grid-articulos')?.addEventListener('click', (e) => {
-					const target = e.target as HTMLElement;
-					if (target.closest('a')) {
+				// Detectar cuando vamos a un detalle
+				grid?.addEventListener('click', (e) => {
+					if ((e.target as HTMLElement).closest('a')) {
 						sessionStorage.setItem('nav-from-detail', 'true');
-					}
-				});
-
-				window.onscroll = () => {
-					if (!window.location.pathname.includes('/articulo/')) {
 						sessionStorage.setItem('scroll-pos', window.scrollY.toString());
 					}
-				};
+				});
 			};
 
-			if ('scrollRestoration' in history) {
-				history.scrollRestoration = 'manual';
-			}
+			// Ejecución en Astro
+			document.addEventListener('astro:page-load', init);
+			document.addEventListener('astro:after-swap', updateGrid);
 
-			document.addEventListener('astro:after-swap', applySavedState);
-			document.addEventListener('astro:page-load', () => {
-				applySavedState();
-				setupEvents();
-			});
+			// Desactivar restauración automática del navegador
+			if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 		</script>
 	</body>
 </html>
