@@ -1,4 +1,5 @@
 ---
+// ... (El frontmatter se mantiene exactamente igual)
 import '../../styles/global.css';
 import {ClientRouter} from 'astro:transitions';
 import {getCollection, type CollectionEntry} from 'astro:content';
@@ -7,9 +8,9 @@ type LangCode = 'es' | 'ca' | 'en' | 'fr';
 
 const uiTranslations = {
 	es: {title: 'Nuestros Productos', search: 'Buscar tejido...', details: 'Ver detalles', more: 'Cargar más productos', empty: 'No se encontraron tejidos.'},
-	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar més productes', empty: "No s'han trobat teixits."},
+	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar más productes', empty: "No s'han trobat teixits."},
 	en: {title: 'Our Products', search: 'Search fabric...', details: 'View details', more: 'Load more products', empty: 'No fabrics found.'},
-	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les detalles', more: 'Charger plus de produits', empty: 'Aucun tissu trouvé.'},
+	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les detalles', more: 'Charger plus de productos', empty: 'Aucun tissu trouvé.'},
 };
 
 export async function getStaticPaths() {
@@ -40,9 +41,11 @@ const languages = [
 		<title>C Palau S.A. | Mayorista</title>
 		<ClientRouter />
 		<style is:global>
-			/* Evita saltos visuales en el contenedor de la imagen durante la transición */
 			[transition:name] {
 				will-change: transform, opacity;
+			}
+			html {
+				scroll-behavior: auto !important;
 			}
 		</style>
 	</head>
@@ -94,26 +97,46 @@ const languages = [
 		</main>
 
 		<script>
-			const renderGrid = () => {
+			const applySavedState = () => {
 				const input = document.getElementById('buscador') as HTMLInputElement;
 				const articles = Array.from(document.querySelectorAll('.card-articulo')) as HTMLElement[];
 				const btn = document.getElementById('btn-cargar-mas');
-				const noRes = document.getElementById('no-results');
 
 				if (!input) return;
 
+				// --- LA LLAVE DE NAVEGACIÓN ---
+				const vienesDeDetalle = sessionStorage.getItem('nav-from-detail') === 'true';
+
+				if (!vienesDeDetalle) {
+					// Es un F5 o entrada nueva: Reset total
+					sessionStorage.removeItem('search-term');
+					sessionStorage.removeItem('visible-count');
+					sessionStorage.setItem('scroll-pos', '0');
+					window.scrollTo(0, 0);
+				}
+
+				// Consumimos la llave (la borramos para que el próximo F5 limpie la página)
+				sessionStorage.removeItem('nav-from-detail');
+
+				// --- APLICAR ESTADO ---
 				const term = (sessionStorage.getItem('search-term') || '').toLowerCase().trim();
 				const visibleCount = parseInt(sessionStorage.getItem('visible-count') || '15');
+				const savedScroll = sessionStorage.getItem('scroll-pos');
 
 				input.value = sessionStorage.getItem('search-term') || '';
-
 				const filtered = articles.filter((a) => a.dataset.nombre?.includes(term));
 
 				articles.forEach((a) => a.classList.add('hidden'));
 				filtered.slice(0, visibleCount).forEach((a) => a.classList.remove('hidden'));
 
 				if (btn) (btn as HTMLElement).style.display = visibleCount >= filtered.length ? 'none' : 'inline-block';
-				if (noRes) noRes.classList.toggle('hidden', filtered.length > 0);
+
+				// Restaurar scroll solo si veníamos de un detalle
+				if (vienesDeDetalle && savedScroll && savedScroll !== '0') {
+					setTimeout(() => {
+						window.scrollTo(0, parseInt(savedScroll));
+					}, 10); // Un pequeño margen para que el layout se asiente
+				}
 			};
 
 			const setupEvents = () => {
@@ -124,23 +147,40 @@ const languages = [
 				input.oninput = () => {
 					sessionStorage.setItem('search-term', input.value);
 					sessionStorage.setItem('visible-count', '15');
-					renderGrid();
+					sessionStorage.setItem('scroll-pos', '0');
+					applySavedState();
 				};
 
 				if (btn) {
 					btn.onclick = () => {
 						const current = parseInt(sessionStorage.getItem('visible-count') || '15');
 						sessionStorage.setItem('visible-count', (current + 15).toString());
-						renderGrid();
+						applySavedState();
 					};
 				}
+
+				// CAPTURA DE SALIDA: Al hacer clic en un artículo, avisamos que "nos vamos pero volveremos"
+				document.getElementById('grid-articulos')?.addEventListener('click', (e) => {
+					const target = e.target as HTMLElement;
+					if (target.closest('a')) {
+						sessionStorage.setItem('nav-from-detail', 'true');
+					}
+				});
+
+				window.onscroll = () => {
+					if (!window.location.pathname.includes('/articulo/')) {
+						sessionStorage.setItem('scroll-pos', window.scrollY.toString());
+					}
+				};
 			};
 
-			// Ejecutar antes del swap para evitar parpadeos de visibilidad
-			document.addEventListener('astro:after-swap', renderGrid);
+			if ('scrollRestoration' in history) {
+				history.scrollRestoration = 'manual';
+			}
 
+			document.addEventListener('astro:after-swap', applySavedState);
 			document.addEventListener('astro:page-load', () => {
-				renderGrid();
+				applySavedState();
 				setupEvents();
 			});
 		</script>
