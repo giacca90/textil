@@ -19,6 +19,10 @@ export default defineConfig({
 		locales: ['es', 'ca', 'en', 'fr'],
 		routing: {prefixDefaultLocale: false},
 	},
+	prefetch: {
+		prefetchAll: true,
+		defaultStrategy: 'hover',
+	},
 	vite: {
 		plugins: [tailwindcss()],
 		build: {

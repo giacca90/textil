@@ -6,10 +6,10 @@ import {getCollection} from 'astro:content';
 type LangCode = 'es' | 'ca' | 'en' | 'fr';
 
 const uiTranslations = {
-	es: {title: 'Nuestros Productos', search: 'Buscar tejido...', details: 'Ver detalles', more: 'Cargar más productos', empty: 'No se encontraron tejidos.', footer: '© 2024 C. PALAU SA.', about: 'Nosotros'},
-	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar más productes', empty: "No s'han trobat teixits.", footer: '© 2024 C. PALAU SA.', about: 'Nosaltres'},
-	en: {title: 'Our Products', search: 'Search fabric...', details: 'View details', more: 'Load more products', empty: 'No fabrics found.', footer: '© 2024 C. PALAU SA.', about: 'About Us'},
-	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les detalles', more: 'Charger plus de productos', empty: 'Aucun tissu trouvé.', footer: '© 2024 C. PALAU SA.', about: 'À propos'},
+	es: {title: 'Nuestros Productos', search: 'Buscar tejido...', details: 'Ver detalles', more: 'Cargar más productos', empty: 'No se encontraron tejidos.', footer: '© 2026 C. PALAU SA.', about: 'Nosotros'},
+	ca: {title: 'Els Nostres Productes', search: 'Cercar teixit...', details: 'Veure detalls', more: 'Carregar más productes', empty: "No s'han trobat teixits.", footer: '© 2026 C. PALAU SA.', about: 'Nosaltres'},
+	en: {title: 'Our Products', search: 'Search fabric...', details: 'View details', more: 'Load more products', empty: 'No fabrics found.', footer: '© 2026 C. PALAU SA.', about: 'About Us'},
+	fr: {title: 'Nos Produits', search: 'Chercher du tissu...', details: 'Voir les detalles', more: 'Charger plus de productos', empty: 'Aucun tissu trouvé.', footer: '© 2026 C. PALAU SA.', about: 'À propos'},
 };
 
 export async function getStaticPaths() {
@@ -33,6 +33,9 @@ const getRoute = (l: LangCode) => {
 const homeUrl = getRoute(currentLang);
 const aboutUrl = forceSlash(`${homeUrl}nosotros`);
 
+// Obtenemos todas las imágenes para pre-cachearlas
+const allImageUrls = articulos.map((a) => a.data.imagen).filter(Boolean);
+
 const languages = [
 	{code: 'es', label: 'Castellano', flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'},
 	{code: 'ca', label: 'Català', flag: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg'},
@@ -44,20 +47,81 @@ const languages = [
 <html lang={currentLang}>
 	<head>
 		<meta charset="utf-8" />
+		<style is:inline>
+			/* ESTILOS CRÍTICOS INMEDIATOS */
+			.rounded-xl,
+			.card-articulo,
+			.card-articulo img {
+				border-radius: 0.75rem !important;
+				overflow: hidden !important;
+			}
+			.rounded-2xl,
+			#buscador {
+				border-radius: 1rem !important;
+				overflow: hidden !important;
+			}
+			.rounded-full,
+			#btn-cargar-mas,
+			nav,
+			nav a,
+			nav img {
+				border-radius: 9999px !important;
+				overflow: hidden !important;
+			}
+			.rounded-lg {
+				border-radius: 0.5rem !important;
+				overflow: hidden !important;
+			}
+			.dark {
+				background-color: #111827 !important;
+			}
+			.dark body {
+				background-color: #111827 !important;
+			}
+			/* Forzamos que las capturas de la transición hereden el redondeado */
+			::view-transition-old(*),
+			::view-transition-new(*),
+			::view-transition-group(*) {
+				border-radius: inherit !important;
+				overflow: hidden !important;
+			}
+		</style>
 		<meta name="viewport" content="width=device-width" />
 		<title>C Palau S.A. | Mayorista</title>
-		<link rel="icon" type="image/svg+xml" href={`${base}favicon.ico`} />
-		<ClientRouter />
+		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
+		<ClientRouter fallback="swap" />
+
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`);
+				});
+			}
+		</script>
 
 		<script is:inline>
+			// Evitamos que el navegador intente restaurar el scroll por su cuenta
+			if ('scrollRestoration' in history) {
+				history.scrollRestoration = 'manual';
+			}
+
 			// El tema se aplica de forma inmediata para evitar destellos blancos
-			const applyTheme = () => {
-				const stored = localStorage.getItem('theme');
-				const darkMode = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
-				document.documentElement.classList.toggle('dark', darkMode);
-			};
-			applyTheme();
-			document.addEventListener('astro:after-swap', applyTheme);
+			(function () {
+				const applyTheme = () => {
+					const stored = localStorage.getItem('theme');
+					const darkMode = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+					document.documentElement.classList.toggle('dark', darkMode);
+				};
+				applyTheme();
+				document.addEventListener('astro:after-swap', applyTheme);
+
+				// Escuchar cambios en la preferencia del sistema
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+					if (!localStorage.getItem('theme')) {
+						document.documentElement.classList.toggle('dark', e.matches);
+					}
+				});
+			})();
 		</script>
 
 		<style is:global>
@@ -65,6 +129,8 @@ const languages = [
 			::view-transition-old(*),
 			::view-transition-new(*) {
 				animation-duration: 400ms;
+				border-radius: inherit !important;
+				overflow: hidden !important;
 			}
 			.hidden-art {
 				display: none !important;
@@ -186,11 +252,26 @@ const languages = [
 					};
 				}
 
+				// Aseguramos que la parrilla esté lista antes de restaurar scroll
+				if (isIndex) {
+					prepareGrid();
+				}
+
 				// Restauramos scroll solo al volver
 				if (isIndex && sessionStorage.getItem('should-restore') === 'true') {
 					const pos = sessionStorage.getItem('scroll-pos');
-					if (pos) window.scrollTo(0, parseInt(pos));
+					if (pos) {
+						// Usamos un pequeño timeout para asegurar que el navegador ha terminado de renderizar
+						setTimeout(() => {
+							window.scrollTo({
+								top: parseInt(pos),
+								behavior: 'instant',
+							});
+						}, 0);
+					}
 					sessionStorage.removeItem('should-restore');
+				} else if (isIndex) {
+					window.scrollTo(0, 0);
 				}
 			};
 
@@ -213,10 +294,25 @@ const languages = [
 				}
 			});
 
-			// Flujo de Astro
-			prepareGrid();
+			// Pre-cacheo de todas las imágenes de la colección
+			const preloadImages = () => {
+				const imageData = document.getElementById('image-data');
+				if (!imageData) return;
+				const images = JSON.parse(imageData.textContent || '[]');
+				images.forEach((url: string) => {
+					const img = new Image();
+					img.src = url;
+				});
+			};
+
+			// Inicialización inicial y en cada navegación
 			document.addEventListener('astro:after-swap', prepareGrid);
-			document.addEventListener('astro:page-load', init);
+			document.addEventListener('astro:page-load', () => {
+				init();
+				preloadImages();
+			});
 		</script>
+
+		<script type="application/json" id="image-data" set:html={JSON.stringify(allImageUrls)} />
 	</body>
 </html>

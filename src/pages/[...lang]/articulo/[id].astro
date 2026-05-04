@@ -47,9 +47,83 @@ const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang
 <html lang={currentLang}>
 	<head>
 		<meta charset="utf-8" />
+		<style is:inline>
+			/* ESTILOS CRÍTICOS INMEDIATOS */
+			.rounded-3xl,
+			.main-card,
+			.main-card img {
+				border-radius: 1.5rem !important;
+				overflow: hidden !important;
+			}
+			.rounded-2xl,
+			.inner-card {
+				border-radius: 1rem !important;
+				overflow: hidden !important;
+			}
+			.rounded-xl {
+				border-radius: 0.75rem !important;
+				overflow: hidden !important;
+			}
+			.rounded-lg {
+				border-radius: 0.5rem !important;
+				overflow: hidden !important;
+			}
+			.dark {
+				background-color: #111827 !important;
+			}
+			.dark body {
+				background-color: #111827 !important;
+			}
+			/* Transiciones */
+			::view-transition-old(*),
+			::view-transition-new(*),
+			::view-transition-group(*) {
+				border-radius: inherit !important;
+				overflow: hidden !important;
+			}
+		</style>
+		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<meta name="viewport" content="width=device-width" />
 		<title>{art.data.nombre} | C. Palau S.A.</title>
-		<ClientRouter />
+		<ClientRouter fallback="swap" />
+
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`);
+				});
+			}
+		</script>
+
+		<script is:inline>
+			if ('scrollRestoration' in history) {
+				history.scrollRestoration = 'manual';
+			}
+			// El tema se aplica de forma inmediata
+			(function () {
+				const applyTheme = () => {
+					const stored = localStorage.getItem('theme');
+					const darkMode = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+					document.documentElement.classList.toggle('dark', darkMode);
+				};
+				applyTheme();
+				document.addEventListener('astro:after-swap', applyTheme);
+
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+					if (!localStorage.getItem('theme')) {
+						document.documentElement.classList.toggle('dark', e.matches);
+					}
+				});
+			})();
+		</script>
+		<style is:global>
+			/* Optimizamos para que las transiciones sean suaves */
+			::view-transition-old(*),
+			::view-transition-new(*) {
+				border-radius: inherit !important;
+				overflow: hidden !important;
+			}
+		</style>
 	</head>
 	<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
 		<main class="max-w-3xl mx-auto px-4 py-12">
@@ -60,13 +134,13 @@ const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang
 				{t.back}
 			</a>
 
-			<article class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
+			<article class="main-card bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
 				<div class="w-full h-64 md:h-80 overflow-hidden bg-gray-200 dark:bg-gray-700">
 					<img src={art.data.imagen} alt={art.data.nombre} class="w-full h-full object-cover" transition:name={`img-${art.data.index}`} loading="eager" />
 				</div>
 
 				<div class="px-8 pb-12 -mt-8 relative z-10">
-					<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-50 dark:border-gray-700">
+					<div class="inner-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-50 dark:border-gray-700">
 						<span class="text-indigo-500 dark:text-indigo-400 font-bold uppercase tracking-widest text-xs">
 							{t.label} (REF: #{art.data.index})
 						</span>

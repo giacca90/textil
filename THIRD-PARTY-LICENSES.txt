@@ -1,0 +1,2678 @@
+├─ @astrojs/compiler@2.13.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/compiler
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier-plugin-astro/node_modules/@astrojs/compiler
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier-plugin-astro/node_modules/@astrojs/compiler/LICENSE
+├─ @astrojs/compiler@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/compiler
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/compiler
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/compiler/LICENSE
+├─ @astrojs/internal-helpers@0.8.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/internal-helpers
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/internal-helpers/LICENSE
+├─ @astrojs/markdown-remark@7.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/markdown-remark
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/markdown-remark/LICENSE
+├─ @astrojs/prism@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/prism
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/prism/LICENSE
+├─ @astrojs/telemetry@3.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/telemetry
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@astrojs/telemetry/LICENSE
+├─ @babel/helper-string-parser@7.27.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/babel/babel
+│  ├─ publisher: The Babel Team
+│  ├─ url: https://babel.dev/team
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/helper-string-parser
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/helper-string-parser/LICENSE
+├─ @babel/helper-validator-identifier@7.28.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/babel/babel
+│  ├─ publisher: The Babel Team
+│  ├─ url: https://babel.dev/team
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/helper-validator-identifier
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/helper-validator-identifier/LICENSE
+├─ @babel/parser@7.29.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/babel/babel
+│  ├─ publisher: The Babel Team
+│  ├─ url: https://babel.dev/team
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/parser
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/parser/LICENSE
+├─ @babel/types@7.29.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/babel/babel
+│  ├─ publisher: The Babel Team
+│  ├─ url: https://babel.dev/team
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/types
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@babel/types/LICENSE
+├─ @capsizecss/unpack@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/seek-oss/capsize
+│  ├─ publisher: Michael Taranto
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@capsizecss/unpack
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@capsizecss/unpack/LICENSE
+├─ @clack/core@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bombshell-dev/clack
+│  ├─ publisher: Nate Moore
+│  ├─ email: nate@natemoo.re
+│  ├─ url: https://twitter.com/n_moore
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@clack/core
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@clack/core/LICENSE
+├─ @clack/prompts@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bombshell-dev/clack
+│  ├─ publisher: Nate Moore
+│  ├─ email: nate@natemoo.re
+│  ├─ url: https://twitter.com/n_moore
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@clack/prompts
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@clack/prompts/LICENSE
+├─ @esbuild/linux-x64@0.27.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/evanw/esbuild
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@esbuild/linux-x64
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@esbuild/linux-x64/README.md
+├─ @img/colour@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lovell/colour
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/colour
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/colour/LICENSE.md
+├─ @img/sharp-libvips-linux-x64@1.2.4
+│  ├─ licenses: LGPL-3.0-or-later
+│  ├─ repository: https://github.com/lovell/sharp-libvips
+│  ├─ publisher: Lovell Fuller
+│  ├─ email: npm@lovell.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-libvips-linux-x64
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-libvips-linux-x64/README.md
+├─ @img/sharp-libvips-linuxmusl-x64@1.2.4
+│  ├─ licenses: LGPL-3.0-or-later
+│  ├─ repository: https://github.com/lovell/sharp-libvips
+│  ├─ publisher: Lovell Fuller
+│  ├─ email: npm@lovell.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-libvips-linuxmusl-x64
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-libvips-linuxmusl-x64/README.md
+├─ @img/sharp-linux-x64@0.34.5
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/lovell/sharp
+│  ├─ publisher: Lovell Fuller
+│  ├─ email: npm@lovell.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-linux-x64
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-linux-x64/LICENSE
+├─ @img/sharp-linuxmusl-x64@0.34.5
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/lovell/sharp
+│  ├─ publisher: Lovell Fuller
+│  ├─ email: npm@lovell.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-linuxmusl-x64
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@img/sharp-linuxmusl-x64/LICENSE
+├─ @jridgewell/gen-mapping@0.3.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jridgewell/sourcemaps
+│  ├─ publisher: Justin Ridgewell
+│  ├─ email: justin@ridgewell.name
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/gen-mapping
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/gen-mapping/LICENSE
+├─ @jridgewell/remapping@2.3.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jridgewell/sourcemaps
+│  ├─ publisher: Justin Ridgewell
+│  ├─ email: justin@ridgewell.name
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/remapping
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/remapping/LICENSE
+├─ @jridgewell/resolve-uri@3.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jridgewell/resolve-uri
+│  ├─ publisher: Justin Ridgewell
+│  ├─ email: justin@ridgewell.name
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/resolve-uri
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/resolve-uri/LICENSE
+├─ @jridgewell/sourcemap-codec@1.5.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jridgewell/sourcemaps
+│  ├─ publisher: Justin Ridgewell
+│  ├─ email: justin@ridgewell.name
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/sourcemap-codec
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/sourcemap-codec/LICENSE
+├─ @jridgewell/trace-mapping@0.3.31
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jridgewell/sourcemaps
+│  ├─ publisher: Justin Ridgewell
+│  ├─ email: justin@ridgewell.name
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/trace-mapping
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@jridgewell/trace-mapping/LICENSE
+├─ @nodelib/fs.scandir@2.1.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@nodelib/fs.scandir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@nodelib/fs.scandir/LICENSE
+├─ @nodelib/fs.stat@2.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@nodelib/fs.stat
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@nodelib/fs.stat/LICENSE
+├─ @nodelib/fs.walk@1.2.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@nodelib/fs.walk
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@nodelib/fs.walk/LICENSE
+├─ @oslojs/encoding@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/oslo-project/encoding
+│  ├─ publisher: pilcrowOnPaper
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@oslojs/encoding
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@oslojs/encoding/LICENSE
+├─ @rollup/pluginutils@5.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rollup/plugins
+│  ├─ publisher: Rich Harris
+│  ├─ email: richard.a.harris@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@rollup/pluginutils
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@rollup/pluginutils/LICENSE
+├─ @rollup/rollup-linux-x64-gnu@4.59.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rollup/rollup
+│  ├─ publisher: Lukas Taegert-Atkinson
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@rollup/rollup-linux-x64-gnu
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@rollup/rollup-linux-x64-gnu/README.md
+├─ @rollup/rollup-linux-x64-musl@4.59.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rollup/rollup
+│  ├─ publisher: Lukas Taegert-Atkinson
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@rollup/rollup-linux-x64-musl
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@rollup/rollup-linux-x64-musl/README.md
+├─ @shikijs/core@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Pine Wu
+│  ├─ email: octref@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/core
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/core/LICENSE
+├─ @shikijs/engine-javascript@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/engine-javascript
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/engine-javascript/LICENSE
+├─ @shikijs/engine-oniguruma@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/engine-oniguruma
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/engine-oniguruma/LICENSE
+├─ @shikijs/langs@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/langs
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/langs/LICENSE
+├─ @shikijs/primitive@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/primitive
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/primitive/LICENSE
+├─ @shikijs/themes@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/themes
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/themes/LICENSE
+├─ @shikijs/types@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/types
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/types/LICENSE
+├─ @shikijs/vscode-textmate@10.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/vscode-textmate
+│  ├─ publisher: Microsoft Corporation
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/vscode-textmate
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@shikijs/vscode-textmate/LICENSE.md
+├─ @tailwindcss/node@4.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/node
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/node/LICENSE
+├─ @tailwindcss/oxide-linux-x64-gnu@4.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/oxide-linux-x64-gnu
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/oxide-linux-x64-gnu/LICENSE
+├─ @tailwindcss/oxide-linux-x64-musl@4.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/oxide-linux-x64-musl
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/oxide-linux-x64-musl/LICENSE
+├─ @tailwindcss/oxide@4.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/oxide
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/oxide/LICENSE
+├─ @tailwindcss/vite@4.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/vite
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@tailwindcss/vite/LICENSE
+├─ @types/debug@4.1.12
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/debug
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/debug/LICENSE
+├─ @types/estree@1.0.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/estree
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/estree/LICENSE
+├─ @types/hast@3.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/hast
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/hast/LICENSE
+├─ @types/mdast@4.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/mdast
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/mdast/LICENSE
+├─ @types/ms@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/ms
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/ms/LICENSE
+├─ @types/nlcst@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/nlcst
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/nlcst/LICENSE
+├─ @types/node@25.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/node
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/node/LICENSE
+├─ @types/unist@3.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/unist
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@types/unist/LICENSE
+├─ @ungap/structured-clone@1.3.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/ungap/structured-clone
+│  ├─ publisher: Andrea Giammarchi
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/@ungap/structured-clone
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/@ungap/structured-clone/LICENSE
+├─ abbrev@1.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/abbrev-js
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/abbrev
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/abbrev/LICENSE
+├─ ansi-styles@3.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-styles
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ansi-styles
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ansi-styles/license
+├─ anymatch@3.1.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/micromatch/anymatch
+│  ├─ publisher: Elan Shanker
+│  ├─ url: https://github.com/es128
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/anymatch
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/anymatch/LICENSE
+├─ argparse@2.0.1
+│  ├─ licenses: Python-2.0
+│  ├─ repository: https://github.com/nodeca/argparse
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/argparse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/argparse/LICENSE
+├─ aria-query@5.3.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/A11yance/aria-query
+│  ├─ publisher: Jesse Beach
+│  ├─ email: splendidnoise@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/aria-query
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/aria-query/LICENSE
+├─ array-find-index@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/array-find-index
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/array-find-index
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/array-find-index/license
+├─ array-iterate@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/array-iterate
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/array-iterate
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/array-iterate/license
+├─ array-union@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/array-union
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/array-union
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/array-union/license
+├─ asap@2.0.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kriskowal/asap
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/asap
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/asap/LICENSE.md
+├─ astro@6.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/astro
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/astro/LICENSE
+├─ async@3.2.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/caolan/async
+│  ├─ publisher: Caolan McMahon
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/async
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/async/LICENSE
+├─ axobject-query@4.1.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/A11yance/axobject-query
+│  ├─ publisher: Jesse Beach
+│  ├─ email: splendidnoise@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/axobject-query
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/axobject-query/LICENSE
+├─ bail@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/bail
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/bail
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/bail/license
+├─ balanced-match@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/balanced-match
+│  ├─ publisher: Julian Gruber
+│  ├─ email: mail@juliangruber.com
+│  ├─ url: http://juliangruber.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/balanced-match
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/balanced-match/LICENSE.md
+├─ boolbase@1.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/fb55/boolbase
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/boolbase
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/boolbase/README.md
+├─ brace-expansion@1.1.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/brace-expansion
+│  ├─ publisher: Julian Gruber
+│  ├─ email: mail@juliangruber.com
+│  ├─ url: http://juliangruber.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/brace-expansion
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/brace-expansion/LICENSE
+├─ braces@3.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/braces
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/braces
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/braces/LICENSE
+├─ ccount@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/ccount
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ccount
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ccount/license
+├─ chalk@2.4.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/chalk
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/chalk
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/chalk/license
+├─ character-entities-html4@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/character-entities-html4
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/character-entities-html4
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/character-entities-html4/license
+├─ character-entities-legacy@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/character-entities-legacy
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/character-entities-legacy
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/character-entities-legacy/license
+├─ character-entities@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/character-entities
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/character-entities
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/character-entities/license
+├─ chokidar@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/paulmillr/chokidar
+│  ├─ publisher: Paul Miller
+│  ├─ url: https://paulmillr.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/chokidar
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/chokidar/LICENSE
+├─ ci-info@4.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/watson/ci-info
+│  ├─ publisher: Thomas Watson Steen
+│  ├─ email: w@tson.dk
+│  ├─ url: https://twitter.com/wa7son
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ci-info
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ci-info/LICENSE
+├─ clsx@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/clsx
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/clsx
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/clsx/license
+├─ color-convert@1.9.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Qix-/color-convert
+│  ├─ publisher: Heather Arthur
+│  ├─ email: fayearthur@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/color-convert
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/color-convert/LICENSE
+├─ color-name@1.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dfcreative/color-name
+│  ├─ publisher: DY
+│  ├─ email: dfcreative@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/color-name
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/color-name/LICENSE
+├─ comma-separated-tokens@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/comma-separated-tokens
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/comma-separated-tokens
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/comma-separated-tokens/license
+├─ commander@11.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tj/commander.js
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/commander
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/commander/LICENSE
+├─ commander@13.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tj/commander.js
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/gh-pages/node_modules/commander
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/gh-pages/node_modules/commander/LICENSE
+├─ common-ancestor-path@2.0.0
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/common-ancestor-path
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: https://izs.me
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/common-ancestor-path
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/common-ancestor-path/LICENSE.md
+├─ commondir@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/node-commondir
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/commondir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/commondir/LICENSE
+├─ concat-map@0.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/node-concat-map
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/concat-map
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/concat-map/LICENSE
+├─ cookie-es@1.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/cookie-es
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/cookie-es
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/cookie-es/LICENSE
+├─ cookie@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/cookie
+│  ├─ publisher: Roman Shtylman
+│  ├─ email: shtylman@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/cookie
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/cookie/LICENSE
+├─ crossws@0.3.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/h3js/crossws
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/crossws
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/crossws/LICENSE
+├─ css-select@5.2.2
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/css-select
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/css-select
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/css-select/LICENSE
+├─ css-tree@2.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/csstree/csstree
+│  ├─ publisher: Roman Dvornov
+│  ├─ email: rdvornov@gmail.com
+│  ├─ url: https://github.com/lahmatiy
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/csso/node_modules/css-tree
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/csso/node_modules/css-tree/LICENSE
+├─ css-tree@3.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/csstree/csstree
+│  ├─ publisher: Roman Dvornov
+│  ├─ email: rdvornov@gmail.com
+│  ├─ url: https://github.com/lahmatiy
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/css-tree
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/css-tree/LICENSE
+├─ css-what@6.2.2
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/css-what
+│  ├─ publisher: Felix Böhm
+│  ├─ email: me@feedic.com
+│  ├─ url: http://feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/css-what
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/css-what/LICENSE
+├─ csso@5.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/css/csso
+│  ├─ publisher: Sergey Kryzhanovsky
+│  ├─ email: skryzhanovsky@ya.ru
+│  ├─ url: https://github.com/afelix
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/csso
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/csso/LICENSE
+├─ csv-parse@6.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/adaltas/node-csv
+│  ├─ publisher: David Worms
+│  ├─ email: david@adaltas.com
+│  ├─ url: https://www.adaltas.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/csv-parse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/csv-parse/LICENSE
+├─ debug@3.2.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/debug
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/license-checker/node_modules/debug
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/license-checker/node_modules/debug/LICENSE
+├─ debug@4.4.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/debug-js/debug
+│  ├─ publisher: Josh Junon
+│  ├─ url: https://github.com/qix-
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/debug
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/debug/LICENSE
+├─ debuglog@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sam-github/node-debuglog
+│  ├─ publisher: Sam Roberts
+│  ├─ email: sam@strongloop.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/debuglog
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/debuglog/LICENSE
+├─ decode-named-character-reference@1.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/decode-named-character-reference
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/decode-named-character-reference
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/decode-named-character-reference/license
+├─ defu@6.1.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/defu
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/defu
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/defu/LICENSE
+├─ dequal@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/dequal
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dequal
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dequal/license
+├─ destr@2.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/destr
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/destr
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/destr/LICENSE
+├─ detect-libc@2.1.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/lovell/detect-libc
+│  ├─ publisher: Lovell Fuller
+│  ├─ email: npm@lovell.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/detect-libc
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/detect-libc/LICENSE
+├─ devalue@5.6.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sveltejs/devalue
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/devalue
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/devalue/LICENSE
+├─ devlop@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/devlop
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/devlop
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/devlop/license
+├─ dezalgo@1.0.4
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/dezalgo
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dezalgo
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dezalgo/LICENSE
+├─ diff@8.0.3
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/kpdecker/jsdiff
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/diff
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/diff/LICENSE
+├─ dir-glob@3.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kevva/dir-glob
+│  ├─ publisher: Kevin Mårtensson
+│  ├─ email: kevinmartensson@gmail.com
+│  ├─ url: github.com/kevva
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dir-glob
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dir-glob/license
+├─ dlv@1.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/developit/dlv
+│  ├─ publisher: Jason Miller
+│  ├─ email: jason@developit.ca
+│  ├─ url: http://jasonformat.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dlv
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dlv/README.md
+├─ dom-serializer@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/cheeriojs/dom-serializer
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dom-serializer
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dom-serializer/LICENSE
+├─ domelementtype@2.3.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/domelementtype
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/domelementtype
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/domelementtype/LICENSE
+├─ domhandler@5.0.3
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/domhandler
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/domhandler
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/domhandler/LICENSE
+├─ domutils@3.2.2
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/domutils
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/domutils
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/domutils/LICENSE
+├─ dset@3.1.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/dset
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dset
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dset/license
+├─ email-addresses@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jackbearheart/email-addresses
+│  ├─ publisher: Jack Bearheart
+│  ├─ email: johnrbowman@fastmail.fm
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/email-addresses
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/email-addresses/LICENSE
+├─ enhanced-resolve@5.20.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/webpack/enhanced-resolve
+│  ├─ publisher: Tobias Koppers @sokra
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/enhanced-resolve
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/enhanced-resolve/LICENSE
+├─ entities@4.5.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/entities
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/dom-serializer/node_modules/entities
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/dom-serializer/node_modules/entities/LICENSE
+├─ entities@6.0.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/entities
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/entities
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/entities/LICENSE
+├─ es-module-lexer@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/guybedford/es-module-lexer
+│  ├─ publisher: Guy Bedford
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/es-module-lexer
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/es-module-lexer/LICENSE
+├─ esbuild@0.27.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/evanw/esbuild
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/esbuild
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/esbuild/LICENSE.md
+├─ escape-string-regexp@1.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/escape-string-regexp
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/strip-outer/node_modules/escape-string-regexp
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/strip-outer/node_modules/escape-string-regexp/license
+├─ escape-string-regexp@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/escape-string-regexp
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/escape-string-regexp
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/escape-string-regexp/license
+├─ estree-walker@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Rich-Harris/estree-walker
+│  ├─ publisher: Rich Harris
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/estree-walker
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/estree-walker/LICENSE
+├─ eventemitter3@5.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/primus/eventemitter3
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/eventemitter3
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/eventemitter3/LICENSE
+├─ extend@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/justmoon/node-extend
+│  ├─ publisher: Stefan Thomas
+│  ├─ email: justmoon@members.fsf.org
+│  ├─ url: http://www.justmoon.net
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/extend
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/extend/LICENSE
+├─ fast-glob@3.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mrmlnc/fast-glob
+│  ├─ publisher: Denis Malinochkin
+│  ├─ url: https://mrmlnc.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fast-glob
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fast-glob/LICENSE
+├─ fastq@1.20.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/mcollina/fastq
+│  ├─ publisher: Matteo Collina
+│  ├─ email: hello@matteocollina.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fastq
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fastq/LICENSE
+├─ fdir@6.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/thecodrr/fdir
+│  ├─ publisher: thecodrr
+│  ├─ email: thecodrr@protonmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fdir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fdir/LICENSE
+├─ filename-reserved-regex@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/filename-reserved-regex
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/filename-reserved-regex
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/filename-reserved-regex/license
+├─ filenamify@4.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/filenamify
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/filenamify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/filenamify/license
+├─ fill-range@7.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/fill-range
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fill-range
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fill-range/LICENSE
+├─ find-cache-dir@3.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/avajs/find-cache-dir
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/find-cache-dir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/find-cache-dir/license
+├─ find-up@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/find-up
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/find-up
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/find-up/license
+├─ flattie@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/flattie
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/flattie
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/flattie/license
+├─ fontace@0.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/delucis/fontace
+│  ├─ publisher: delucis
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fontace
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fontace/LICENSE
+├─ fontkitten@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/delucis/fontkitten
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fontkitten
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fontkitten/LICENSE
+├─ fs-extra@11.3.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jprichardson/node-fs-extra
+│  ├─ publisher: JP Richardson
+│  ├─ email: jprichardson@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fs-extra
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fs-extra/LICENSE
+├─ fs.realpath@1.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/fs.realpath
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/fs.realpath
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/fs.realpath/LICENSE
+├─ function-bind@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Raynos/function-bind
+│  ├─ publisher: Raynos
+│  ├─ email: raynos2@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/function-bind
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/function-bind/LICENSE
+├─ gh-pages@6.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tschaub/gh-pages
+│  ├─ publisher: Tim Schaub
+│  ├─ url: http://tschaub.net/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/gh-pages
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/gh-pages/LICENSE
+├─ github-slugger@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/Flet/github-slugger
+│  ├─ publisher: Dan Flettre
+│  ├─ email: flettre@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/github-slugger
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/github-slugger/LICENSE
+├─ glob-parent@5.1.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/gulpjs/glob-parent
+│  ├─ publisher: Gulp Team
+│  ├─ email: team@gulpjs.com
+│  ├─ url: https://gulpjs.com/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/glob-parent
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/glob-parent/LICENSE
+├─ glob@7.2.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/node-glob
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/glob
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/glob/LICENSE
+├─ globby@11.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/globby
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/globby
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/globby/license
+├─ graceful-fs@4.2.11
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/node-graceful-fs
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/graceful-fs
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/graceful-fs/LICENSE
+├─ h3@1.15.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/h3js/h3
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/h3
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/h3/LICENSE
+├─ has-flag@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/has-flag
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/has-flag
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/has-flag/license
+├─ hasown@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/hasOwn
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hasown
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hasown/LICENSE
+├─ hast-util-from-html@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-from-html
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-from-html
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-from-html/license
+├─ hast-util-from-parse5@8.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-from-parse5
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-from-parse5
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-from-parse5/license
+├─ hast-util-is-element@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-is-element
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-is-element
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-is-element/license
+├─ hast-util-parse-selector@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-parse-selector
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-parse-selector
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-parse-selector/license
+├─ hast-util-raw@9.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-raw
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-raw
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-raw/license
+├─ hast-util-to-html@9.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-to-html
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-to-html
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-to-html/license
+├─ hast-util-to-parse5@8.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-to-parse5
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-to-parse5
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-to-parse5/license
+├─ hast-util-to-text@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-to-text
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-to-text
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-to-text/license
+├─ hast-util-whitespace@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hast-util-whitespace
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-whitespace
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hast-util-whitespace/license
+├─ hastscript@9.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/hastscript
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hastscript
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hastscript/license
+├─ hosted-git-info@2.8.9
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/hosted-git-info
+│  ├─ publisher: Rebecca Turner
+│  ├─ email: me@re-becca.org
+│  ├─ url: http://re-becca.org
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/hosted-git-info
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/hosted-git-info/LICENSE
+├─ html-escaper@3.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/WebReflection/html-escaper
+│  ├─ publisher: Andrea Giammarchi
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/html-escaper
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/html-escaper/LICENSE.txt
+├─ html-void-elements@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/html-void-elements
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/html-void-elements
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/html-void-elements/license
+├─ http-cache-semantics@4.2.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/kornelski/http-cache-semantics
+│  ├─ publisher: Kornel Lesiński
+│  ├─ email: npms2@geekhood.net
+│  ├─ url: https://kornel.ski/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/http-cache-semantics
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/http-cache-semantics/LICENSE
+├─ ignore@5.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kaelzhang/node-ignore
+│  ├─ publisher: kael
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ignore
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ignore/LICENSE-MIT
+├─ inflight@1.0.6
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/inflight
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/inflight
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/inflight/LICENSE
+├─ inherits@2.0.4
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/inherits
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/inherits
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/inherits/LICENSE
+├─ iron-webcrypto@1.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/brc-dd/iron-webcrypto
+│  ├─ publisher: Divyansh Singh
+│  ├─ email: brc-dd@hotmail.com
+│  ├─ url: https://github.com/brc-dd
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/iron-webcrypto
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/iron-webcrypto/LICENSE.md
+├─ is-core-module@2.16.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/is-core-module
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-core-module
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-core-module/LICENSE
+├─ is-docker@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-docker
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-docker
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-docker/license
+├─ is-extglob@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/is-extglob
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-extglob
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-extglob/LICENSE
+├─ is-glob@4.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/is-glob
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-glob
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-glob/LICENSE
+├─ is-inside-container@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-inside-container
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-inside-container
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-inside-container/license
+├─ is-number@7.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/is-number
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-number
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-number/LICENSE
+├─ is-plain-obj@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-plain-obj
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-plain-obj
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-plain-obj/license
+├─ is-wsl@3.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-wsl
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-wsl
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/is-wsl/license
+├─ jiti@2.6.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/jiti
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/jiti
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/jiti/LICENSE
+├─ js-yaml@4.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodeca/js-yaml
+│  ├─ publisher: Vladimir Zapparov
+│  ├─ email: dervus.grim@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/js-yaml
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/js-yaml/LICENSE
+├─ json-parse-even-better-errors@2.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/npm/json-parse-even-better-errors
+│  ├─ publisher: Kat Marchán
+│  ├─ email: kzm@zkat.tech
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/json-parse-even-better-errors
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/json-parse-even-better-errors/LICENSE.md
+├─ jsonfile@6.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jprichardson/node-jsonfile
+│  ├─ publisher: JP Richardson
+│  ├─ email: jprichardson@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/jsonfile
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/jsonfile/LICENSE
+├─ license-checker@25.0.1
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/davglass/license-checker
+│  ├─ publisher: Dav Glass
+│  ├─ email: davglass@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/license-checker
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/license-checker/LICENSE
+├─ lightningcss-linux-x64-gnu@1.31.1
+│  ├─ licenses: MPL-2.0
+│  ├─ repository: https://github.com/parcel-bundler/lightningcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/lightningcss-linux-x64-gnu
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/lightningcss-linux-x64-gnu/LICENSE
+├─ lightningcss-linux-x64-musl@1.31.1
+│  ├─ licenses: MPL-2.0
+│  ├─ repository: https://github.com/parcel-bundler/lightningcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/lightningcss-linux-x64-musl
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/lightningcss-linux-x64-musl/LICENSE
+├─ lightningcss@1.31.1
+│  ├─ licenses: MPL-2.0
+│  ├─ repository: https://github.com/parcel-bundler/lightningcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/lightningcss
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/lightningcss/LICENSE
+├─ locate-path@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/locate-path
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/locate-path
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/locate-path/license
+├─ longest-streak@3.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/longest-streak
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/longest-streak
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/longest-streak/license
+├─ lru-cache@11.2.7
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/node-lru-cache
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/lru-cache
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/lru-cache/LICENSE.md
+├─ magic-string@0.30.21
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Rich-Harris/magic-string
+│  ├─ publisher: Rich Harris
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/magic-string
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/magic-string/LICENSE
+├─ magicast@0.5.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/magicast
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/magicast
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/magicast/LICENSE
+├─ make-dir@3.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/make-dir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/make-dir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/make-dir/license
+├─ markdown-table@3.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/markdown-table
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/markdown-table
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/markdown-table/license
+├─ mdast-util-definitions@6.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-definitions
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-definitions
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-definitions/license
+├─ mdast-util-find-and-replace@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-find-and-replace
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-find-and-replace
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-find-and-replace/license
+├─ mdast-util-from-markdown@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-from-markdown
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-from-markdown
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-from-markdown/license
+├─ mdast-util-gfm-autolink-literal@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-autolink-literal
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-autolink-literal
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-autolink-literal/license
+├─ mdast-util-gfm-footnote@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-footnote
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-footnote
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-footnote/license
+├─ mdast-util-gfm-strikethrough@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-strikethrough
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-strikethrough
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-strikethrough/license
+├─ mdast-util-gfm-table@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-table
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-table
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-table/license
+├─ mdast-util-gfm-task-list-item@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-task-list-item
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-task-list-item
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm-task-list-item/license
+├─ mdast-util-gfm@3.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-gfm/license
+├─ mdast-util-phrasing@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-phrasing
+│  ├─ publisher: Victor Felder
+│  ├─ email: victor@draft.li
+│  ├─ url: https://draft.li
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-phrasing
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-phrasing/license
+├─ mdast-util-to-hast@13.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-to-hast
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-to-hast
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-to-hast/license
+├─ mdast-util-to-markdown@2.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-to-markdown
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-to-markdown
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-to-markdown/license
+├─ mdast-util-to-string@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/mdast-util-to-string
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-to-string
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdast-util-to-string/license
+├─ mdn-data@2.0.28
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/mdn/data
+│  ├─ publisher: Mozilla Developer Network
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/csso/node_modules/mdn-data
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/csso/node_modules/mdn-data/LICENSE
+├─ mdn-data@2.27.1
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/mdn/data
+│  ├─ publisher: Mozilla Developer Network
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdn-data
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mdn-data/LICENSE
+├─ merge2@1.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/teambition/merge2
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/merge2
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/merge2/LICENSE
+├─ micromark-core-commonmark@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-core-commonmark
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-core-commonmark
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-core-commonmark/license
+├─ micromark-extension-gfm-autolink-literal@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-autolink-literal
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-autolink-literal
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-autolink-literal/license
+├─ micromark-extension-gfm-footnote@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-footnote
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-footnote
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-footnote/license
+├─ micromark-extension-gfm-strikethrough@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-strikethrough
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-strikethrough
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-strikethrough/license
+├─ micromark-extension-gfm-table@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-table
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-table
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-table/license
+├─ micromark-extension-gfm-tagfilter@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-tagfilter
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-tagfilter
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-tagfilter/license
+├─ micromark-extension-gfm-task-list-item@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-task-list-item
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-task-list-item
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm-task-list-item/license
+├─ micromark-extension-gfm@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark-extension-gfm
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-extension-gfm/license
+├─ micromark-factory-destination@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-destination
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-destination
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-destination/license
+├─ micromark-factory-label@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-label
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-label
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-label/license
+├─ micromark-factory-space@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-space
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-space
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-space/license
+├─ micromark-factory-title@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-title
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-title
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-title/license
+├─ micromark-factory-whitespace@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-whitespace
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-whitespace
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-factory-whitespace/license
+├─ micromark-util-character@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-character
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-character
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-character/license
+├─ micromark-util-chunked@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-chunked
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-chunked
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-chunked/license
+├─ micromark-util-classify-character@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-classify-character
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-classify-character
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-classify-character/license
+├─ micromark-util-combine-extensions@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-combine-extensions
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-combine-extensions
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-combine-extensions/license
+├─ micromark-util-decode-numeric-character-reference@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-numeric-character-reference
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-decode-numeric-character-reference
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-decode-numeric-character-reference/license
+├─ micromark-util-decode-string@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-string
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-decode-string
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-decode-string/license
+├─ micromark-util-encode@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-encode
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-encode
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-encode/license
+├─ micromark-util-html-tag-name@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-html-tag-name
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-html-tag-name
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-html-tag-name/license
+├─ micromark-util-normalize-identifier@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-normalize-identifier
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-normalize-identifier
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-normalize-identifier/license
+├─ micromark-util-resolve-all@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-resolve-all
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-resolve-all
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-resolve-all/license
+├─ micromark-util-sanitize-uri@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-sanitize-uri
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-sanitize-uri
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-sanitize-uri/license
+├─ micromark-util-subtokenize@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-subtokenize
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-subtokenize
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-subtokenize/license
+├─ micromark-util-symbol@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-symbol
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-symbol
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-symbol/license
+├─ micromark-util-types@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-types
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-types
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark-util-types/license
+├─ micromark@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromark/license
+├─ micromatch@4.0.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/micromatch
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromatch
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/micromatch/LICENSE
+├─ minimatch@3.1.5
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/minimatch
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/minimatch
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/minimatch/LICENSE
+├─ minimist@1.2.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/minimistjs/minimist
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/minimist
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/minimist/LICENSE
+├─ mkdirp@0.5.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/node-mkdirp
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mkdirp
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mkdirp/LICENSE
+├─ mrmime@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/mrmime
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/mrmime
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/mrmime/license
+├─ ms@2.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vercel/ms
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ms
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ms/license.md
+├─ nanoid@3.3.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ai/nanoid
+│  ├─ publisher: Andrey Sitnik
+│  ├─ email: andrey@sitnik.ru
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/nanoid
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/nanoid/LICENSE
+├─ neotraverse@0.6.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/PuruVJ/neotraverse
+│  ├─ publisher: Puru Vijay, James Halliday
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/neotraverse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/neotraverse/LICENSE
+├─ nlcst-to-string@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/nlcst-to-string
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/nlcst-to-string
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/nlcst-to-string/license
+├─ node-fetch-native@1.6.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/node-fetch-native
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/node-fetch-native
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/node-fetch-native/LICENSE
+├─ node-mock-http@1.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/node-mock-http
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/node-mock-http
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/node-mock-http/LICENSE
+├─ nopt@4.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/nopt
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/nopt
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/nopt/LICENSE
+├─ normalize-package-data@2.5.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/npm/normalize-package-data
+│  ├─ publisher: Meryn Stol
+│  ├─ email: merynstol@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/normalize-package-data
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/normalize-package-data/LICENSE
+├─ normalize-path@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/normalize-path
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/normalize-path
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/normalize-path/LICENSE
+├─ npm-normalize-package-bin@1.0.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/npm-normalize-package-bin
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: https://izs.me
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/npm-normalize-package-bin
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/npm-normalize-package-bin/LICENSE
+├─ nth-check@2.1.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/nth-check
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/nth-check
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/nth-check/LICENSE
+├─ obug@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sxzz/obug
+│  ├─ publisher: Kevin Deng
+│  ├─ email: sxzz@sxzz.moe
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/obug
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/obug/LICENSE
+├─ ofetch@1.5.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/ofetch
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ofetch
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ofetch/LICENSE
+├─ ohash@2.0.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/ohash
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ohash
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ohash/LICENSE
+├─ once@1.4.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/once
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/once
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/once/LICENSE
+├─ oniguruma-parser@0.12.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/slevithan/oniguruma-parser
+│  ├─ publisher: Steven Levithan
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/oniguruma-parser
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/oniguruma-parser/LICENSE
+├─ oniguruma-to-es@4.3.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/slevithan/oniguruma-to-es
+│  ├─ publisher: Steven Levithan
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/oniguruma-to-es
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/oniguruma-to-es/LICENSE
+├─ os-homedir@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/os-homedir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/os-homedir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/os-homedir/license
+├─ os-tmpdir@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/os-tmpdir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/os-tmpdir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/os-tmpdir/license
+├─ osenv@0.1.5
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/osenv
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/osenv
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/osenv/LICENSE
+├─ p-limit@2.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-limit
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-locate/node_modules/p-limit
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-locate/node_modules/p-limit/license
+├─ p-limit@7.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-limit
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-limit
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-limit/license
+├─ p-locate@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-locate
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-locate
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-locate/license
+├─ p-queue@9.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-queue
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-queue
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-queue/license
+├─ p-timeout@7.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-timeout
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-timeout
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-timeout/license
+├─ p-try@2.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-try
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-try
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/p-try/license
+├─ package-manager-detector@1.6.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/antfu-collective/package-manager-detector
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/package-manager-detector
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/package-manager-detector/LICENSE
+├─ parse-latin@7.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/parse-latin
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/parse-latin
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/parse-latin/license
+├─ parse5@7.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inikulin/parse5
+│  ├─ publisher: Ivan Nikulin
+│  ├─ email: ifaaan@gmail.com
+│  ├─ url: https://github.com/inikulin
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/parse5
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/parse5/LICENSE
+├─ path-exists@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/path-exists
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-exists
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-exists/license
+├─ path-is-absolute@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/path-is-absolute
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-is-absolute
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-is-absolute/license
+├─ path-parse@1.0.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jbgutierrez/path-parse
+│  ├─ publisher: Javier Blanco
+│  ├─ email: http://jbgutierrez.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-parse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-parse/LICENSE
+├─ path-type@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/path-type
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-type
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/path-type/license
+├─ piccolore@0.1.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/delucis/piccolore
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/piccolore
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/piccolore/README.md
+├─ picocolors@1.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/alexeyraspopov/picocolors
+│  ├─ publisher: Alexey Raspopov
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/picocolors
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/picocolors/LICENSE
+├─ picomatch@2.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/picomatch
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/anymatch/node_modules/picomatch
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/anymatch/node_modules/picomatch/LICENSE
+├─ picomatch@4.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/picomatch
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/picomatch
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/picomatch/LICENSE
+├─ pkg-dir@4.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/pkg-dir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/pkg-dir
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/pkg-dir/license
+├─ postcss@8.5.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/postcss/postcss
+│  ├─ publisher: Andrey Sitnik
+│  ├─ email: andrey@sitnik.ru
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/postcss
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/postcss/LICENSE
+├─ prettier-plugin-astro@0.14.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/prettier-plugin-astro
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier-plugin-astro
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier-plugin-astro/LICENSE
+├─ prettier-plugin-tailwindcss@0.7.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier-plugin-tailwindcss
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier-plugin-tailwindcss/LICENSE
+├─ prettier@3.8.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/prettier/prettier
+│  ├─ publisher: James Long
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/prettier/LICENSE
+├─ prismjs@1.30.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/PrismJS/prism
+│  ├─ publisher: Lea Verou
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/prismjs
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/prismjs/LICENSE
+├─ property-information@7.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/property-information
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/property-information
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/property-information/license
+├─ queue-microtask@1.2.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/feross/queue-microtask
+│  ├─ publisher: Feross Aboukhadijeh
+│  ├─ email: feross@feross.org
+│  ├─ url: https://feross.org
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/queue-microtask
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/queue-microtask/LICENSE
+├─ radix3@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/radix3
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/radix3
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/radix3/LICENSE
+├─ read-installed@4.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/read-installed
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/read-installed
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/read-installed/LICENSE
+├─ read-package-json@2.1.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/read-package-json
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/read-package-json
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/read-package-json/LICENSE
+├─ readdir-scoped-modules@1.1.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/readdir-scoped-modules
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/readdir-scoped-modules
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/readdir-scoped-modules/LICENSE
+├─ readdirp@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/paulmillr/readdirp
+│  ├─ publisher: Thorsten Lorenz
+│  ├─ email: thlorenz@gmx.de
+│  ├─ url: thlorenz.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/readdirp
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/readdirp/LICENSE
+├─ regex-recursion@6.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/slevithan/regex-recursion
+│  ├─ publisher: Steven Levithan
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/regex-recursion
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/regex-recursion/LICENSE
+├─ regex-utilities@2.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/slevithan/regex-utilities
+│  ├─ publisher: Steven Levithan
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/regex-utilities
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/regex-utilities/LICENSE
+├─ regex@6.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/slevithan/regex
+│  ├─ publisher: Steven Levithan
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/regex
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/regex/LICENSE
+├─ rehype-parse@9.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rehypejs/rehype/tree/main/packages/rehype-parse
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype-parse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype-parse/license
+├─ rehype-raw@7.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rehypejs/rehype-raw
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype-raw
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype-raw/license
+├─ rehype-stringify@10.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rehypejs/rehype/tree/main/packages/rehype-stringify
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype-stringify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype-stringify/license
+├─ rehype@13.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rehypejs/rehype/tree/main/packages/rehype
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/rehype/license
+├─ remark-gfm@4.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/remarkjs/remark-gfm
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-gfm
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-gfm/license
+├─ remark-parse@11.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/remarkjs/remark/tree/main/packages/remark-parse
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-parse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-parse/license
+├─ remark-rehype@11.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/remarkjs/remark-rehype
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-rehype
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-rehype/license
+├─ remark-smartypants@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/silvenon/remark-smartypants
+│  ├─ publisher: Matija Marohnić
+│  ├─ email: matija.marohnic@gmail.com
+│  ├─ url: https://silvenon.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-smartypants
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-smartypants/license
+├─ remark-stringify@11.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/remarkjs/remark/tree/main/packages/remark-stringify
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-stringify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/remark-stringify/license
+├─ resolve@1.22.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/browserify/resolve
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/resolve
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/resolve/LICENSE
+├─ retext-latin@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/retextjs/retext/tree/main/packages/retext-latin
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext-latin
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext-latin/readme.md
+├─ retext-smartypants@6.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/retextjs/retext-smartypants
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext-smartypants
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext-smartypants/license
+├─ retext-stringify@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/retextjs/retext/tree/main/packages/retext-stringify
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext-stringify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext-stringify/readme.md
+├─ retext@9.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/retextjs/retext/tree/main/packages/retext
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/retext/readme.md
+├─ reusify@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mcollina/reusify
+│  ├─ publisher: Matteo Collina
+│  ├─ email: hello@matteocollina.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/reusify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/reusify/LICENSE
+├─ rollup@4.59.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rollup/rollup
+│  ├─ publisher: Rich Harris
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/rollup
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/rollup/LICENSE.md
+├─ run-parallel@1.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/feross/run-parallel
+│  ├─ publisher: Feross Aboukhadijeh
+│  ├─ email: feross@feross.org
+│  ├─ url: https://feross.org
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/run-parallel
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/run-parallel/LICENSE
+├─ s.color@0.0.15
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/TheRealSyler/s.color
+│  ├─ publisher: Syler
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/s.color
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/s.color/LICENSE
+├─ sass-formatter@0.7.9
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/TheRealSyler/sass-formatter
+│  ├─ publisher: Syler
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/sass-formatter
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/sass-formatter/LICENSE
+├─ sax@1.5.0
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/sax-js
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/sax
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/sax/LICENSE.md
+├─ semver@5.7.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/node-semver
+│  ├─ publisher: GitHub Inc.
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/normalize-package-data/node_modules/semver
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/normalize-package-data/node_modules/semver/LICENSE
+├─ semver@6.3.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/node-semver
+│  ├─ publisher: GitHub Inc.
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/make-dir/node_modules/semver
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/make-dir/node_modules/semver/LICENSE
+├─ semver@7.7.4
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/node-semver
+│  ├─ publisher: GitHub Inc.
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/semver
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/semver/LICENSE
+├─ sharp@0.34.5
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/lovell/sharp
+│  ├─ publisher: Lovell Fuller
+│  ├─ email: npm@lovell.info
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/sharp
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/sharp/LICENSE
+├─ shiki@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shikijs/shiki
+│  ├─ publisher: Pine Wu
+│  ├─ email: octref@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/shiki
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/shiki/LICENSE
+├─ sisteransi@1.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/terkelg/sisteransi
+│  ├─ publisher: Terkel Gjervig
+│  ├─ email: terkel@terkel.com
+│  ├─ url: https://terkel.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/sisteransi
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/sisteransi/license
+├─ slash@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/slash
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/slash
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/slash/license
+├─ slide@1.1.6
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/slide-flow-control
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/slide
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/slide/LICENSE
+├─ smol-toml@1.6.0
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/squirrelchat/smol-toml
+│  ├─ publisher: Cynthia
+│  ├─ email: cyyynthia@borkenware.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/smol-toml
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/smol-toml/LICENSE
+├─ source-map-js@1.2.1
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/7rulnik/source-map-js
+│  ├─ publisher: Valentin 7rulnik Semirulnik
+│  ├─ email: v7rulnik@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/source-map-js
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/source-map-js/LICENSE
+├─ space-separated-tokens@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/space-separated-tokens
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/space-separated-tokens
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/space-separated-tokens/license
+├─ spdx-compare@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kemitchell/spdx-compare.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-compare
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-compare/LICENSE.md
+├─ spdx-correct@3.2.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/jslicense/spdx-correct.js
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-correct
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-correct/LICENSE
+├─ spdx-exceptions@2.5.0
+│  ├─ licenses: CC-BY-3.0
+│  ├─ repository: https://github.com/kemitchell/spdx-exceptions.json
+│  ├─ publisher: The Linux Foundation
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-exceptions
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-exceptions/README.md
+├─ spdx-expression-parse@3.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jslicense/spdx-expression-parse.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-expression-parse
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-expression-parse/LICENSE
+├─ spdx-license-ids@3.0.23
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/jslicense/spdx-license-ids
+│  ├─ publisher: Shinnosuke Watanabe
+│  ├─ url: https://github.com/shinnn
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-license-ids
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-license-ids/README.md
+├─ spdx-ranges@2.1.1
+│  ├─ licenses: (MIT AND CC-BY-3.0)
+│  ├─ repository: https://github.com/kemitchell/spdx-ranges.js
+│  ├─ publisher: The Linux Foundation
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-ranges
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-ranges/LICENSE.md
+├─ spdx-satisfies@4.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kemitchell/spdx-satisfies.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-satisfies
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/spdx-satisfies/LICENSE
+├─ stringify-entities@4.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/stringify-entities
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/stringify-entities
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/stringify-entities/license
+├─ strip-outer@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/strip-outer
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/strip-outer
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/strip-outer/license
+├─ suf-log@2.5.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/TheRealSyler/suf-log
+│  ├─ publisher: Syler
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/suf-log
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/suf-log/LICENSE
+├─ supports-color@5.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/supports-color
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/supports-color
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/supports-color/license
+├─ supports-preserve-symlinks-flag@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/node-supports-preserve-symlinks-flag
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/supports-preserve-symlinks-flag
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/supports-preserve-symlinks-flag/LICENSE
+├─ svgo@4.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/svg/svgo
+│  ├─ publisher: Kir Belevich
+│  ├─ email: kir@belevi.ch
+│  ├─ url: https://github.com/deepsweet
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/svgo
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/svgo/LICENSE
+├─ tailwindcss@4.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tailwindcss
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tailwindcss/LICENSE
+├─ tapable@2.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/webpack/tapable
+│  ├─ publisher: Tobias Koppers @sokra
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tapable
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tapable/LICENSE
+├─ textil@0.0.1
+│  ├─ licenses: Custom: https://docs.astro.build
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/README.md
+├─ tiny-inflate@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/devongovett/tiny-inflate
+│  ├─ publisher: Devon Govett
+│  ├─ email: devongovett@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tiny-inflate
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tiny-inflate/LICENSE
+├─ tinyclip@0.1.12
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinyclip
+│  ├─ publisher: Tinylibs Maintainers
+│  ├─ url: https://github.com/tinylibs
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tinyclip
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tinyclip/LICENSE
+├─ tinyexec@1.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinyexec
+│  ├─ publisher: James Garbutt
+│  ├─ url: https://github.com/43081j
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tinyexec
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tinyexec/LICENSE
+├─ tinyglobby@0.2.15
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/SuperchupuDev/tinyglobby
+│  ├─ publisher: Superchupu
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tinyglobby
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tinyglobby/LICENSE
+├─ to-regex-range@5.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/to-regex-range
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/to-regex-range
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/to-regex-range/LICENSE
+├─ treeify@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/notatestuser/treeify
+│  ├─ publisher: Luke Plaster
+│  ├─ email: notatestuser@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/treeify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/treeify/LICENSE
+├─ trim-lines@3.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/trim-lines
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/trim-lines
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/trim-lines/license
+├─ trim-repeated@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/trim-repeated
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/trim-repeated
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/trim-repeated/license
+├─ trough@2.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/trough
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/trough
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/trough/license
+├─ tsconfck@3.1.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dominikg/tsconfck
+│  ├─ publisher: dominikg
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/tsconfck
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/tsconfck/LICENSE
+├─ ufo@1.6.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/ufo
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ufo
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ufo/LICENSE
+├─ ultrahtml@1.6.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/natemoo-re/ultrahtml
+│  ├─ publisher: Nate Moore
+│  ├─ email: nate@natemoo.re
+│  ├─ url: https://twitter.com/n_moore
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/ultrahtml
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/ultrahtml/LICENSE
+├─ uncrypto@0.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/uncrypto
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/uncrypto
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/uncrypto/LICENSE
+├─ undici-types@7.18.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/undici
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/undici-types
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/undici-types/LICENSE
+├─ unified@11.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unifiedjs/unified
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unified
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unified/license
+├─ unifont@0.7.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/unifont
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unifont
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unifont/LICENCE
+├─ unist-util-find-after@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-find-after
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-find-after
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-find-after/license
+├─ unist-util-is@6.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-is
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-is
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-is/license
+├─ unist-util-modify-children@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-modify-children
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-modify-children
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-modify-children/license
+├─ unist-util-position@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-position
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-position
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-position/license
+├─ unist-util-remove-position@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-remove-position
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-remove-position
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-remove-position/license
+├─ unist-util-stringify-position@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-stringify-position
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-stringify-position
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-stringify-position/license
+├─ unist-util-visit-children@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-visit-children
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-visit-children
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-visit-children/license
+├─ unist-util-visit-parents@6.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-visit-parents
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-visit-parents
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-visit-parents/license
+├─ unist-util-visit@5.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/syntax-tree/unist-util-visit
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-visit
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unist-util-visit/license
+├─ universalify@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/RyanZim/universalify
+│  ├─ publisher: Ryan Zimmerman
+│  ├─ email: opensrc@ryanzim.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/universalify
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/universalify/LICENSE
+├─ unstorage@1.17.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/unstorage
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/unstorage
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/unstorage/LICENSE
+├─ util-extend@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/isaacs/util-extend
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/util-extend
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/util-extend/LICENSE
+├─ validate-npm-package-license@3.0.4
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/kemitchell/validate-npm-package-license.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/validate-npm-package-license
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/validate-npm-package-license/LICENSE
+├─ vfile-location@5.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vfile/vfile-location
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/vfile-location
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/vfile-location/license
+├─ vfile-message@4.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vfile/vfile-message
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/vfile-message
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/vfile-message/license
+├─ vfile@6.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vfile/vfile
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/vfile
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/vfile/license
+├─ vite@7.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitejs/vite
+│  ├─ publisher: Evan You
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/vite
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/vite/LICENSE.md
+├─ vitefu@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/svitejs/vitefu
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/vitefu
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/vitefu/LICENSE
+├─ web-namespaces@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wooorm/web-namespaces
+│  ├─ publisher: Titus Wormer
+│  ├─ email: tituswormer@gmail.com
+│  ├─ url: https://wooorm.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/web-namespaces
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/web-namespaces/license
+├─ which-pm-runs@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/zkochan/packages/tree/main/which-pm-runs
+│  ├─ publisher: Zoltan Kochan
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/which-pm-runs
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/which-pm-runs/LICENSE
+├─ wrappy@1.0.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/wrappy
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/wrappy
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/wrappy/LICENSE
+├─ xxhash-wasm@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jungomi/xxhash-wasm
+│  ├─ publisher: Michael Jungo
+│  ├─ email: michaeljungo92@gmail.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/xxhash-wasm
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/xxhash-wasm/LICENSE.md
+├─ yargs-parser@22.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/yargs-parser
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/yargs-parser
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/yargs-parser/LICENSE.txt
+├─ yocto-queue@1.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/yocto-queue
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/yocto-queue
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/yocto-queue/license
+├─ zod@4.3.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/colinhacks/zod
+│  ├─ publisher: Colin McDonnell
+│  ├─ email: zod@colinhacks.com
+│  ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/zod
+│  └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/zod/LICENSE
+└─ zwitch@2.0.4
+   ├─ licenses: MIT
+   ├─ repository: https://github.com/wooorm/zwitch
+   ├─ publisher: Titus Wormer
+   ├─ email: tituswormer@gmail.com
+   ├─ url: https://wooorm.com
+   ├─ path: /home/matt/Escritorio/Proyectos/Textil/node_modules/zwitch
+   └─ licenseFile: /home/matt/Escritorio/Proyectos/Textil/node_modules/zwitch/license

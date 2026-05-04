@@ -1,3 +1,40 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Estilos críticos para evitar parpadeos en transiciones */
+.rounded-xl,
+.card-articulo {
+	border-radius: 0.75rem !important;
+	overflow: hidden !important;
+}
+.rounded-2xl,
+#buscador {
+	border-radius: 1rem !important;
+	overflow: hidden !important;
+}
+.rounded-3xl,
+.main-card {
+	border-radius: 1.5rem !important;
+	overflow: hidden !important;
+}
+.rounded-full,
+#btn-cargar-mas,
+nav {
+	border-radius: 9999px !important;
+	overflow: hidden !important;
+}
+
+/* Evitar que las transiciones de vista muestren bordes cuadrados */
+::view-transition-old(*),
+::view-transition-new(*) {
+	border-radius: inherit;
+}
+
+/* Forzar el color de fondo en modo oscuro para evitar destellos blancos */
+.dark {
+	background-color: #111827 !important;
+}
+.dark body {
+	background-color: #111827 !important;
+}
