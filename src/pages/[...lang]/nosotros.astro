@@ -89,8 +89,24 @@ const formatText = (text: string) => text.replace(/\*\*(.*?)\*\*/g, '<strong>$1<
 		</style>
 		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<meta name="viewport" content="width=device-width" />
-		<title>{t.title} | C. PALAU SA</title>
+		<title>{t.title} | C. PALAU SA | Mayorista Textil</title>
 		<meta name="description" content={t.description} />
+		<meta name="keywords" content="nosotros, historia, C. Palau, mayorista textil, Barcelona, tejidos" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={`https://giacca90.github.io/textil/${currentLang === 'es' ? '' : currentLang + '/'}nosotros/`} />
+		<meta property="og:title" content={`${t.title} | C. PALAU SA`} />
+		<meta property="og:description" content={t.description} />
+		<meta property="og:image" content="https://giacca90.github.io/textil/og-image.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={`https://giacca90.github.io/textil/${currentLang === 'es' ? '' : currentLang + '/'}nosotros/`} />
+		<meta property="twitter:title" content={`${t.title} | C. PALAU SA`} />
+		<meta property="twitter:description" content={t.description} />
+		<meta property="twitter:image" content="https://giacca90.github.io/textil/og-image.jpg" />
+
 		<ClientRouter fallback="swap" />
 
 		<script>

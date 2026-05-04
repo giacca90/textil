@@ -27,7 +27,7 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"deploy": "astro build && gh-pages -d dist",
-		"license-report": "license-checker --txt --out THIRD-PARTY-LICENSES.txt"
+		"license-report": "license-checker --txt --out THIRD-PARTY-LICENSES.txt && sed -i \"s|$PWD|.|g\" THIRD-PARTY-LICENSES.txt"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.2.4",

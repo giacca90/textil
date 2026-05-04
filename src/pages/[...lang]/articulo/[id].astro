@@ -82,9 +82,26 @@ const backUrl = currentLang === 'es' ? `${baseUrl}/` : `${baseUrl}/${currentLang
 				overflow: hidden !important;
 			}
 		</style>
-		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<meta name="viewport" content="width=device-width" />
-		<title>{art.data.nombre} | C. Palau S.A.</title>
+		<title>{art.data.nombre} | C. Palau S.A. | Mayorista Textil</title>
+		<meta name="description" content={art.data.descripcion || t.defaultDesc} />
+		<meta name="keywords" content={`${art.data.nombre}, textil, mayorista, tejidos, telas, C. Palau, Barcelona`} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content={`https://giacca90.github.io/textil/${currentLang === 'es' ? '' : currentLang + '/'}articulo/${art.data.index}/`} />
+		<meta property="og:title" content={`${art.data.nombre} | C. Palau S.A.`} />
+		<meta property="og:description" content={art.data.descripcion || t.defaultDesc} />
+		<meta property="og:image" content={art.data.imagen} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={`https://giacca90.github.io/textil/${currentLang === 'es' ? '' : currentLang + '/'}articulo/${art.data.index}/`} />
+		<meta property="twitter:title" content={`${art.data.nombre} | C. Palau S.A.`} />
+		<meta property="twitter:description" content={art.data.descripcion || t.defaultDesc} />
+		<meta property="twitter:image" content={art.data.imagen} />
+
+		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<ClientRouter fallback="swap" />
 
 		<script>
