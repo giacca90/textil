@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://giacca90.github.io/textil/sitemap-index.xml
