@@ -2,7 +2,7 @@ const CACHE_NAME = 'textil-cache-v1';
 const IMAGE_CACHE_NAME = 'textil-images-v1';
 
 // Recursos estáticos básicos
-const STATIC_ASSETS = ['./', './favicon.ico'];
+const STATIC_ASSETS = ['/textil/', '/textil/favicon.ico'];
 
 self.addEventListener('install', (event) => {
 	event.waitUntil(
