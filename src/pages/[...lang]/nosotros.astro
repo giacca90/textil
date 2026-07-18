@@ -95,17 +95,17 @@ const formatText = (text: string) => text.replace(/\*\*(.*?)\*\*/g, '<strong>$1<
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content={`https://giacca90.github.io/textil/${currentLang === 'es' ? '' : currentLang + '/'}nosotros/`} />
+		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={`${t.title} | C. PALAU SA`} />
 		<meta property="og:description" content={t.description} />
-		<meta property="og:image" content="https://giacca90.github.io/textil/og-image.jpg" />
+		<meta property="og:image" content={new URL('/og-image.jpg', Astro.url)} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={`https://giacca90.github.io/textil/${currentLang === 'es' ? '' : currentLang + '/'}nosotros/`} />
+		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content={`${t.title} | C. PALAU SA`} />
 		<meta property="twitter:description" content={t.description} />
-		<meta property="twitter:image" content="https://giacca90.github.io/textil/og-image.jpg" />
+		<meta property="twitter:image" content={new URL('/og-image.jpg', Astro.url)} />
 
 		<ClientRouter fallback="swap" />
 
