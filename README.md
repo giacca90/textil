@@ -1,6 +1,15 @@
----
-
-| | | GGGGGG IIII AAA CCCCCC CCCCCC AAA 9999999 00000 | | GG GG II AA AA CC CC CC CC AA AA 99 99 00 00 | | GG II AA AA CC CC AA AA 99 99 00 00 | | GG GGGG II AA AA CC CC AA AA 99999999 00 00 | | GG GG II AAAAAAAAA CC CC AAAAAAAAA 99 00 00 | | GG GG II AA AA CC CC CC CC AA AA 99 99 00 00 | | GGGGGG IIII AA AA CCCCCC CCCCCC AA AA 9999999 00000 | |****************************************\_****************************************|
+```
+ _________________________________________________________________________________
+|                                                                                 |
+|  GGGGGG    IIII     AAA      CCCCCC    CCCCCC      AAA      9999999     00000   |
+| GG    GG    II     AA AA    CC    CC  CC    CC    AA AA    99     99   00   00  |
+| GG          II    AA   AA   CC        CC         AA   AA   99     99  00     00 |
+| GG   GGGG   II   AA     AA  CC        CC        AA     AA   99999999  00     00 |
+| GG    GG    II   AAAAAAAAA  CC        CC        AAAAAAAAA         99  00     00 |
+| GG    GG    II   AA     AA  CC    CC  CC    CC  AA     AA  99     99   00   00  |
+|  GGGGGG    IIII  AA     AA   CCCCCC    CCCCCC   AA     AA   9999999     00000   |
+|_________________________________________________________________________________|
+```
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/giacca90/textil?style=for-the-badge&logo=github&color=gold" alt="Stars">
@@ -16,8 +25,6 @@ Este proyecto es la plataforma web corporativa y catálogo interactivo de **C. P
 <p style="color: gray; margin: 0;">This project is the corporate web platform and interactive catalog for **C. PALAU SA**, a leading textile distributor and wholesaler based in Barcelona. Designed to offer ultra-fast navigation, a modern user experience, and comprehensive multilingual support, this site acts as a digital catalog for industry professionals to explore collections and high-quality fabrics.</p>
 <p style="color: gray; margin: 0;">Questo progetto è la piattaforma web aziendale e il catalogo interattivo di **C. PALAU SA**, un distributore e grossista tessile di riferimento con sede a Barcellona. Progettato per offrire una navigazione ultraveloce, un'esperienza utente moderna e un supporto multilingue completo, questo sito funge da catalogo digitale per i professionisti del settore per esplorare collezioni e tessuti di alta qualità.</p>
 
----
-
 ## 2. Características Principales / Key Features / Caratteristiche Principali
 
 - **Arquitectura Multilingüe**: Soporte nativo para Español, Catalán, Inglés y Francés con enrutamiento dinámico adaptado e indexación SEO óptima. <span style="color: gray;"> — **Multilingual Architecture**: Native support for Spanish, Catalan, English, and French with tailored dynamic routing and optimal SEO indexing.</span> <span style="color: gray;"> — **Architettura Multilingue**: Supporto nativo per spagnolo, catalano, inglese e francese con routing dinamico personalizzato e indicizzazione SEO ottimale.</span>
@@ -28,8 +35,6 @@ Este proyecto es la plataforma web corporativa y catálogo interactivo de **C. P
 
 - **Soporte de Carga Offline (PWA)**: Integrado con un Service Worker que permite el almacenamiento en caché de los recursos y el funcionamiento offline básico. <span style="color: gray;"> — **Offline Loading Support (PWA)**: Integrated with a Service Worker that enables resource caching and basic offline functionality.</span> <span style="color: gray;"> — **Supporto al Caricamento Offline (PWA)**: Integrato con un Service Worker che consente il caching delle risorse e il funzionamento offline di base.</span>
 
----
-
 ## 3. Tecnologías Empleadas / Tech Stack / Tecnologie Utilizzate
 
 | Tecnología / Tech   | Propósito / Purpose | Descripción / Description                                                                                                                                                                                                                                                         |
@@ -38,8 +43,6 @@ Este proyecto es la plataforma web corporativa y catálogo interactivo de **C. P
 | **Tailwind CSS v4** | Diseño y Estilos    | Framework CSS utilitario para un diseño moderno, flexible y responsivo. <span style="color: gray;"><br>— Utility-first CSS framework for modern, responsive layouts. <br>— Framework CSS di tipo utility-first per layout moderni e responsive.</span>                            |
 | **Vite**            | Empaquetador        | Herramienta de construcción ultrarrápida que optimiza recursos, CSS y scripts. <span style="color: gray;"><br>— Ultra-fast build tool optimizing resources, CSS, and scripts. <br>— Strumento di build ultraveloce che ottimizza risorse, CSS e script.</span>                    |
 | **TypeScript**      | Lenguaje            | Tipado estático robusto para asegurar la calidad y mantenibilidad del código. <span style="color: gray;"><br>— Strong static typing ensuring code quality and maintainability. <br>— Tipizzazione statica robusta per garantire la qualità e la manutenibilità del codice.</span> |
-
----
 
 ## 4. Estructura del Proyecto / Project Structure / Struttura del Progetto
 
@@ -71,8 +74,6 @@ Este proyecto es la plataforma web corporativa y catálogo interactivo de **C. P
 └── tsconfig.json           # Ajustes del compilador de TypeScript / TypeScript configuration
 ```
 
----
-
 ## 5. Requisitos Previos / Prerequisites / Requisiti Previsti
 
 Antes de iniciar el entorno de desarrollo, asegúrate de tener instalado:
@@ -83,16 +84,12 @@ Antes de iniciar el entorno de desarrollo, asegúrate de tener instalado:
 - **Node.js**: `>= 22.12.0` (Recomendado/Recommended)
 - **npm**: Administrador de paquetes de Node.js / Node.js package manager / Gestore di pacchetti Node.js
 
----
-
 ## 6. Configuración y Variables / Configuration & Variables / Configurazione e Variabili
 
 Este proyecto no requiere variables de entorno complejas ni bases de datos para su funcionamiento local. Las rutas y recursos se autoconfiguran utilizando los entornos estándares de Astro (`import.meta.env.BASE_URL`), lo cual facilita enormemente el despliegue directo.
 
 <p style="color: gray; margin: 0;">This project does not require complex environment variables or databases for local operation. Routes and assets are self-configured using Astro's standard environments (`import.meta.env.BASE_URL`), greatly facilitating direct deployment.</p>
 <p style="color: gray; margin: 0;">Questo progetto non richiede variabili d'ambiente complesse o database per il funzionamento locale. Le rotte e le risorse si autoconfigurano utilizzando gli ambienti standard di Astro (`import.meta.env.BASE_URL`), facilitando notevolmente il deployment diretto.</p>
-
----
 
 ## 7. Despliegue / Deployment / Deployment
 

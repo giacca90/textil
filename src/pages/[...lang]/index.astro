@@ -95,15 +95,15 @@ const languages = [
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content="C Palau S.A. | Mayorista Textil" />
-		<meta property="og:description" content="C. Palau S.A. - Mayorista de tejidos y productos textiles. Calidad y variety en telas para profesionales." />
-		<meta property="og:image" content={new URL('/og-image.jpg', Astro.url)} />
+		<meta property="og:description" content="C. Palau S.A. - Mayorista de tejidos y productos textiles. Calidad y variedad en telas para profesionales." />
+		<meta property="og:image" content={new URL(`${import.meta.env.BASE_URL}cpalau.png`, Astro.url)} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content="C Palau S.A. | Mayorista Textil" />
-		<meta property="twitter:description" content="C. Palau S.A. - Mayorista de tejidos y productos textiles. Calidad y variety en telas para profesionales." />
-		<meta property="twitter:image" content={new URL('/og-image.jpg', Astro.url)} />
+		<meta property="twitter:description" content="C. Palau S.A. - Mayorista de tejidos y productos textiles. Calidad y variedad en telas para profesionales." />
+		<meta property="twitter:image" content={new URL(`${import.meta.env.BASE_URL}cpalau.png`, Astro.url)} />
 
 		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<ClientRouter fallback="swap" />
