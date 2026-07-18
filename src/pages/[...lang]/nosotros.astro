@@ -98,14 +98,14 @@ const formatText = (text: string) => text.replace(/\*\*(.*?)\*\*/g, '<strong>$1<
 		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={`${t.title} | C. PALAU SA`} />
 		<meta property="og:description" content={t.description} />
-		<meta property="og:image" content={new URL(`${import.meta.env.BASE_URL}cpalau.png`, Astro.url)} />
+		<meta property="og:image" content={new URL(`${import.meta.env.BASE_URL}og-image.png`, Astro.url)} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content={`${t.title} | C. PALAU SA`} />
 		<meta property="twitter:description" content={t.description} />
-		<meta property="twitter:image" content={new URL(`${import.meta.env.BASE_URL}cpalau.png`, Astro.url)} />
+		<meta property="twitter:image" content={new URL(`${import.meta.env.BASE_URL}og-image.png`, Astro.url)} />
 
 		<ClientRouter fallback="swap" />
 

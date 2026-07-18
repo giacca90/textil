@@ -1,39 +1,69 @@
+├─ @astrojs/cloudflare@14.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: ./node_modules/@astrojs/cloudflare
+│  └─ licenseFile: ./node_modules/@astrojs/cloudflare/LICENSE
+├─ @astrojs/compiler-binding-linux-x64-gnu@0.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/compiler-rs
+│  ├─ publisher: Astro contributors
+│  ├─ path: ./node_modules/@astrojs/compiler-binding-linux-x64-gnu
+│  └─ licenseFile: ./node_modules/@astrojs/compiler-binding-linux-x64-gnu/README.md
+├─ @astrojs/compiler-binding-linux-x64-musl@0.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/compiler-rs
+│  ├─ publisher: Astro contributors
+│  ├─ path: ./node_modules/@astrojs/compiler-binding-linux-x64-musl
+│  └─ licenseFile: ./node_modules/@astrojs/compiler-binding-linux-x64-musl/README.md
+├─ @astrojs/compiler-binding@0.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/compiler-rs
+│  ├─ publisher: Astro contributors
+│  ├─ path: ./node_modules/@astrojs/compiler-binding
+│  └─ licenseFile: ./node_modules/@astrojs/compiler-binding/LICENSE
+├─ @astrojs/compiler-rs@0.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/compiler-rs
+│  ├─ publisher: withastro
+│  ├─ path: ./node_modules/@astrojs/compiler-rs
+│  └─ licenseFile: ./node_modules/@astrojs/compiler-rs/LICENSE
 ├─ @astrojs/compiler@2.13.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/withastro/compiler
 │  ├─ publisher: withastro
 │  ├─ path: ./node_modules/prettier-plugin-astro/node_modules/@astrojs/compiler
 │  └─ licenseFile: ./node_modules/prettier-plugin-astro/node_modules/@astrojs/compiler/LICENSE
-├─ @astrojs/compiler@3.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/withastro/compiler
-│  ├─ publisher: withastro
-│  ├─ path: ./node_modules/@astrojs/compiler
-│  └─ licenseFile: ./node_modules/@astrojs/compiler/LICENSE
-├─ @astrojs/internal-helpers@0.8.0
+├─ @astrojs/internal-helpers@0.10.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/withastro/astro
 │  ├─ publisher: withastro
 │  ├─ path: ./node_modules/@astrojs/internal-helpers
 │  └─ licenseFile: ./node_modules/@astrojs/internal-helpers/LICENSE
-├─ @astrojs/markdown-remark@7.0.0
+├─ @astrojs/markdown-satteri@0.3.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/withastro/astro
 │  ├─ publisher: withastro
-│  ├─ path: ./node_modules/@astrojs/markdown-remark
-│  └─ licenseFile: ./node_modules/@astrojs/markdown-remark/LICENSE
-├─ @astrojs/prism@4.0.0
+│  ├─ path: ./node_modules/@astrojs/markdown-satteri
+│  └─ licenseFile: ./node_modules/@astrojs/markdown-satteri/LICENSE
+├─ @astrojs/prism@4.0.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/withastro/astro
 │  ├─ publisher: withastro
 │  ├─ path: ./node_modules/@astrojs/prism
 │  └─ licenseFile: ./node_modules/@astrojs/prism/LICENSE
-├─ @astrojs/telemetry@3.3.0
+├─ @astrojs/telemetry@3.3.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/withastro/astro
 │  ├─ publisher: withastro
 │  ├─ path: ./node_modules/@astrojs/telemetry
 │  └─ licenseFile: ./node_modules/@astrojs/telemetry/LICENSE
+├─ @astrojs/underscore-redirects@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/withastro/astro
+│  ├─ publisher: withastro
+│  ├─ path: ./node_modules/@astrojs/underscore-redirects
+│  └─ licenseFile: ./node_modules/@astrojs/underscore-redirects/LICENSE
 ├─ @babel/helper-string-parser@7.27.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/babel/babel
@@ -62,6 +92,16 @@
 │  ├─ url: https://babel.dev/team
 │  ├─ path: ./node_modules/@babel/types
 │  └─ licenseFile: ./node_modules/@babel/types/LICENSE
+├─ @bruits/satteri-linux-x64-gnu@0.9.4
+│  ├─ licenses: [1m[31mUNKNOWN[39m[22m
+│  ├─ repository: https://github.com/bruits/satteri
+│  ├─ path: ./node_modules/@bruits/satteri-linux-x64-gnu
+│  └─ licenseFile: ./node_modules/@bruits/satteri-linux-x64-gnu/README.md
+├─ @bruits/satteri-linux-x64-musl@0.9.4
+│  ├─ licenses: [1m[31mUNKNOWN[39m[22m
+│  ├─ repository: https://github.com/bruits/satteri
+│  ├─ path: ./node_modules/@bruits/satteri-linux-x64-musl
+│  └─ licenseFile: ./node_modules/@bruits/satteri-linux-x64-musl/README.md
 ├─ @capsizecss/unpack@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/seek-oss/capsize
@@ -84,7 +124,51 @@
 │  ├─ url: https://twitter.com/n_moore
 │  ├─ path: ./node_modules/@clack/prompts
 │  └─ licenseFile: ./node_modules/@clack/prompts/LICENSE
-├─ @esbuild/linux-x64@0.27.4
+├─ @cloudflare/kv-asset-handler@0.5.0
+│  ├─ licenses: MIT OR Apache-2.0
+│  ├─ repository: https://github.com/cloudflare/workers-sdk
+│  ├─ publisher: wrangler@cloudflare.com
+│  ├─ path: ./node_modules/@cloudflare/kv-asset-handler
+│  └─ licenseFile: ./node_modules/@cloudflare/kv-asset-handler/README.md
+├─ @cloudflare/unenv-preset@2.16.1
+│  ├─ licenses: MIT OR Apache-2.0
+│  ├─ repository: https://github.com/cloudflare/workers-sdk
+│  ├─ path: ./node_modules/@cloudflare/unenv-preset
+│  └─ licenseFile: ./node_modules/@cloudflare/unenv-preset/README.md
+├─ @cloudflare/vite-plugin@1.44.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/cloudflare/workers-sdk
+│  ├─ path: ./node_modules/@cloudflare/vite-plugin
+│  └─ licenseFile: ./node_modules/@cloudflare/vite-plugin/README.md
+├─ @cloudflare/workerd-linux-64@1.20260708.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/cloudflare/workerd
+│  ├─ path: ./node_modules/@cloudflare/workerd-linux-64
+│  └─ licenseFile: ./node_modules/@cloudflare/workerd-linux-64/README.md
+├─ @cspotcode/source-map-support@0.8.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/cspotcode/node-source-map-support
+│  ├─ path: ./node_modules/@cspotcode/source-map-support
+│  └─ licenseFile: ./node_modules/@cspotcode/source-map-support/LICENSE.md
+├─ @emnapi/core@1.11.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/toyobayashi/emnapi
+│  ├─ publisher: toyobayashi
+│  ├─ path: ./node_modules/@emnapi/core
+│  └─ licenseFile: ./node_modules/@emnapi/core/LICENSE
+├─ @emnapi/runtime@1.11.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/toyobayashi/emnapi
+│  ├─ publisher: toyobayashi
+│  ├─ path: ./node_modules/@emnapi/runtime
+│  └─ licenseFile: ./node_modules/@emnapi/runtime/LICENSE
+├─ @emnapi/wasi-threads@1.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/toyobayashi/emnapi
+│  ├─ publisher: toyobayashi
+│  ├─ path: ./node_modules/@emnapi/wasi-threads
+│  └─ licenseFile: ./node_modules/@emnapi/wasi-threads/LICENSE
+├─ @esbuild/linux-x64@0.28.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/evanw/esbuild
 │  ├─ path: ./node_modules/@esbuild/linux-x64
@@ -157,6 +241,19 @@
 │  ├─ email: justin@ridgewell.name
 │  ├─ path: ./node_modules/@jridgewell/trace-mapping
 │  └─ licenseFile: ./node_modules/@jridgewell/trace-mapping/LICENSE
+├─ @jridgewell/trace-mapping@0.3.9
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jridgewell/trace-mapping
+│  ├─ publisher: Justin Ridgewell
+│  ├─ email: justin@ridgewell.name
+│  ├─ path: ./node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping
+│  └─ licenseFile: ./node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/LICENSE
+├─ @napi-rs/wasm-runtime@1.1.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/napi-rs/napi-rs
+│  ├─ publisher: LongYinan
+│  ├─ url: https://github.com/Brooooooklyn
+│  └─ path: ./node_modules/@napi-rs/wasm-runtime
 ├─ @nodelib/fs.scandir@2.1.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir
@@ -178,6 +275,47 @@
 │  ├─ publisher: pilcrowOnPaper
 │  ├─ path: ./node_modules/@oslojs/encoding
 │  └─ licenseFile: ./node_modules/@oslojs/encoding/LICENSE
+├─ @oxc-project/types@0.138.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/oxc-project/oxc
+│  ├─ publisher: Boshen and oxc contributors
+│  ├─ path: ./node_modules/@oxc-project/types
+│  └─ licenseFile: ./node_modules/@oxc-project/types/LICENSE
+├─ @poppinss/colors@4.1.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/poppinss/colors
+│  ├─ publisher: virk
+│  ├─ path: ./node_modules/@poppinss/colors
+│  └─ licenseFile: ./node_modules/@poppinss/colors/LICENSE.md
+├─ @poppinss/dumper@0.6.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/poppinss/dumper
+│  ├─ publisher: Harminder Virk
+│  ├─ email: virk@adonisjs.com
+│  ├─ path: ./node_modules/@poppinss/dumper
+│  └─ licenseFile: ./node_modules/@poppinss/dumper/LICENSE.md
+├─ @poppinss/exception@1.2.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/poppinss/exception
+│  ├─ publisher: Harminder Virk
+│  ├─ email: virk@adonisjs.com
+│  ├─ path: ./node_modules/@poppinss/exception
+│  └─ licenseFile: ./node_modules/@poppinss/exception/LICENSE.md
+├─ @rolldown/binding-linux-x64-gnu@1.1.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rolldown/rolldown
+│  ├─ path: ./node_modules/@rolldown/binding-linux-x64-gnu
+│  └─ licenseFile: ./node_modules/@rolldown/binding-linux-x64-gnu/README.md
+├─ @rolldown/binding-linux-x64-musl@1.1.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rolldown/rolldown
+│  ├─ path: ./node_modules/@rolldown/binding-linux-x64-musl
+│  └─ licenseFile: ./node_modules/@rolldown/binding-linux-x64-musl/README.md
+├─ @rolldown/pluginutils@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rolldown/plugins
+│  ├─ path: ./node_modules/@rolldown/pluginutils
+│  └─ licenseFile: ./node_modules/@rolldown/pluginutils/LICENSE
 ├─ @rollup/pluginutils@5.3.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/rollup/plugins
@@ -197,49 +335,49 @@
 │  ├─ publisher: Lukas Taegert-Atkinson
 │  ├─ path: ./node_modules/@rollup/rollup-linux-x64-musl
 │  └─ licenseFile: ./node_modules/@rollup/rollup-linux-x64-musl/README.md
-├─ @shikijs/core@4.0.2
+├─ @shikijs/core@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Pine Wu
 │  ├─ email: octref@gmail.com
 │  ├─ path: ./node_modules/@shikijs/core
 │  └─ licenseFile: ./node_modules/@shikijs/core/LICENSE
-├─ @shikijs/engine-javascript@4.0.2
+├─ @shikijs/engine-javascript@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Anthony Fu
 │  ├─ email: anthonyfu117@hotmail.com
 │  ├─ path: ./node_modules/@shikijs/engine-javascript
 │  └─ licenseFile: ./node_modules/@shikijs/engine-javascript/LICENSE
-├─ @shikijs/engine-oniguruma@4.0.2
+├─ @shikijs/engine-oniguruma@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Anthony Fu
 │  ├─ email: anthonyfu117@hotmail.com
 │  ├─ path: ./node_modules/@shikijs/engine-oniguruma
 │  └─ licenseFile: ./node_modules/@shikijs/engine-oniguruma/LICENSE
-├─ @shikijs/langs@4.0.2
+├─ @shikijs/langs@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Anthony Fu
 │  ├─ email: anthonyfu117@hotmail.com
 │  ├─ path: ./node_modules/@shikijs/langs
 │  └─ licenseFile: ./node_modules/@shikijs/langs/LICENSE
-├─ @shikijs/primitive@4.0.2
+├─ @shikijs/primitive@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Anthony Fu
 │  ├─ email: anthonyfu117@hotmail.com
 │  ├─ path: ./node_modules/@shikijs/primitive
 │  └─ licenseFile: ./node_modules/@shikijs/primitive/LICENSE
-├─ @shikijs/themes@4.0.2
+├─ @shikijs/themes@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Anthony Fu
 │  ├─ email: anthonyfu117@hotmail.com
 │  ├─ path: ./node_modules/@shikijs/themes
 │  └─ licenseFile: ./node_modules/@shikijs/themes/LICENSE
-├─ @shikijs/types@4.0.2
+├─ @shikijs/types@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Anthony Fu
@@ -252,36 +390,58 @@
 │  ├─ publisher: Microsoft Corporation
 │  ├─ path: ./node_modules/@shikijs/vscode-textmate
 │  └─ licenseFile: ./node_modules/@shikijs/vscode-textmate/LICENSE.md
-├─ @tailwindcss/node@4.2.1
+├─ @sindresorhus/is@7.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: ./node_modules/@sindresorhus/is
+│  └─ licenseFile: ./node_modules/@sindresorhus/is/license
+├─ @speed-highlight/core@1.2.17
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/speed-highlight/core
+│  ├─ publisher: matubu
+│  ├─ email: hi@mathias.ninja
+│  ├─ url: https://mathias.ninja
+│  ├─ path: ./node_modules/@speed-highlight/core
+│  └─ licenseFile: ./node_modules/@speed-highlight/core/LICENSE
+├─ @tailwindcss/node@4.2.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/tailwindcss
 │  ├─ path: ./node_modules/@tailwindcss/node
 │  └─ licenseFile: ./node_modules/@tailwindcss/node/LICENSE
-├─ @tailwindcss/oxide-linux-x64-gnu@4.2.1
+├─ @tailwindcss/oxide-linux-x64-gnu@4.2.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/tailwindcss
 │  ├─ path: ./node_modules/@tailwindcss/oxide-linux-x64-gnu
 │  └─ licenseFile: ./node_modules/@tailwindcss/oxide-linux-x64-gnu/LICENSE
-├─ @tailwindcss/oxide-linux-x64-musl@4.2.1
+├─ @tailwindcss/oxide-linux-x64-musl@4.2.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/tailwindcss
 │  ├─ path: ./node_modules/@tailwindcss/oxide-linux-x64-musl
 │  └─ licenseFile: ./node_modules/@tailwindcss/oxide-linux-x64-musl/LICENSE
-├─ @tailwindcss/oxide@4.2.1
+├─ @tailwindcss/oxide@4.2.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/tailwindcss
 │  ├─ path: ./node_modules/@tailwindcss/oxide
 │  └─ licenseFile: ./node_modules/@tailwindcss/oxide/LICENSE
-├─ @tailwindcss/vite@4.2.1
+├─ @tailwindcss/vite@4.2.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/tailwindcss
 │  ├─ path: ./node_modules/@tailwindcss/vite
 │  └─ licenseFile: ./node_modules/@tailwindcss/vite/LICENSE
-├─ @types/debug@4.1.12
+├─ @tybys/wasm-util@0.10.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/toyobayashi/wasm-util
+│  ├─ publisher: toyobayashi
+│  ├─ path: ./node_modules/@tybys/wasm-util
+│  └─ licenseFile: ./node_modules/@tybys/wasm-util/README.md
+├─ @types/estree-jsx@1.0.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
-│  ├─ path: ./node_modules/@types/debug
-│  └─ licenseFile: ./node_modules/@types/debug/LICENSE
+│  ├─ path: ./node_modules/@types/estree-jsx
+│  └─ licenseFile: ./node_modules/@types/estree-jsx/LICENSE
 ├─ @types/estree@1.0.8
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -297,17 +457,12 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: ./node_modules/@types/mdast
 │  └─ licenseFile: ./node_modules/@types/mdast/LICENSE
-├─ @types/ms@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
-│  ├─ path: ./node_modules/@types/ms
-│  └─ licenseFile: ./node_modules/@types/ms/LICENSE
 ├─ @types/nlcst@2.0.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: ./node_modules/@types/nlcst
 │  └─ licenseFile: ./node_modules/@types/nlcst/LICENSE
-├─ @types/node@25.5.0
+├─ @types/node@25.6.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: ./node_modules/@types/node
@@ -317,7 +472,7 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: ./node_modules/@types/unist
 │  └─ licenseFile: ./node_modules/@types/unist/LICENSE
-├─ @ungap/structured-clone@1.3.0
+├─ @ungap/structured-clone@1.3.2
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/ungap/structured-clone
 │  ├─ publisher: Andrea Giammarchi
@@ -330,6 +485,12 @@
 │  ├─ email: i@izs.me
 │  ├─ path: ./node_modules/abbrev
 │  └─ licenseFile: ./node_modules/abbrev/LICENSE
+├─ am-i-vibing@0.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ascorbic/am-i-vibing
+│  ├─ publisher: Matt Kane
+│  ├─ path: ./node_modules/am-i-vibing
+│  └─ licenseFile: ./node_modules/am-i-vibing/README.md
 ├─ ansi-styles@3.2.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/chalk/ansi-styles
@@ -365,14 +526,6 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: ./node_modules/array-find-index
 │  └─ licenseFile: ./node_modules/array-find-index/license
-├─ array-iterate@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/array-iterate
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/array-iterate
-│  └─ licenseFile: ./node_modules/array-iterate/license
 ├─ array-union@2.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/array-union
@@ -386,7 +539,7 @@
 │  ├─ repository: https://github.com/kriskowal/asap
 │  ├─ path: ./node_modules/asap
 │  └─ licenseFile: ./node_modules/asap/LICENSE.md
-├─ astro@6.0.4
+├─ astro@7.0.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/withastro/astro
 │  ├─ publisher: withastro
@@ -421,6 +574,13 @@
 │  ├─ url: http://juliangruber.com
 │  ├─ path: ./node_modules/balanced-match
 │  └─ licenseFile: ./node_modules/balanced-match/LICENSE.md
+├─ blake3-wasm@2.1.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/connor4312/blake3
+│  ├─ publisher: Connor Peet
+│  ├─ email: connor@peet.io
+│  ├─ path: ./node_modules/blake3-wasm
+│  └─ licenseFile: ./node_modules/blake3-wasm/LICENSE
 ├─ boolbase@1.0.0
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/fb55/boolbase
@@ -472,14 +632,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/character-entities-legacy
 │  └─ licenseFile: ./node_modules/character-entities-legacy/license
-├─ character-entities@2.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/character-entities
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/character-entities
-│  └─ licenseFile: ./node_modules/character-entities/license
 ├─ chokidar@5.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/paulmillr/chokidar
@@ -563,7 +715,7 @@
 │  ├─ url: http://substack.net
 │  ├─ path: ./node_modules/concat-map
 │  └─ licenseFile: ./node_modules/concat-map/LICENSE
-├─ cookie-es@1.2.2
+├─ cookie-es@1.2.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/unjs/cookie-es
 │  ├─ path: ./node_modules/cookie-es
@@ -619,7 +771,7 @@
 │  ├─ url: https://github.com/afelix
 │  ├─ path: ./node_modules/csso
 │  └─ licenseFile: ./node_modules/csso/LICENSE
-├─ csv-parse@6.1.0
+├─ csv-parse@7.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/adaltas/node-csv
 │  ├─ publisher: David Worms
@@ -634,13 +786,6 @@
 │  ├─ email: tj@vision-media.ca
 │  ├─ path: ./node_modules/license-checker/node_modules/debug
 │  └─ licenseFile: ./node_modules/license-checker/node_modules/debug/LICENSE
-├─ debug@4.4.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/debug-js/debug
-│  ├─ publisher: Josh Junon
-│  ├─ url: https://github.com/qix-
-│  ├─ path: ./node_modules/debug
-│  └─ licenseFile: ./node_modules/debug/LICENSE
 ├─ debuglog@1.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sam-github/node-debuglog
@@ -648,15 +793,7 @@
 │  ├─ email: sam@strongloop.com
 │  ├─ path: ./node_modules/debuglog
 │  └─ licenseFile: ./node_modules/debuglog/LICENSE
-├─ decode-named-character-reference@1.3.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/decode-named-character-reference
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/decode-named-character-reference
-│  └─ licenseFile: ./node_modules/decode-named-character-reference/license
-├─ defu@6.1.4
+├─ defu@6.1.7
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/unjs/defu
 │  ├─ path: ./node_modules/defu
@@ -681,7 +818,7 @@
 │  ├─ email: npm@lovell.info
 │  ├─ path: ./node_modules/detect-libc
 │  └─ licenseFile: ./node_modules/detect-libc/LICENSE
-├─ devalue@5.6.4
+├─ devalue@5.8.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sveltejs/devalue
 │  ├─ path: ./node_modules/devalue
@@ -715,14 +852,6 @@
 │  ├─ url: github.com/kevva
 │  ├─ path: ./node_modules/dir-glob
 │  └─ licenseFile: ./node_modules/dir-glob/license
-├─ dlv@1.1.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/developit/dlv
-│  ├─ publisher: Jason Miller
-│  ├─ email: jason@developit.ca
-│  ├─ url: http://jasonformat.com
-│  ├─ path: ./node_modules/dlv
-│  └─ licenseFile: ./node_modules/dlv/README.md
 ├─ dom-serializer@2.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/cheeriojs/dom-serializer
@@ -766,7 +895,7 @@
 │  ├─ email: johnrbowman@fastmail.fm
 │  ├─ path: ./node_modules/email-addresses
 │  └─ licenseFile: ./node_modules/email-addresses/LICENSE
-├─ enhanced-resolve@5.20.0
+├─ enhanced-resolve@5.21.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/webpack/enhanced-resolve
 │  ├─ publisher: Tobias Koppers @sokra
@@ -779,20 +908,18 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: ./node_modules/dom-serializer/node_modules/entities
 │  └─ licenseFile: ./node_modules/dom-serializer/node_modules/entities/LICENSE
-├─ entities@6.0.1
-│  ├─ licenses: BSD-2-Clause
-│  ├─ repository: https://github.com/fb55/entities
-│  ├─ publisher: Felix Boehm
-│  ├─ email: me@feedic.com
-│  ├─ path: ./node_modules/entities
-│  └─ licenseFile: ./node_modules/entities/LICENSE
+├─ error-stack-parser-es@1.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/antfu/error-stack-parser-es
+│  ├─ path: ./node_modules/error-stack-parser-es
+│  └─ licenseFile: ./node_modules/error-stack-parser-es/LICENSE
 ├─ es-module-lexer@2.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/guybedford/es-module-lexer
 │  ├─ publisher: Guy Bedford
 │  ├─ path: ./node_modules/es-module-lexer
 │  └─ licenseFile: ./node_modules/es-module-lexer/LICENSE
-├─ esbuild@0.27.4
+├─ esbuild@0.28.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/evanw/esbuild
 │  ├─ path: ./node_modules/esbuild
@@ -805,14 +932,6 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: ./node_modules/strip-outer/node_modules/escape-string-regexp
 │  └─ licenseFile: ./node_modules/strip-outer/node_modules/escape-string-regexp/license
-├─ escape-string-regexp@5.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/sindresorhus/escape-string-regexp
-│  ├─ publisher: Sindre Sorhus
-│  ├─ email: sindresorhus@gmail.com
-│  ├─ url: https://sindresorhus.com
-│  ├─ path: ./node_modules/escape-string-regexp
-│  └─ licenseFile: ./node_modules/escape-string-regexp/license
 ├─ estree-walker@2.0.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/Rich-Harris/estree-walker
@@ -931,6 +1050,13 @@
 │  ├─ email: raynos2@gmail.com
 │  ├─ path: ./node_modules/function-bind
 │  └─ licenseFile: ./node_modules/function-bind/LICENSE
+├─ get-tsconfig@5.0.0-beta.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/privatenumber/get-tsconfig
+│  ├─ publisher: Hiroki Osame
+│  ├─ email: hiroki.osame@gmail.com
+│  ├─ path: ./node_modules/get-tsconfig
+│  └─ licenseFile: ./node_modules/get-tsconfig/LICENSE
 ├─ gh-pages@6.3.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tschaub/gh-pages
@@ -974,7 +1100,7 @@
 │  ├─ repository: https://github.com/isaacs/node-graceful-fs
 │  ├─ path: ./node_modules/graceful-fs
 │  └─ licenseFile: ./node_modules/graceful-fs/LICENSE
-├─ h3@1.15.6
+├─ h3@1.15.11
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/h3js/h3
 │  ├─ path: ./node_modules/h3
@@ -994,46 +1120,6 @@
 │  ├─ email: ljharb@gmail.com
 │  ├─ path: ./node_modules/hasown
 │  └─ licenseFile: ./node_modules/hasown/LICENSE
-├─ hast-util-from-html@2.0.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-from-html
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-from-html
-│  └─ licenseFile: ./node_modules/hast-util-from-html/license
-├─ hast-util-from-parse5@8.0.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-from-parse5
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-from-parse5
-│  └─ licenseFile: ./node_modules/hast-util-from-parse5/license
-├─ hast-util-is-element@3.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-is-element
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-is-element
-│  └─ licenseFile: ./node_modules/hast-util-is-element/license
-├─ hast-util-parse-selector@4.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-parse-selector
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-parse-selector
-│  └─ licenseFile: ./node_modules/hast-util-parse-selector/license
-├─ hast-util-raw@9.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-raw
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-raw
-│  └─ licenseFile: ./node_modules/hast-util-raw/license
 ├─ hast-util-to-html@9.0.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/hast-util-to-html
@@ -1042,22 +1128,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/hast-util-to-html
 │  └─ licenseFile: ./node_modules/hast-util-to-html/license
-├─ hast-util-to-parse5@8.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-to-parse5
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-to-parse5
-│  └─ licenseFile: ./node_modules/hast-util-to-parse5/license
-├─ hast-util-to-text@4.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hast-util-to-text
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hast-util-to-text
-│  └─ licenseFile: ./node_modules/hast-util-to-text/license
 ├─ hast-util-whitespace@3.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/hast-util-whitespace
@@ -1066,14 +1136,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/hast-util-whitespace
 │  └─ licenseFile: ./node_modules/hast-util-whitespace/license
-├─ hastscript@9.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/hastscript
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/hastscript
-│  └─ licenseFile: ./node_modules/hastscript/license
 ├─ hosted-git-info@2.8.9
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/npm/hosted-git-info
@@ -1144,6 +1206,14 @@
 │  ├─ publisher: Sindre Sorhus
 │  ├─ email: sindresorhus@gmail.com
 │  ├─ url: https://sindresorhus.com
+│  ├─ path: ./node_modules/is-inside-container/node_modules/is-docker
+│  └─ licenseFile: ./node_modules/is-inside-container/node_modules/is-docker/license
+├─ is-docker@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-docker
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
 │  ├─ path: ./node_modules/is-docker
 │  └─ licenseFile: ./node_modules/is-docker/license
 ├─ is-extglob@2.1.1
@@ -1196,7 +1266,7 @@
 │  ├─ repository: https://github.com/unjs/jiti
 │  ├─ path: ./node_modules/jiti
 │  └─ licenseFile: ./node_modules/jiti/LICENSE
-├─ js-yaml@4.1.1
+├─ js-yaml@4.3.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/js-yaml
 │  ├─ publisher: Vladimir Zapparov
@@ -1210,6 +1280,12 @@
 │  ├─ email: kzm@zkat.tech
 │  ├─ path: ./node_modules/json-parse-even-better-errors
 │  └─ licenseFile: ./node_modules/json-parse-even-better-errors/LICENSE.md
+├─ jsonc-parser@3.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/microsoft/node-jsonc-parser
+│  ├─ publisher: Microsoft Corporation
+│  ├─ path: ./node_modules/jsonc-parser
+│  └─ licenseFile: ./node_modules/jsonc-parser/LICENSE.md
 ├─ jsonfile@6.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jprichardson/node-jsonfile
@@ -1217,6 +1293,14 @@
 │  ├─ email: jprichardson@gmail.com
 │  ├─ path: ./node_modules/jsonfile
 │  └─ licenseFile: ./node_modules/jsonfile/LICENSE
+├─ kleur@4.1.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/kleur
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: ./node_modules/kleur
+│  └─ licenseFile: ./node_modules/kleur/license
 ├─ license-checker@25.0.1
 │  ├─ licenses: BSD-3-Clause
 │  ├─ repository: https://github.com/davglass/license-checker
@@ -1224,17 +1308,17 @@
 │  ├─ email: davglass@gmail.com
 │  ├─ path: ./node_modules/license-checker
 │  └─ licenseFile: ./node_modules/license-checker/LICENSE
-├─ lightningcss-linux-x64-gnu@1.31.1
+├─ lightningcss-linux-x64-gnu@1.32.0
 │  ├─ licenses: MPL-2.0
 │  ├─ repository: https://github.com/parcel-bundler/lightningcss
 │  ├─ path: ./node_modules/lightningcss-linux-x64-gnu
 │  └─ licenseFile: ./node_modules/lightningcss-linux-x64-gnu/LICENSE
-├─ lightningcss-linux-x64-musl@1.31.1
+├─ lightningcss-linux-x64-musl@1.32.0
 │  ├─ licenses: MPL-2.0
 │  ├─ repository: https://github.com/parcel-bundler/lightningcss
 │  ├─ path: ./node_modules/lightningcss-linux-x64-musl
 │  └─ licenseFile: ./node_modules/lightningcss-linux-x64-musl/LICENSE
-├─ lightningcss@1.31.1
+├─ lightningcss@1.32.0
 │  ├─ licenses: MPL-2.0
 │  ├─ repository: https://github.com/parcel-bundler/lightningcss
 │  ├─ path: ./node_modules/lightningcss
@@ -1247,15 +1331,7 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: ./node_modules/locate-path
 │  └─ licenseFile: ./node_modules/locate-path/license
-├─ longest-streak@3.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/longest-streak
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/longest-streak
-│  └─ licenseFile: ./node_modules/longest-streak/license
-├─ lru-cache@11.2.7
+├─ lru-cache@11.3.5
 │  ├─ licenses: BlueOak-1.0.0
 │  ├─ repository: https://github.com/isaacs/node-lru-cache
 │  ├─ publisher: Isaac Z. Schlueter
@@ -1281,94 +1357,6 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: ./node_modules/make-dir
 │  └─ licenseFile: ./node_modules/make-dir/license
-├─ markdown-table@3.0.4
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/markdown-table
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/markdown-table
-│  └─ licenseFile: ./node_modules/markdown-table/license
-├─ mdast-util-definitions@6.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-definitions
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-definitions
-│  └─ licenseFile: ./node_modules/mdast-util-definitions/license
-├─ mdast-util-find-and-replace@3.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-find-and-replace
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-find-and-replace
-│  └─ licenseFile: ./node_modules/mdast-util-find-and-replace/license
-├─ mdast-util-from-markdown@2.0.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-from-markdown
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-from-markdown
-│  └─ licenseFile: ./node_modules/mdast-util-from-markdown/license
-├─ mdast-util-gfm-autolink-literal@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-autolink-literal
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-gfm-autolink-literal
-│  └─ licenseFile: ./node_modules/mdast-util-gfm-autolink-literal/license
-├─ mdast-util-gfm-footnote@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-footnote
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-gfm-footnote
-│  └─ licenseFile: ./node_modules/mdast-util-gfm-footnote/license
-├─ mdast-util-gfm-strikethrough@2.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-strikethrough
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-gfm-strikethrough
-│  └─ licenseFile: ./node_modules/mdast-util-gfm-strikethrough/license
-├─ mdast-util-gfm-table@2.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-table
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-gfm-table
-│  └─ licenseFile: ./node_modules/mdast-util-gfm-table/license
-├─ mdast-util-gfm-task-list-item@2.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm-task-list-item
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-gfm-task-list-item
-│  └─ licenseFile: ./node_modules/mdast-util-gfm-task-list-item/license
-├─ mdast-util-gfm@3.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-gfm
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-gfm
-│  └─ licenseFile: ./node_modules/mdast-util-gfm/license
-├─ mdast-util-phrasing@4.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-phrasing
-│  ├─ publisher: Victor Felder
-│  ├─ email: victor@draft.li
-│  ├─ url: https://draft.li
-│  ├─ path: ./node_modules/mdast-util-phrasing
-│  └─ licenseFile: ./node_modules/mdast-util-phrasing/license
 ├─ mdast-util-to-hast@13.2.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/mdast-util-to-hast
@@ -1377,22 +1365,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/mdast-util-to-hast
 │  └─ licenseFile: ./node_modules/mdast-util-to-hast/license
-├─ mdast-util-to-markdown@2.1.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-to-markdown
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-to-markdown
-│  └─ licenseFile: ./node_modules/mdast-util-to-markdown/license
-├─ mdast-util-to-string@4.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/mdast-util-to-string
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/mdast-util-to-string
-│  └─ licenseFile: ./node_modules/mdast-util-to-string/license
 ├─ mdn-data@2.0.28
 │  ├─ licenses: CC0-1.0
 │  ├─ repository: https://github.com/mdn/data
@@ -1410,110 +1382,6 @@
 │  ├─ repository: https://github.com/teambition/merge2
 │  ├─ path: ./node_modules/merge2
 │  └─ licenseFile: ./node_modules/merge2/LICENSE
-├─ micromark-core-commonmark@2.0.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-core-commonmark
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-core-commonmark
-│  └─ licenseFile: ./node_modules/micromark-core-commonmark/license
-├─ micromark-extension-gfm-autolink-literal@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-autolink-literal
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm-autolink-literal
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm-autolink-literal/license
-├─ micromark-extension-gfm-footnote@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-footnote
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm-footnote
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm-footnote/license
-├─ micromark-extension-gfm-strikethrough@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-strikethrough
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm-strikethrough
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm-strikethrough/license
-├─ micromark-extension-gfm-table@2.1.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-table
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm-table
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm-table/license
-├─ micromark-extension-gfm-tagfilter@2.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-tagfilter
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm-tagfilter
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm-tagfilter/license
-├─ micromark-extension-gfm-task-list-item@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm-task-list-item
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm-task-list-item
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm-task-list-item/license
-├─ micromark-extension-gfm@3.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark-extension-gfm
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-extension-gfm
-│  └─ licenseFile: ./node_modules/micromark-extension-gfm/license
-├─ micromark-factory-destination@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-destination
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-factory-destination
-│  └─ licenseFile: ./node_modules/micromark-factory-destination/license
-├─ micromark-factory-label@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-label
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-factory-label
-│  └─ licenseFile: ./node_modules/micromark-factory-label/license
-├─ micromark-factory-space@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-space
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-factory-space
-│  └─ licenseFile: ./node_modules/micromark-factory-space/license
-├─ micromark-factory-title@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-title
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-factory-title
-│  └─ licenseFile: ./node_modules/micromark-factory-title/license
-├─ micromark-factory-whitespace@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-factory-whitespace
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-factory-whitespace
-│  └─ licenseFile: ./node_modules/micromark-factory-whitespace/license
 ├─ micromark-util-character@2.1.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-character
@@ -1522,46 +1390,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/micromark-util-character
 │  └─ licenseFile: ./node_modules/micromark-util-character/license
-├─ micromark-util-chunked@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-chunked
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-chunked
-│  └─ licenseFile: ./node_modules/micromark-util-chunked/license
-├─ micromark-util-classify-character@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-classify-character
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-classify-character
-│  └─ licenseFile: ./node_modules/micromark-util-classify-character/license
-├─ micromark-util-combine-extensions@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-combine-extensions
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-combine-extensions
-│  └─ licenseFile: ./node_modules/micromark-util-combine-extensions/license
-├─ micromark-util-decode-numeric-character-reference@2.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-numeric-character-reference
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-decode-numeric-character-reference
-│  └─ licenseFile: ./node_modules/micromark-util-decode-numeric-character-reference/license
-├─ micromark-util-decode-string@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-string
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-decode-string
-│  └─ licenseFile: ./node_modules/micromark-util-decode-string/license
 ├─ micromark-util-encode@2.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-encode
@@ -1570,30 +1398,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/micromark-util-encode
 │  └─ licenseFile: ./node_modules/micromark-util-encode/license
-├─ micromark-util-html-tag-name@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-html-tag-name
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-html-tag-name
-│  └─ licenseFile: ./node_modules/micromark-util-html-tag-name/license
-├─ micromark-util-normalize-identifier@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-normalize-identifier
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-normalize-identifier
-│  └─ licenseFile: ./node_modules/micromark-util-normalize-identifier/license
-├─ micromark-util-resolve-all@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-resolve-all
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-resolve-all
-│  └─ licenseFile: ./node_modules/micromark-util-resolve-all/license
 ├─ micromark-util-sanitize-uri@2.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-sanitize-uri
@@ -1602,14 +1406,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/micromark-util-sanitize-uri
 │  └─ licenseFile: ./node_modules/micromark-util-sanitize-uri/license
-├─ micromark-util-subtokenize@2.1.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-subtokenize
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark-util-subtokenize
-│  └─ licenseFile: ./node_modules/micromark-util-subtokenize/license
 ├─ micromark-util-symbol@2.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark-util-symbol
@@ -1626,14 +1422,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/micromark-util-types
 │  └─ licenseFile: ./node_modules/micromark-util-types/license
-├─ micromark@4.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/micromark/micromark/tree/main/packages/micromark
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/micromark
-│  └─ licenseFile: ./node_modules/micromark/license
 ├─ micromatch@4.0.8
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromatch/micromatch
@@ -1641,6 +1429,13 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: ./node_modules/micromatch
 │  └─ licenseFile: ./node_modules/micromatch/LICENSE
+├─ miniflare@4.20260708.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/cloudflare/workers-sdk
+│  ├─ publisher: MrBBot
+│  ├─ email: me@mrbbot.dev
+│  ├─ path: ./node_modules/miniflare
+│  └─ licenseFile: ./node_modules/miniflare/README.md
 ├─ minimatch@3.1.5
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/minimatch
@@ -1678,7 +1473,7 @@
 │  ├─ repository: https://github.com/vercel/ms
 │  ├─ path: ./node_modules/ms
 │  └─ licenseFile: ./node_modules/ms/license.md
-├─ nanoid@3.3.11
+├─ nanoid@3.3.15
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/ai/nanoid
 │  ├─ publisher: Andrey Sitnik
@@ -1771,13 +1566,13 @@
 │  ├─ url: http://blog.izs.me/
 │  ├─ path: ./node_modules/once
 │  └─ licenseFile: ./node_modules/once/LICENSE
-├─ oniguruma-parser@0.12.1
+├─ oniguruma-parser@0.12.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/slevithan/oniguruma-parser
 │  ├─ publisher: Steven Levithan
 │  ├─ path: ./node_modules/oniguruma-parser
 │  └─ licenseFile: ./node_modules/oniguruma-parser/LICENSE
-├─ oniguruma-to-es@4.3.4
+├─ oniguruma-to-es@4.3.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/slevithan/oniguruma-to-es
 │  ├─ publisher: Steven Levithan
@@ -1859,22 +1654,6 @@
 │  ├─ email: anthonyfu117@hotmail.com
 │  ├─ path: ./node_modules/package-manager-detector
 │  └─ licenseFile: ./node_modules/package-manager-detector/LICENSE
-├─ parse-latin@7.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/parse-latin
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/parse-latin
-│  └─ licenseFile: ./node_modules/parse-latin/license
-├─ parse5@7.3.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/inikulin/parse5
-│  ├─ publisher: Ivan Nikulin
-│  ├─ email: ifaaan@gmail.com
-│  ├─ url: https://github.com/inikulin
-│  ├─ path: ./node_modules/parse5
-│  └─ licenseFile: ./node_modules/parse5/LICENSE
 ├─ path-exists@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/path-exists
@@ -1898,6 +1677,11 @@
 │  ├─ email: http://jbgutierrez.info
 │  ├─ path: ./node_modules/path-parse
 │  └─ licenseFile: ./node_modules/path-parse/LICENSE
+├─ path-to-regexp@6.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/path-to-regexp
+│  ├─ path: ./node_modules/path-to-regexp
+│  └─ licenseFile: ./node_modules/path-to-regexp/LICENSE
 ├─ path-type@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/path-type
@@ -1906,6 +1690,11 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: ./node_modules/path-type
 │  └─ licenseFile: ./node_modules/path-type/license
+├─ pathe@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/pathe
+│  ├─ path: ./node_modules/pathe
+│  └─ licenseFile: ./node_modules/pathe/LICENSE
 ├─ piccolore@0.1.3
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/delucis/piccolore
@@ -1917,14 +1706,14 @@
 │  ├─ publisher: Alexey Raspopov
 │  ├─ path: ./node_modules/picocolors
 │  └─ licenseFile: ./node_modules/picocolors/LICENSE
-├─ picomatch@2.3.1
+├─ picomatch@2.3.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromatch/picomatch
 │  ├─ publisher: Jon Schlinkert
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: ./node_modules/anymatch/node_modules/picomatch
 │  └─ licenseFile: ./node_modules/anymatch/node_modules/picomatch/LICENSE
-├─ picomatch@4.0.3
+├─ picomatch@4.0.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromatch/picomatch
 │  ├─ publisher: Jon Schlinkert
@@ -1939,11 +1728,11 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: ./node_modules/pkg-dir
 │  └─ licenseFile: ./node_modules/pkg-dir/license
-├─ postcss@8.5.8
+├─ postcss@8.5.16
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/postcss/postcss
 │  ├─ publisher: Andrey Sitnik
-│  ├─ email: andrey@sitnik.ru
+│  ├─ email: andrey@sitnik.es
 │  ├─ path: ./node_modules/postcss
 │  └─ licenseFile: ./node_modules/postcss/LICENSE
 ├─ prettier-plugin-astro@0.14.1
@@ -1951,7 +1740,7 @@
 │  ├─ repository: https://github.com/withastro/prettier-plugin-astro
 │  ├─ path: ./node_modules/prettier-plugin-astro
 │  └─ licenseFile: ./node_modules/prettier-plugin-astro/LICENSE
-├─ prettier-plugin-tailwindcss@0.7.2
+├─ prettier-plugin-tailwindcss@0.8.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
 │  ├─ path: ./node_modules/prettier-plugin-tailwindcss
@@ -1968,7 +1757,13 @@
 │  ├─ publisher: Lea Verou
 │  ├─ path: ./node_modules/prismjs
 │  └─ licenseFile: ./node_modules/prismjs/LICENSE
-├─ property-information@7.1.0
+├─ process-ancestry@0.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ascorbic/process-ancestry
+│  ├─ publisher: Matt Kane
+│  ├─ path: ./node_modules/process-ancestry
+│  └─ licenseFile: ./node_modules/process-ancestry/README.md
+├─ property-information@7.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/wooorm/property-information
 │  ├─ publisher: Titus Wormer
@@ -2039,78 +1834,13 @@
 │  ├─ publisher: Steven Levithan
 │  ├─ path: ./node_modules/regex
 │  └─ licenseFile: ./node_modules/regex/LICENSE
-├─ rehype-parse@9.0.1
+├─ resolve-pkg-maps@1.0.0
 │  ├─ licenses: MIT
-│  ├─ repository: https://github.com/rehypejs/rehype/tree/main/packages/rehype-parse
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/rehype-parse
-│  └─ licenseFile: ./node_modules/rehype-parse/license
-├─ rehype-raw@7.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/rehypejs/rehype-raw
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/rehype-raw
-│  └─ licenseFile: ./node_modules/rehype-raw/license
-├─ rehype-stringify@10.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/rehypejs/rehype/tree/main/packages/rehype-stringify
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/rehype-stringify
-│  └─ licenseFile: ./node_modules/rehype-stringify/license
-├─ rehype@13.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/rehypejs/rehype/tree/main/packages/rehype
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/rehype
-│  └─ licenseFile: ./node_modules/rehype/license
-├─ remark-gfm@4.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/remarkjs/remark-gfm
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/remark-gfm
-│  └─ licenseFile: ./node_modules/remark-gfm/license
-├─ remark-parse@11.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/remarkjs/remark/tree/main/packages/remark-parse
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/remark-parse
-│  └─ licenseFile: ./node_modules/remark-parse/license
-├─ remark-rehype@11.1.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/remarkjs/remark-rehype
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/remark-rehype
-│  └─ licenseFile: ./node_modules/remark-rehype/license
-├─ remark-smartypants@3.0.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/silvenon/remark-smartypants
-│  ├─ publisher: Matija Marohnić
-│  ├─ email: matija.marohnic@gmail.com
-│  ├─ url: https://silvenon.com
-│  ├─ path: ./node_modules/remark-smartypants
-│  └─ licenseFile: ./node_modules/remark-smartypants/license
-├─ remark-stringify@11.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/remarkjs/remark/tree/main/packages/remark-stringify
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/remark-stringify
-│  └─ licenseFile: ./node_modules/remark-stringify/license
+│  ├─ repository: https://github.com/privatenumber/resolve-pkg-maps
+│  ├─ publisher: Hiroki Osame
+│  ├─ email: hiroki.osame@gmail.com
+│  ├─ path: ./node_modules/resolve-pkg-maps
+│  └─ licenseFile: ./node_modules/resolve-pkg-maps/LICENSE
 ├─ resolve@1.22.11
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/browserify/resolve
@@ -2119,14 +1849,6 @@
 │  ├─ url: http://substack.net
 │  ├─ path: ./node_modules/resolve
 │  └─ licenseFile: ./node_modules/resolve/LICENSE
-├─ retext-latin@4.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/retextjs/retext/tree/main/packages/retext-latin
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/retext-latin
-│  └─ licenseFile: ./node_modules/retext-latin/readme.md
 ├─ retext-smartypants@6.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/retextjs/retext-smartypants
@@ -2135,22 +1857,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/retext-smartypants
 │  └─ licenseFile: ./node_modules/retext-smartypants/license
-├─ retext-stringify@4.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/retextjs/retext/tree/main/packages/retext-stringify
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/retext-stringify
-│  └─ licenseFile: ./node_modules/retext-stringify/readme.md
-├─ retext@9.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/retextjs/retext/tree/main/packages/retext
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/retext
-│  └─ licenseFile: ./node_modules/retext/readme.md
 ├─ reusify@1.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/mcollina/reusify
@@ -2158,6 +1864,11 @@
 │  ├─ email: hello@matteocollina.com
 │  ├─ path: ./node_modules/reusify
 │  └─ licenseFile: ./node_modules/reusify/LICENSE
+├─ rolldown@1.1.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rolldown/rolldown
+│  ├─ path: ./node_modules/rolldown
+│  └─ licenseFile: ./node_modules/rolldown/LICENSE
 ├─ rollup@4.59.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/rollup/rollup
@@ -2184,6 +1895,11 @@
 │  ├─ publisher: Syler
 │  ├─ path: ./node_modules/sass-formatter
 │  └─ licenseFile: ./node_modules/sass-formatter/LICENSE
+├─ satteri@0.9.4
+│  ├─ licenses: MIT*
+│  ├─ repository: https://github.com/bruits/satteri
+│  ├─ path: ./node_modules/satteri
+│  └─ licenseFile: ./node_modules/satteri/LICENSE
 ├─ sax@1.5.0
 │  ├─ licenses: BlueOak-1.0.0
 │  ├─ repository: https://github.com/isaacs/sax-js
@@ -2217,7 +1933,7 @@
 │  ├─ email: npm@lovell.info
 │  ├─ path: ./node_modules/sharp
 │  └─ licenseFile: ./node_modules/sharp/LICENSE
-├─ shiki@4.0.2
+├─ shiki@4.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/shikijs/shiki
 │  ├─ publisher: Pine Wu
@@ -2248,11 +1964,11 @@
 │  ├─ url: http://blog.izs.me/
 │  ├─ path: ./node_modules/slide
 │  └─ licenseFile: ./node_modules/slide/LICENSE
-├─ smol-toml@1.6.0
+├─ smol-toml@1.7.0
 │  ├─ licenses: BSD-3-Clause
 │  ├─ repository: https://github.com/squirrelchat/smol-toml
-│  ├─ publisher: Cynthia
-│  ├─ email: cyyynthia@borkenware.com
+│  ├─ publisher: Cynthia Rey
+│  ├─ email: cynthia@cynthia.dev
 │  ├─ path: ./node_modules/smol-toml
 │  └─ licenseFile: ./node_modules/smol-toml/LICENSE
 ├─ source-map-js@1.2.1
@@ -2340,6 +2056,14 @@
 │  ├─ publisher: Syler
 │  ├─ path: ./node_modules/suf-log
 │  └─ licenseFile: ./node_modules/suf-log/LICENSE
+├─ supports-color@10.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/supports-color
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: ./node_modules/@poppinss/dumper/node_modules/supports-color
+│  └─ licenseFile: ./node_modules/@poppinss/dumper/node_modules/supports-color/license
 ├─ supports-color@5.5.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/chalk/supports-color
@@ -2363,12 +2087,17 @@
 │  ├─ url: https://github.com/deepsweet
 │  ├─ path: ./node_modules/svgo
 │  └─ licenseFile: ./node_modules/svgo/LICENSE
-├─ tailwindcss@4.2.1
+├─ tailwindcss@4.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tailwindlabs/tailwindcss
+│  ├─ path: ./node_modules/@tailwindcss/node/node_modules/tailwindcss
+│  └─ licenseFile: ./node_modules/@tailwindcss/node/node_modules/tailwindcss/LICENSE
+├─ tailwindcss@4.3.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tailwindlabs/tailwindcss
 │  ├─ path: ./node_modules/tailwindcss
 │  └─ licenseFile: ./node_modules/tailwindcss/LICENSE
-├─ tapable@2.3.0
+├─ tapable@2.3.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/webpack/tapable
 │  ├─ publisher: Tobias Koppers @sokra
@@ -2402,7 +2131,7 @@
 │  ├─ url: https://github.com/43081j
 │  ├─ path: ./node_modules/tinyexec
 │  └─ licenseFile: ./node_modules/tinyexec/LICENSE
-├─ tinyglobby@0.2.15
+├─ tinyglobby@0.2.17
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/SuperchupuDev/tinyglobby
 │  ├─ publisher: Superchupu
@@ -2446,12 +2175,12 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/trough
 │  └─ licenseFile: ./node_modules/trough/license
-├─ tsconfck@3.1.6
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/dominikg/tsconfck
-│  ├─ publisher: dominikg
-│  ├─ path: ./node_modules/tsconfck
-│  └─ licenseFile: ./node_modules/tsconfck/LICENSE
+├─ tslib@2.8.1
+│  ├─ licenses: 0BSD
+│  ├─ repository: https://github.com/Microsoft/tslib
+│  ├─ publisher: Microsoft Corp.
+│  ├─ path: ./node_modules/tslib
+│  └─ licenseFile: ./node_modules/tslib/LICENSE.txt
 ├─ ufo@1.6.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/unjs/ufo
@@ -2470,11 +2199,21 @@
 │  ├─ repository: https://github.com/unjs/uncrypto
 │  ├─ path: ./node_modules/uncrypto
 │  └─ licenseFile: ./node_modules/uncrypto/LICENSE
-├─ undici-types@7.18.2
+├─ undici-types@7.19.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodejs/undici
 │  ├─ path: ./node_modules/undici-types
 │  └─ licenseFile: ./node_modules/undici-types/LICENSE
+├─ undici@7.28.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/undici
+│  ├─ path: ./node_modules/undici
+│  └─ licenseFile: ./node_modules/undici/LICENSE
+├─ unenv@2.0.0-rc.24
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/unenv
+│  ├─ path: ./node_modules/unenv
+│  └─ licenseFile: ./node_modules/unenv/LICENSE
 ├─ unified@11.0.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/unifiedjs/unified
@@ -2488,14 +2227,6 @@
 │  ├─ repository: https://github.com/unjs/unifont
 │  ├─ path: ./node_modules/unifont
 │  └─ licenseFile: ./node_modules/unifont/LICENCE
-├─ unist-util-find-after@5.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/unist-util-find-after
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/unist-util-find-after
-│  └─ licenseFile: ./node_modules/unist-util-find-after/license
 ├─ unist-util-is@6.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/unist-util-is
@@ -2504,14 +2235,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/unist-util-is
 │  └─ licenseFile: ./node_modules/unist-util-is/license
-├─ unist-util-modify-children@4.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/unist-util-modify-children
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/unist-util-modify-children
-│  └─ licenseFile: ./node_modules/unist-util-modify-children/license
 ├─ unist-util-position@5.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/unist-util-position
@@ -2520,14 +2243,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/unist-util-position
 │  └─ licenseFile: ./node_modules/unist-util-position/license
-├─ unist-util-remove-position@5.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/unist-util-remove-position
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/unist-util-remove-position
-│  └─ licenseFile: ./node_modules/unist-util-remove-position/license
 ├─ unist-util-stringify-position@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/unist-util-stringify-position
@@ -2536,14 +2251,6 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/unist-util-stringify-position
 │  └─ licenseFile: ./node_modules/unist-util-stringify-position/license
-├─ unist-util-visit-children@3.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/syntax-tree/unist-util-visit-children
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/unist-util-visit-children
-│  └─ licenseFile: ./node_modules/unist-util-visit-children/license
 ├─ unist-util-visit-parents@6.0.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/syntax-tree/unist-util-visit-parents
@@ -2567,7 +2274,7 @@
 │  ├─ email: opensrc@ryanzim.com
 │  ├─ path: ./node_modules/universalify
 │  └─ licenseFile: ./node_modules/universalify/LICENSE
-├─ unstorage@1.17.4
+├─ unstorage@1.17.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/unjs/unstorage
 │  ├─ path: ./node_modules/unstorage
@@ -2585,14 +2292,6 @@
 │  ├─ url: https://kemitchell.com
 │  ├─ path: ./node_modules/validate-npm-package-license
 │  └─ licenseFile: ./node_modules/validate-npm-package-license/LICENSE
-├─ vfile-location@5.0.3
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/vfile/vfile-location
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/vfile-location
-│  └─ licenseFile: ./node_modules/vfile-location/license
 ├─ vfile-message@4.0.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/vfile/vfile-message
@@ -2609,7 +2308,7 @@
 │  ├─ url: https://wooorm.com
 │  ├─ path: ./node_modules/vfile
 │  └─ licenseFile: ./node_modules/vfile/license
-├─ vite@7.3.1
+├─ vite@8.1.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/vitejs/vite
 │  ├─ publisher: Evan You
@@ -2620,20 +2319,23 @@
 │  ├─ repository: https://github.com/svitejs/vitefu
 │  ├─ path: ./node_modules/vitefu
 │  └─ licenseFile: ./node_modules/vitefu/LICENSE
-├─ web-namespaces@2.0.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/wooorm/web-namespaces
-│  ├─ publisher: Titus Wormer
-│  ├─ email: tituswormer@gmail.com
-│  ├─ url: https://wooorm.com
-│  ├─ path: ./node_modules/web-namespaces
-│  └─ licenseFile: ./node_modules/web-namespaces/license
 ├─ which-pm-runs@1.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/zkochan/packages/tree/main/which-pm-runs
 │  ├─ publisher: Zoltan Kochan
 │  ├─ path: ./node_modules/which-pm-runs
 │  └─ licenseFile: ./node_modules/which-pm-runs/LICENSE
+├─ workerd@1.20260708.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/cloudflare/workerd
+│  ├─ path: ./node_modules/workerd
+│  └─ licenseFile: ./node_modules/workerd/README.md
+├─ wrangler@4.110.0
+│  ├─ licenses: MIT OR Apache-2.0
+│  ├─ repository: https://github.com/cloudflare/workers-sdk
+│  ├─ publisher: wrangler@cloudflare.com
+│  ├─ path: ./node_modules/wrangler
+│  └─ licenseFile: ./node_modules/wrangler/README.md
 ├─ wrappy@1.0.2
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/npm/wrappy
@@ -2642,6 +2344,14 @@
 │  ├─ url: http://blog.izs.me/
 │  ├─ path: ./node_modules/wrappy
 │  └─ licenseFile: ./node_modules/wrappy/LICENSE
+├─ ws@8.21.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/websockets/ws
+│  ├─ publisher: Einar Otto Stangvik
+│  ├─ email: einaros@gmail.com
+│  ├─ url: http://2x.io
+│  ├─ path: ./node_modules/ws
+│  └─ licenseFile: ./node_modules/ws/LICENSE
 ├─ xxhash-wasm@1.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jungomi/xxhash-wasm
@@ -2664,6 +2374,20 @@
 │  ├─ url: https://sindresorhus.com
 │  ├─ path: ./node_modules/yocto-queue
 │  └─ licenseFile: ./node_modules/yocto-queue/license
+├─ youch-core@0.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/poppinss/youch-core
+│  ├─ publisher: Harminder Virk
+│  ├─ email: virk@adonisjs.com
+│  ├─ path: ./node_modules/youch-core
+│  └─ licenseFile: ./node_modules/youch-core/LICENSE.md
+├─ youch@4.1.0-beta.10
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/poppinss/youch
+│  ├─ publisher: Harminder Virk
+│  ├─ email: virk@adonisjs.com
+│  ├─ path: ./node_modules/youch
+│  └─ licenseFile: ./node_modules/youch/LICENSE.md
 ├─ zod@4.3.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/colinhacks/zod
